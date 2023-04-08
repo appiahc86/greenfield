@@ -73,12 +73,12 @@ onMounted(() => {
           </li>
 
           <li class="nav-item text-center">
-            <a href="#" class="nav-link text-decoration-none">gallery</a>
+            <router-link :to="{name: 'gallery'}" class="nav-link text-decoration-none">gallery</router-link>
           </li>
 
           <li class="nav-item dropdown">
             <div class="nav-link dropdown-toggle text-center" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>projects
+              <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>our programs
             </div>
             <ul class="dropdown-menu text-center">
               <li><a href="#" class="dropdown-item">project one</a></li>
@@ -110,7 +110,7 @@ onMounted(() => {
 
   <router-view/>
 
-    <footer class="mt-4 bg-success text-white">
+    <footer class="bg-success text-white">
     <div class="container-fluid py-5">
       <div class="row text-center">
         <div class="col-6 col-lg-3 mb-4">
@@ -140,7 +140,7 @@ onMounted(() => {
           <div class="d-flex text-center">
             <div class="mx-auto">
               <a><span class="pi pi-facebook" style="font-size: 1.6em"></span></a>
-              <a ><span class="pi pi-youtube mx-4" style="font-size: 1.6em"></span></a>
+              <a ><span class="pi pi-linkedin mx-4" style="font-size: 1.6em"></span></a>
               <a ><span class="pi pi-twitter" style="font-size: 1.6em"></span></a>
             </div>
 

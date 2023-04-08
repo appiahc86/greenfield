@@ -1,6 +1,34 @@
 <script setup>
 import { ref, onMounted } from "vue";
+import sal from 'sal.js'
+import Carousel from "primevue/carousel";
+import Button from "primevue/button";
+import Tag from "primevue/tag";
+const responsiveOptions = ref([
+  {
+    breakpoint: '1199px',
+    numVisible: 3,
+    numScroll: 3
+  },
+  {
+    breakpoint: '991px',
+    numVisible: 2,
+    numScroll: 2
+  },
+  {
+    breakpoint: '767px',
+    numVisible: 1,
+    numScroll: 1
+  }
+]);
 
+const products  = ref([
+  {name: 'Mr Amissah Francis', price: 200, inventoryStatus: 'boom', image: '/img/headoffice.jpg'},
+  {name: 'hello', price: 200, inventoryStatus: 'boom', image: '/img/headoffice.jpg'},
+  {name: 'Appiah Collins', price: 200, inventoryStatus: 'boom', image: '/img/headoffice.jpg'},
+  {name: 'hello', price: 200, inventoryStatus: 'boom', image: '/img/headoffice.jpg'},
+  {name: 'hello', price: 200, inventoryStatus: 'boom', image: '/img/headoffice.jpg'},
+])
 
 onMounted(() => {
 
@@ -11,11 +39,16 @@ onMounted(() => {
     wrap: true
   })
   carousel.cycle();
+
+  sal({
+    once: false,
+  });
+
 })
 </script>
 
 <template>
-  <div class="mt-5 mt-sm-5 mt-md-4 mt-lg-0">
+  <div class="mt-5 mt-sm-5 mt-md-4 mt-lg-0 ">
 
     <div id="homeCarousel" class="carousel slide carousel-fade">
       <div class="carousel-indicators">
@@ -54,58 +87,180 @@ onMounted(() => {
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+    </div><!--   ./carousel -->
+
+
+
+    <div class="container-fluid container-md mt-5 p-0 p-lg-5">
+      <h2 class="fw-bold px-2">MISSION</h2>
+      <p class="fs-5 px-2"
+         data-sal="slide-up"
+         data-sal-delay="300"
+         data-sal-duration="2000"
+         style="--sal-duration: 1s; --sal-delay: 1s;"
+         data-sal-easing="ease-out-back"
+      >
+        Our mission is to impact the society and improve the well-being of small holder
+        farmers through implementation of sustainable agricultural value
+        chain programs that seek to increase crop yield, increase small holder
+        farmers’ income and improve their livelihood to help alleviate poverty.
+      </p>
+      <div class="row flex-md-row-reverse g-0" style="background: #ecf0f1">
+        <div class="col-md-6" >
+          <img src="/img/xa.jpeg" alt="" class="img-fluid w-100">
+        </div>
+        <div class="col-md-6 pt-5  px-3">
+          <h2 class="fw-bold"
+              data-sal="slide-right"
+              data-sal-delay="300"
+              style="--sal-duration: 2s; --sal-delay: 1s;"
+              data-sal-easing="ease-out-back"
+          >WELCOME TO GREENFIELD</h2>
+          <p class="mt-2 mt-lg-5 fs-6 text-center"
+             data-sal="flip-right"
+             data-sal-delay="300"
+             style="--sal-duration: 2s; --sal-delay: 1s;"
+             data-sal-easing="ease-out-back"
+          >
+            GreenField Agricultural Services is a social impact and value addition
+            Agribusiness Company that supports small holder farmers by implementing
+            sustainable agricultural value chain programs aimed at increasing crop
+            yield, increasing farmers' income, improving their livelihood and reducing poverty.
+            The Head Office is located in Kumasi, the capital city of the Ashanti Region.
+            <br>  <button class="btn btn-sm btn-success">Read more</button>
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row g-0" style="background: #ecf0f1;">
+        <div class="col-md-6">
+          <img src="/img/headoffice.jpeg" alt="" class="img-fluid w-100 h-100">
+        </div>
+        <div class="col-md-6 pt-5 px-3">
+          <h2 class="fw-bold"
+              data-sal="zoom-in"
+              data-sal-delay="300"
+              data-sal-easing="ease-out-back"
+              style="--sal-duration: 1s; --sal-delay: 1s;"
+          >VISION</h2>
+          <p class="mt-2 mt-lg-5 fs-6 text-center"
+             data-sal="zoom-in"
+             data-sal-delay="300"
+             style="--sal-duration: 2s; --sal-delay: 1s;"
+             data-sal-easing="ease-out-back"
+          >
+            Our vision is to become the preferred social impact and value addition
+            Agribusiness partner in Ghana and West Africa with tailor-made and farmer
+            friendly agribusiness models that work effectively for small holder farmers
+            and seek to increase crop yield, increase small holder farmers' income,
+            improve their livelihood and help alleviate poverty.
+          </p>
+        </div>
+
+      </div>
     </div>
+
+
+
+
+
+
+
+    <div class="container mt-3 mb-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h3 class="title mb-2 mt-5">Our <span class="text-success">Amazing</span> Team</h3>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12 mb-5">
+          <div class="mt-4 pt-2">
+            <div class="team position-relative d-block text-center">
+              <div class="image position-relative d-block overflow-hidden">
+                <img src="/img/team/sebe.jpg" class="img-fluid rounded-circle" alt="sebe">
+                <div class="overlay rounded bg-dark"></div>
+              </div>
+              <div class="content py-2 member-position bg-white border-bottom overflow-hidden rounded d-inline-block">
+                <h4 class="title mb-0">Mr. Kofi Sebe</h4>
+                <small class="text-muted">General Manager</small><br><br>
+                <small>
+                  <a href="" class="text-decoration-none text-success">View Profile</a>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 col-12 mb-5">
+          <div class="mt-4 pt-2">
+            <div class="team position-relative d-block text-center">
+              <div class="image position-relative d-block overflow-hidden">
+                <img src="/img/team/ellen.jpg" class="img-fluid rounded-circle" alt="ellen">
+                <div class="overlay rounded bg-dark"></div>
+              </div>
+              <div class="content py-2 member-position bg-white border-bottom overflow-hidden rounded d-inline-block">
+                <h4 class="title mb-0">Ms Ellen Addai</h4>
+                <small class="text-muted">Project Administration Officer</small><br><br>
+                <small>
+                  <a href="" class="text-decoration-none text-success">View Profile</a>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 col-12 mb-5">
+          <div class="mt-4 pt-2">
+            <div class="team position-relative d-block text-center">
+              <div class="image position-relative d-block overflow-hidden">
+                <img src="/img/team/benjamin.jpg" class="img-fluid rounded-circle" alt="benjamin">
+                <div class="overlay rounded bg-dark"></div>
+              </div>
+              <div class="content py-2 member-position bg-white border-bottom overflow-hidden rounded d-inline-block">
+                <h4 class="title mb-0">Mr. Benjamin Dadzie</h4>
+                <small class="text-muted">Operations Manager</small><br><br>
+                <small>
+                  <a href="" class="text-decoration-none text-success">View Profile</a>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+
+        <div class="col-lg-3 col-md-6 col-12 mb-5">
+          <div class="mt-4 pt-2">
+            <div class="team position-relative d-block text-center">
+              <div class="image position-relative d-block overflow-hidden">
+                <img src="/img/team/asante.jpg" class="img-fluid rounded-circle" alt="asante">
+                <div class="overlay rounded bg-dark"></div>
+              </div>
+              <div class="content py-2 member-position bg-white border-bottom overflow-hidden rounded d-inline-block">
+                <h4 class="title mb-0">Mr. Collins Asante</h4>
+                <small class="text-muted">Project Coordinator</small><br><br>
+                <small>
+                  <a href="" class="text-decoration-none text-success">View Profile</a>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div><!--end col-->
+      </div><!--end row-->
+    </div>
+
+
   </div>
 
 
-  <div class="container-fluid mt-5">
-    <div class="row">
-      <div class="col-md-7 px-3">
-        <h3>Welcome to Greenfield</h3>
-        <p>
-          GreenField Agricultural Services is a social impact and value addition
-          Agribusiness Company that supports small holder farmers by implementing sustainable agricultural value
-          chain programs aimed at increasing crop yield, increasing farmers' income, improving their livelihood and
-          reducing poverty. The Head Office is located in Kumasi, the capital city of the Ashanti Region.
 
-        </p>
-
-        <p>
-          Greenfield was first registered as Greenfield Agrochemicals in 2014 as a sole proprietorship to undertake sale of agro
-          inputs, provide training and extension services to small holder farmers. It was founded by Mr. Samuel Amissah,
-          an Agribusiness Expert with about 16 years field experience in Agricultural Financing, Microfinance,
-          Agro Inputs Credit Management, Project Development and Management, VSLAs Development, Cocoa Sustainability,
-          Farm Management, Farmer Training, Agribusiness Management and Consulting. Mr. Amissah is the Chief
-          Executive Officer (CEO) and owner of the business. In order to expand its activities and restructure,
-          the company was registered again as Greenfield Agricultural Services Limited in 2020. Greenfield
-          currently has 6 outlets in the cocoa growing areas providing small holder cocoa farmers with
-          sustainable access to quality agro inputs and training to improve their livelihood. Greenfield
-          started with only 1 outlet at Sofoline in Kumasi and has expanded to 6 outlets currently.
-          These are Sofoline and Kunsu Wiawso in the Ashanti Region, Goaso in the Ahafo Region,
-          Twifo Praso, Agona Abrem in the Central Region and Daboase Junction in the Western Region.
-          <br>  <button class="btn btn-sm btn-success">Read more</button>
-        </p>
-
-
-      </div>
-      <div class="col-md-5">
-        <h3>Head Office</h3>
-        <img src="/img/headoffice.jpg" alt="head office" class="img-fluid">
-        <h4 class="mt-2">Vision</h4>
-        <p>
-          Our vision is to become the preferred social
-          impact and value addition Agribusiness partner in Ghana and West Africa with
-          tailor-made and farmer friendly agribusiness models that work effectively for small
-          holder farmers and seek to increase crop yield, increase small holder farmers' income,
-          improve their livelihood and help alleviate poverty.
-        </p>
-      </div>
-    </div>
-  </div>
 </template>
 
 <style scoped>
+@import 'sal.js/dist/sal.css';
 .carousel-img{
-  filter: brightness(80%);
+  filter: brightness(90%);
 }
 </style>
