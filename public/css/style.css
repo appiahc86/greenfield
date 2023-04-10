@@ -28,6 +28,7 @@ body  {
 
 .team .member-position {
     position: absolute;
+    font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
     bottom: -50px;
     right: 0;
     left: 0;

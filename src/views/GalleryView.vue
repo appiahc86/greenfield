@@ -22,11 +22,11 @@ const responsiveOptions = ref([
 ]);
 
 const products  = ref([
-  {name: 'Mr Amissah Francis', price: 200, inventoryStatus: 'boom', image: '/img/headoffice.jpg'},
-  {name: 'hello', price: 200, inventoryStatus: 'boom', image: '/img/headoffice.jpg'},
-  {name: 'Appiah Collins', price: 200, inventoryStatus: 'boom', image: '/img/headoffice.jpg'},
-  {name: 'hello', price: 200, inventoryStatus: 'boom', image: '/img/headoffice.jpg'},
-  {name: 'hello', price: 200, inventoryStatus: 'boom', image: '/img/headoffice.jpg'},
+  {name: 'Mr Amissah Francis', price: 200, inventoryStatus: 'boom', image: '/img/headoffice2.jpg'},
+  {name: 'hello', price: 200, inventoryStatus: 'boom', image: '/img/headoffice.jpeg'},
+  {name: 'Appiah Collins', price: 200, inventoryStatus: 'boom', image: '/img/headoffice2.jpg'},
+  {name: 'hello', price: 200, inventoryStatus: 'boom', image: '/img/headoffice2.jpg'},
+  {name: 'hello', price: 200, inventoryStatus: 'boom', image: '/img/headoffice2.jpg'},
 ])
 </script>
 

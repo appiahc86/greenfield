@@ -2,6 +2,9 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import AboutView from '../views/AboutView.vue';
 import GalleryView from '../views/GalleryView.vue';
+import ContactView from '../views/ContactView.vue';
+import ManagementView from '../views/ManagementView.vue';
+import ProductsAndServices from '../views/ProductsAndServices.vue';
 
 const routes = [
   {
@@ -18,7 +21,22 @@ const routes = [
     path: '/gallery',
     name: 'gallery',
     component: GalleryView
-  }
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: ContactView
+  },
+  {
+    path: '/management',
+    name: 'management',
+    component: ManagementView
+  },
+  {
+    path: '/products-services',
+    name: 'products',
+    component: ProductsAndServices
+  },
 ]
 
 const router = createRouter({
@@ -33,4 +51,7 @@ const router = createRouter({
   }
 
 })
+
+
+
 export default router

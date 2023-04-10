@@ -65,7 +65,7 @@ onMounted(() => {
           </li>
 
           <li class="nav-item text-center">
-            <a href="#" class="nav-link text-decoration-none">product & services</a>
+            <router-link :to="{name: 'products'}" class="nav-link text-decoration-none">product & services</router-link>
           </li>
 
           <li class="nav-item text-center">
@@ -95,12 +95,12 @@ onMounted(() => {
               <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>About
             </div>
             <ul class="dropdown-menu text-center">
-              <li><a href="#" class="dropdown-item">Management</a></li>
+              <router-link :to="{name: 'management'}" class="nav-link text-decoration-none">management</router-link>
             </ul>
           </li>
 
           <li class="nav-item text-center">
-            <a href="#" class="nav-link text-decoration-none">Contact</a>
+            <router-link :to="{name: 'contact'}" class="nav-link text-decoration-none">contact</router-link>
           </li>
         </ul>
       </div>
@@ -117,7 +117,7 @@ onMounted(() => {
           <h4>Company</h4>
             <a href="#" class="text-decoration-none text-white">About Us</a><br>
             <a href="#" class="text-decoration-none text-white">Leadership</a><br>
-            <a href="#" class="text-decoration-none text-white">Impact</a><br>
+            <a href="#" class="text-decoration-none text-white">Social Impact</a><br>
             <a href="#" class="text-decoration-none text-white">Careers</a><br>
         </div>
 
@@ -131,17 +131,20 @@ onMounted(() => {
         <div class="col-6 col-lg-3 mb-4">
           <h4>Contact</h4>
             <a href="#" class="text-decoration-none text-white"><span class="fw-bold">Phone:</span> 0243631511 / 0265557165 / 0202144534</a><br>
-            <a href="#" class="text-decoration-none text-white"><span class="fw-bold">Email:</span> hdj@gmail.com</a><br>
-            <a href="#" class="text-decoration-none text-white"><span class="fw-bold">Location:</span> Four 34 st Agric</a><br>
+            <a href="#" class="text-decoration-none text-white"><span class="fw-bold">Email:</span> greenfieldagriculturalservices@gmail.com</a><br>
+            <a href="#" class="text-decoration-none text-white"><span class="fw-bold">Location:</span> Four 34 st Agric Nzema</a><br>
         </div>
 
         <div class="col-6 col-lg-3 mb-4">
           <h4>Connect</h4>
           <div class="d-flex text-center">
             <div class="mx-auto">
-              <a><span class="pi pi-facebook" style="font-size: 1.6em"></span></a>
-              <a ><span class="pi pi-linkedin mx-4" style="font-size: 1.6em"></span></a>
-              <a ><span class="pi pi-twitter" style="font-size: 1.6em"></span></a>
+<!--              <a><span class="pi pi-facebook" style="font-size: 1.6em"></span></a>-->
+<!--              <a ><span class="pi pi-linkedin mx-4" style="font-size: 1.6em"></span></a>-->
+<!--              <a ><span class="pi pi-twitter" style="font-size: 1.6em"></span></a>-->
+              <a class="btn btn-dark mx-2" href="tel:+233243631511"><i class="pi pi-phone"></i></a>
+              <a class="btn btn-success mx-2" href="https://api.whatsapp.com/send?phone=233243631511"><i class="pi pi-whatsapp"></i></a>
+              <a class="btn bg-primary text-white mx-2" href="https://www.linkedin.com"><i class="pi pi-linkedin"></i></a>
             </div>
 
           </div>
