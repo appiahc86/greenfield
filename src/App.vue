@@ -40,8 +40,8 @@ onMounted(() => {
 
   // moreServices.value.onclick = () =>  navbarCollapse.value.classList.remove('show');
 });
-const hover = ref(false)
-const programHover = ref(false)
+const hover = ref(false);
+const programHover = ref(false);
 </script>
 
 <template>
@@ -116,13 +116,30 @@ const programHover = ref(false)
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 @mouseenter="programHover = true"
-                @mouseleave="programHover = false"
               >
                 <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>our programs
               </div>
-              <ul class="dropdown-menu text-center" :class="{'show': programHover}">
-                <li><a href="#" class="dropdown-item" :class="{'show': programHover}">project one</a></li>
-                <li><a href="#" class="dropdown-item" :class="{'show': programHover}">project two</a></li>
+              <ul
+                class="dropdown-menu text-center"
+                :class="{ show: programHover }"
+                @mouseleave="programHover = false"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="dropdown-item"
+                    :class="{ show: programHover }"
+                    >project one</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="dropdown-item"
+                    :class="{ show: programHover }"
+                    >project two</a
+                  >
+                </li>
               </ul>
             </li>
 
@@ -134,18 +151,17 @@ const programHover = ref(false)
               class="nav-item dropdown"
               @mouseover="hover = true"
               @mouseleave="hover = false"
-         
             >
               <div
                 class="nav-link dropdown-toggle text-center"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                     :class="{'show': hover}"
+                :class="{ show: hover }"
               >
                 <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>About
               </div>
-              <ul class="dropdown-menu text-center"      :class="{'show': hover}">
+              <ul class="dropdown-menu text-center" :class="{ show: hover }">
                 <li><a href="/about" class="dropdown-item">Management</a></li>
               </ul>
             </li>
