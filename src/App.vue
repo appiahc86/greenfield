@@ -95,12 +95,12 @@ onMounted(() => {
               <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>About
             </div>
             <ul class="dropdown-menu text-center">
-              <li><a href="#" class="dropdown-item">Management</a></li>
+              <li><a href="/about" class="dropdown-item">Management</a></li>
             </ul>
           </li>
 
           <li class="nav-item text-center">
-            <a href="#" class="nav-link text-decoration-none">Contact</a>
+            <a href="/contact" class="nav-link text-decoration-none">Contact</a>
           </li>
         </ul>
       </div>
