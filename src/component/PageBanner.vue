@@ -30,7 +30,7 @@ defineProps({
 </script>
 <style scoped>
 .banner {
-  height: 500px;
+  height: 20em;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

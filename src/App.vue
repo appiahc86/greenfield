@@ -5,7 +5,6 @@ import { onMounted, ref, watch } from "vue";
 const navbarCollapse = ref(null);
 const route = useRoute();
 const router = useRouter();
-const moreServices = ref(null);
 
 const togglerElement = ref(null);
 
@@ -38,9 +37,8 @@ onMounted(() => {
     }
   );
 
-  // moreServices.value.onclick = () =>  navbarCollapse.value.classList.remove('show');
 });
-const hover = ref(false);
+const aboutHover = ref(false);
 const programHover = ref(false);
 </script>
 
@@ -90,9 +88,12 @@ const programHover = ref(false);
             </li>
 
             <li class="nav-item text-center">
-              <a href="#" class="nav-link text-decoration-none"
-                >product & services</a
+              <router-link
+                  :to="{ name: 'products' }"
+                  class="nav-link text-decoration-none"
+              >product & services</router-link
               >
+
             </li>
 
             <li class="nav-item text-center">
@@ -102,20 +103,24 @@ const programHover = ref(false);
             </li>
 
             <li class="nav-item text-center">
-              <router-link
-                :to="{ name: 'gallery' }"
-                class="nav-link text-decoration-none"
-                >gallery</router-link
-              >
+<!--              <router-link-->
+<!--                :to="{ name: 'home' }"-->
+<!--                class="nav-link text-decoration-none"-->
+<!--                >gallery</router-link-->
+<!--              >-->
+              <a href="#"  class="nav-link text-decoration-none">gallery</a>
             </li>
 
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown"
+                @mouseover="programHover = true"
+                @mouseleave="programHover = false"
+            >
               <div
                 class="nav-link dropdown-toggle text-center"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                @mouseenter="programHover = true"
+                :class="{ show: programHover }"
               >
                 <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>our programs
               </div>
@@ -149,26 +154,37 @@ const programHover = ref(false);
 
             <li
               class="nav-item dropdown"
-              @mouseover="hover = true"
-              @mouseleave="hover = false"
+              @mouseover="aboutHover = true"
+              @mouseleave="aboutHover = false"
             >
               <div
                 class="nav-link dropdown-toggle text-center"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                :class="{ show: hover }"
+                :class="{ show: aboutHover }"
               >
                 <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>About
               </div>
-              <ul class="dropdown-menu text-center" :class="{ show: hover }">
-                <li><a href="/about" class="dropdown-item">Management</a></li>
+              <ul class="dropdown-menu text-center" :class="{ show: aboutHover }">
+                <router-link
+                    :to="{ name: 'about' }"
+                    class="dropdown-item"
+                >About Us</router-link
+                >
+                <router-link
+                    :to="{ name: 'management' }"
+                    class="dropdown-item"
+                >Management</router-link
+                >
               </ul>
             </li>
 
             <li class="nav-item text-center">
-              <a href="/contact" class="nav-link text-decoration-none"
-                >Contact</a
+              <router-link
+                  :to="{ name: 'contact' }"
+                  class="nav-link text-decoration-none"
+              >contact</router-link
               >
             </li>
           </ul>
@@ -185,7 +201,7 @@ const programHover = ref(false);
             <h4>Company</h4>
             <a href="#" class="text-decoration-none text-white">About Us</a
             ><br />
-            <a href="#" class="text-decoration-none text-white">Leadership</a
+            <a href="#" class="text-decoration-none text-white">Management</a
             ><br />
             <a href="#" class="text-decoration-none text-white">Impact</a><br />
             <a href="#" class="text-decoration-none text-white">Careers</a
@@ -209,10 +225,11 @@ const programHover = ref(false);
               0202144534</a
             ><br />
             <a href="#" class="text-decoration-none text-white"
-              ><span class="fw-bold">Email:</span> hdj@gmail.com</a
+              ><span class="fw-bold">Email:</span> greenfieldagriculturalservices@gmail.com
+            </a
             ><br />
             <a href="#" class="text-decoration-none text-white"
-              ><span class="fw-bold">Location:</span> Four 34 st Agric</a
+              ><span class="fw-bold">Location:</span> Plt 52 Blk C,Agric Nzema, Kumasi</a
             ><br />
           </div>
 
@@ -247,5 +264,8 @@ const programHover = ref(false);
 }
 .navbar-expand-lg {
   background: linear-gradient(45deg, white, white, #eafcea);
+}
+.dropdown-item {
+  font-size: 0.8rem;
 }
 </style>

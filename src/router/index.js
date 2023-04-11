@@ -2,7 +2,10 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import AboutView from '../views/AboutView.vue';
 import GalleryView from '../views/GalleryView.vue';
-import ContactView from "../views/ContactView.vue";
+import ContactView from '../views/ContactView.vue';
+import ManagementView from '../views/ManagementView.vue';
+import ProductsAndServices from '../views/ProductsAndServices.vue';
+
 const routes = [
   {
     path: '/',
@@ -23,6 +26,22 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: ContactView
+  },
+  {
+    path: '/management',
+    name: 'management',
+    component: ManagementView
+  },
+  {
+    path: '/products-services',
+    name: 'products',
+    component: ProductsAndServices
+  },
+
+  //    redirect to home page if route not found
+  {
+    path: '/:catchAll(.*)*',
+    redirect: {name: 'home'}
   }
 ]
 
@@ -38,4 +57,7 @@ const router = createRouter({
   }
 
 })
+
+
+
 export default router

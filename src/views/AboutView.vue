@@ -70,7 +70,7 @@ import TeamCard from "@/component/TeamCard.vue";
                 <img src="/img/shield-orange.png" alt="" />
               </figure>
               <h5>We are Passionate</h5>
-              <p>Latest analysis by the Cadre Harmonisé.</p>
+              <p>Improving livelihood to help alleviate poverty.</p>
             </div>
             <div class="hb-inner spacing-sm">
               <figure class="hb-icon">
@@ -84,17 +84,17 @@ import TeamCard from "@/component/TeamCard.vue";
       </div>
       <div class="col-lg-6 spacing-md">
         <figure class="home-about-img">
-          <img src="/img/farmey.jpg" alt="" />
-          <div class="image-badget">
-            <figure class="ib-icon">
-              <img src="/img/medal.png" alt="" width="100%" />
-            </figure>
-            <h4 class="mt-4">Our Values</h4>
-            <p>
-              Continuously realize profitability and growth objectives through
-              the manufacture and distribution of fertilizer.
-            </p>
-          </div>
+          <img src="/img/farmertraining.jpeg" alt="" />
+<!--          <div class="image-badget">-->
+<!--            <figure class="ib-icon">-->
+<!--              <img src="/img/medal.png" alt="" width="100%" />-->
+<!--            </figure>-->
+<!--            <h4 class="mt-0">Our Values</h4>-->
+<!--            <p>-->
+<!--              Continuously realize profitability and growth objectives through-->
+<!--              the manufacture and distribution of fertilizer.-->
+<!--            </p>-->
+<!--          </div>-->
         </figure>
       </div>
     </div>
@@ -104,22 +104,22 @@ import TeamCard from "@/component/TeamCard.vue";
     <div class="row">
       <div class="col-lg-6 spacing-md">
         <figure class="home-about-img">
-          <img src="/img/farmey.jpg" alt="" />
-          <div class="image-badget">
-            <figure class="ib-icon">
-              <img src="/img/medal.png" alt="" width="100%" />
-            </figure>
-            <h4 class="mt-4">Our Values</h4>
-            <p>
-              Continuously realize profitability and growth objectives through
-              the manufacture and distribution of fertilizer.
-            </p>
-          </div>
+          <img src="/img/ass.jpeg" alt="" />
+<!--          <div class="image-badget">-->
+<!--            <figure class="ib-icon">-->
+<!--              <img src="/img/medal.png" alt="" width="100%" />-->
+<!--            </figure>-->
+<!--            <h4 class="mt-0">Our Values</h4>-->
+<!--            <p>-->
+<!--              Continuously realize profitability and growth objectives through-->
+<!--              the manufacture and distribution of fertilizer.-->
+<!--            </p>-->
+<!--          </div>-->
         </figure>
       </div>
       <div class="col-lg-6 d-flex justify-content-center align-items-center">
         <div class="home-about">
-          <h3>OUR VISION</h3>
+          <h3 class="mt-3 mt-sm-0">OUR VISION</h3>
           <p>
             Our vision is to become the preferred social impact and value
             addition Agribusiness partner in Ghana and West Africa with
@@ -142,8 +142,13 @@ import TeamCard from "@/component/TeamCard.vue";
   </div>
 
   <div class="my">
-    <div class="home-about text-center">
-      <h2>Our Team</h2>
+    <div class="section-title">
+      <h2>MEET</h2>
+      <h3>Our Team</h3>
+      <p>
+        We have a team of professionals, dedicated to providing excellent
+        service.
+      </p>
     </div>
     <TeamCard />
   </div>

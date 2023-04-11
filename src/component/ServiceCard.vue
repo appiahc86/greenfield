@@ -9,7 +9,7 @@ const servicesData = [{
     description: " Crop and white farmers got most of the acreage allotments, which were seemed."
 },{
     image: "/img/fruits.png",
-    title: ">Fresh Fruits",
+    title: "Fresh Fruits",
     description: "Agriculture becomes more digitized, cybersecurity and data  privacy remain."
 },{
     image: "/img/cow.png",
@@ -34,7 +34,7 @@ const servicesData = [{
     <div class="container">
       <div class="section-title">
         <h2>Services</h2>
-        <h3>What Farmey Offer</h3>
+        <h3>What We Offer</h3>
         <p>
           We have a wide variety of services so that our clients have good
           options.

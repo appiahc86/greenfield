@@ -1,62 +1,10 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import sal from "sal.js";
-import Carousel from "primevue/carousel";
 import Button from "primevue/button";
-import Tag from "primevue/tag";
 import ServiceCard from "@/component/ServiceCard.vue";
 import TeamCard from "@/component/TeamCard.vue";
 import ContactCard from "@/component/ContactCard.vue";
-const responsiveOptions = ref([
-  {
-    breakpoint: "1199px",
-    numVisible: 3,
-    numScroll: 3,
-  },
-  {
-    breakpoint: "991px",
-    numVisible: 2,
-    numScroll: 2,
-  },
-  {
-    breakpoint: "767px",
-    numVisible: 1,
-    numScroll: 1,
-  },
-]);
-
-const products = ref([
-  {
-    name: "Mr Amissah Francis",
-    price: 200,
-    inventoryStatus: "boom",
-    image: "/img/headoffice.jpg",
-  },
-  {
-    name: "hello",
-    price: 200,
-    inventoryStatus: "boom",
-    image: "/img/headoffice.jpg",
-  },
-  {
-    name: "Appiah Collins",
-    price: 200,
-    inventoryStatus: "boom",
-    image: "/img/headoffice.jpg",
-  },
-  {
-    name: "hello",
-    price: 200,
-    inventoryStatus: "boom",
-    image: "/img/headoffice.jpg",
-  },
-  {
-    name: "hello",
-    price: 200,
-    inventoryStatus: "boom",
-    image: "/img/headoffice.jpg",
-  },
-]);
 
 onMounted(() => {
   const myCarouselElement = document.querySelector("#homeCarousel");
@@ -76,18 +24,18 @@ const count = ref(0);
 
 onMounted(() => {
   const intervalId = setInterval(() => {
-    if (count.value < 1000) {
-      count.value++;
+    if (count.value < 6254) {
+      count.value += 2;
     } else {
       clearInterval(intervalId);
     }
-  }, 1);
+  }, 0.1);
 });
 </script>
 
 <template>
   <div class="mt-5 mt-sm-5 mt-md-4 mt-lg-0">
-    <div id="homeCarousel" class="carousel slide carousel-fade">
+    <div id="homeCarousel" class="carousel slide ">
       <div class="carousel-indicators">
         <button
           type="button"
@@ -172,9 +120,14 @@ onMounted(() => {
       <div class="col-lg-6 d-flex justify-content-center align-items-center">
         <div class="home-about">
           <h2>About Us</h2>
-          <h3>
-            BRINGING GROWTH TO <br />
-            AGRICULTURE
+          <h3
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-duration="2000"
+              style="--sal-duration: 1s; --sal-delay: 1s;"
+              data-sal-easing="ease-out-back"
+          >
+            IMPROVING THE LIVELIHOOD OF SMALL HOLDER FARMERS<br />
           </h3>
           <p>
             Our mission is to impact the society and improve the well-being of
@@ -193,7 +146,7 @@ onMounted(() => {
                 <img src="/img/shield-orange.png" alt="" />
               </figure>
               <h5>We are Passionate</h5>
-              <p>Latest analysis by the Cadre Harmonisé.</p>
+              <p>Improving livelihood to help alleviate poverty.</p>
             </div>
             <div class="hb-inner spacing-sm">
               <figure class="hb-icon">
@@ -207,15 +160,15 @@ onMounted(() => {
       </div>
       <div class="col-lg-6 spacing-md">
         <figure class="home-about-img">
-          <img src="/img/farmey.jpg" alt="" />
+          <img src="/img/gfofficer.jpg" alt="" />
           <div class="image-badget">
             <figure class="ib-icon">
               <img src="/img/medal.png" alt="" width="100%" />
             </figure>
-            <h4 class="mt-4">Our Values</h4>
+            <h4 class="mt-0">Our Values</h4>
             <p>
-              Continuously realize profitability and growth objectives through
-              the manufacture and distribution of fertilizer.
+              Continuously support smallholder farmers on sustainable basis to increase their crop yield, increase their income,
+              and improve their livelihood to help reduce poverty while meeting the expectations of our shareholders
             </p>
           </div>
         </figure>
@@ -224,37 +177,41 @@ onMounted(() => {
   </div>
 
   <section>
-    <!-- SERVICES START -->
-    <ServiceCard />
-    <!-- SERVICES END -->
+<!--     SERVICES START-->
+<!--    <ServiceCard />-->
+<!--     SERVICES END-->
 
-    <div class="why-us-layer mt-5 mb-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <div
-            class="why-us-img-bg"
-            :style="{ backgroundImage: `url(/img/farmey-2.jpg)` }"
-          ></div>
+    <div class="why-us-layer mt-5 mb-5 container-fluid">
+      <div class="row me-0">
+        <div class="col-md-6">
+          <img src="/img/headoffice.jpeg" alt="headoffice" class="img-fluid">
         </div>
-        <div class="col-lg-6 d-flex justify-content-center align-items-center">
-          <div class="why-us-left" :style="{ width: '95%', margin: '0 auto' }">
-            <h2>WHY CHOOSE US</h2>
-            <p>
-              Our Integrated Soil Fertility Management (ISFM) Policy focuses on
-              effective combination of mineral fertilizers, organic inputs and
-              improved germplasm combined with knowledge on how to adapt these
-              practices to local conditions in order to improve soil conditions,
-              optimize agronomic efficiency of the applied nutrients and
-              increase crop productivity incomes of smallholder farmers.
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <div class="why-us-left">
+            <h2
+                data-sal="slide-right"
+                data-sal-delay="300"
+                style="--sal-duration: 2s; --sal-delay: 1s;"
+                data-sal-easing="ease-out-back"
+            >WHY CHOOSE US</h2>
+            <p
+                data-sal="zoom-in"
+                data-sal-delay="300"
+                style="--sal-duration: 2s; --sal-delay: 1s;"
+                data-sal-easing="ease-out-back"
+            >
+              We provide small holder farmers with training and extension services, quality agro inputs,
+              and facilitate access to micro loans for farmers to purchace agro inputs acting as a bridge
+              between small holder farmers and Microfinance Institutions (MFIs). We support small holder
+              farmers in the comfort of their communities to increase their crop yield, increase
+              their income and improve their livelihood to help alleviate poverty.
             </p>
-            <p>
-              Promoting the continuous improvement of human and technological
-              resources, generating competitive profitability.
-            </p>
-            <figure class="signature">
-              <img src="images/commons/signature.jpg" alt="" />
-            </figure>
-            <a class="btn btn-default" href="#" role="button">GET A QUOTE</a>
+<!--            <p>-->
+<!--              Promoting the continuous improvement of human and technological-->
+<!--              resources, generating competitive profitability.-->
+<!--            </p>-->
+
+            <router-link class="btn btn-sm btn-default" :to="{name: 'contact'}" role="button">GET IN TOUCH</router-link>
           </div>
         </div>
       </div>
@@ -283,6 +240,7 @@ onMounted(() => {
     <ContactCard />
     <!-- CONTACT END -->
   </section>
+
 </template>
 
 <style>
@@ -292,7 +250,7 @@ onMounted(() => {
 }
 
 .home-about-img {
-  margin-top: 0px;
+  margin-top: 0;
   position: relative;
 }
 .home-about-img img {
@@ -315,8 +273,7 @@ onMounted(() => {
 }
 
 .home-about p {
-  margin: 20px 0px;
-  margin: 0 0 15px;
+  margin: 20px 0;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
 }
@@ -334,10 +291,10 @@ onMounted(() => {
 }
 .hb-box h5 {
   font-size: 18px;
-  margin: 15px 0px 2px;
+  margin: 15px 0 2px;
 }
 .hb-box p {
-  margin: 0px;
+  margin: 0;
   font-size: 14px;
   font-style: italic;
 }
@@ -365,7 +322,7 @@ section {
   overflow: hidden !important;
 }
 .services-layer {
-  padding: 80px 0px;
+  padding: 80px 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -406,7 +363,7 @@ section {
   box-shadow: 0 0 11px 0 rgba(6, 22, 58, 0.14);
   border-radius: 5px;
   padding: 30px 20px;
-  margin: 15px 0px;
+  margin: 15px 0;
 }
 
 .media {
@@ -430,10 +387,10 @@ section {
 }
 
 .why-us-img-bg {
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  /*height: 600px;*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  /*position: relative;*/
 }
 </style>
