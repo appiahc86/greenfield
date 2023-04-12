@@ -2,9 +2,11 @@
   <div class="banner-container">
     <div class="banner" :style="{ backgroundImage: `url(${img})` }">
       <div class="title">
-        <span>Home</span>
+        <span>
+          <router-link :to="{name: 'home'}" class="text-decoration-none text-white">Home</router-link>
+        </span>
         <span> / </span>
-        <span>{{ subTitle }}</span>
+        <span class="fw-bold">{{ subTitle }}</span>
       </div>
       <div class="banner-title">
         <h1>{{ title }}</h1>
@@ -30,7 +32,7 @@ defineProps({
 </script>
 <style scoped>
 .banner {
-  height: 20em;
+  height: 25em;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

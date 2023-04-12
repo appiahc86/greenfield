@@ -6,6 +6,8 @@ import ServiceCard from "@/component/ServiceCard.vue";
 import TeamCard from "@/component/TeamCard.vue";
 import ContactCard from "@/component/ContactCard.vue";
 
+const count = ref(0);
+
 onMounted(() => {
   const myCarouselElement = document.querySelector("#homeCarousel");
   const carousel = new bootstrap.Carousel(myCarouselElement, {
@@ -18,11 +20,7 @@ onMounted(() => {
   sal({
     once: false,
   });
-});
 
-const count = ref(0);
-
-onMounted(() => {
   const intervalId = setInterval(() => {
     if (count.value < 6254) {
       count.value += 2;
@@ -31,6 +29,9 @@ onMounted(() => {
     }
   }, 0.1);
 });
+
+
+
 </script>
 
 <template>
@@ -160,10 +161,10 @@ onMounted(() => {
       </div>
       <div class="col-lg-6 spacing-md">
         <figure class="home-about-img">
-          <img src="/img/gfofficer.jpg" alt="" />
+          <img src="/img/gfofficer.jpg" alt="officer" />
           <div class="image-badget">
             <figure class="ib-icon">
-              <img src="/img/medal.png" alt="" width="100%" />
+              <img src="/img/medal.png" alt="medal" />
             </figure>
             <h4 class="mt-0">Our Values</h4>
             <p>
@@ -309,14 +310,20 @@ onMounted(() => {
   outline-offset: -12px;
   color: #fff;
 }
-.ib-icon {
-  width: 60px;
+.image-badget {
+  padding: 20px !important;
 }
 .image-badget h4 {
   font-size: 20px;
-  line-height: 25px;
+  line-height: 20px;
 }
 
+.image-badget p {
+  font-style: italic;
+}
+.ib-icon {
+  width: 4em;
+}
 /* section */
 section {
   overflow: hidden !important;

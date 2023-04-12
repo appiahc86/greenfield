@@ -181,6 +181,8 @@ const programHover = ref(false);
                     class="dropdown-item"
                 >Management</router-link
                 >
+                <a href="#" class="dropdown-item">News</a>
+
               </ul>
             </li>
 
@@ -244,7 +246,8 @@ const programHover = ref(false);
                 <a
                   ><span class="pi pi-facebook" style="font-size: 1.6em"></span
                 ></a>
-                <a
+                <a href="https://www.linkedin.com/in/greenfield-agricultural-services-limited-418b59228"
+                   class="text-decoration-none text-white" target="_blank"
                   ><span
                     class="pi pi-linkedin mx-4"
                     style="font-size: 1.6em"
