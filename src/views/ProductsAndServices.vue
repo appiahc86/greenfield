@@ -102,9 +102,9 @@ onMounted(() => {
         <div class="section-title">
           <h2>Inputs Outlets</h2>
           <h3 class="mb-4 fw-bold">
-            Our Inputs Outlets/shops are located in the following areas <br>
-            <span class="pi pi-arrow-circle-down" style="font-size: 1.5em"></span>
-
+            Our Inputs Outlets/shops are located in the following areas <br><br>
+<!--            <span style="font-size: 1.5em">&#11015;</span>-->
+            <span style="font-size: 1.5em">&#128071;</span>
           </h3>
         </div>
         <div class="table-responsive">

@@ -91,7 +91,7 @@ const programHover = ref(false);
               <router-link
                   :to="{ name: 'products' }"
                   class="nav-link text-decoration-none"
-              >product & services</router-link
+              >products & services</router-link
               >
 
             </li>
@@ -103,11 +103,6 @@ const programHover = ref(false);
             </li>
 
             <li class="nav-item text-center">
-<!--              <router-link-->
-<!--                :to="{ name: 'home' }"-->
-<!--                class="nav-link text-decoration-none"-->
-<!--                >gallery</router-link-->
-<!--              >-->
               <router-link
                   :to="{ name: 'gallery' }"
                   class="nav-link text-decoration-none"
@@ -136,7 +131,7 @@ const programHover = ref(false);
                 <li>
                   <a
                     href="#"
-                    class="dropdown-item"
+                    class="dropdown-item mb-3"
                     :class="{ show: programHover }"
                     >project one</a
                   >
@@ -173,12 +168,12 @@ const programHover = ref(false);
               <ul class="dropdown-menu text-center" :class="{ show: aboutHover }">
                 <router-link
                     :to="{ name: 'about' }"
-                    class="dropdown-item"
+                    class="dropdown-item mb-3"
                 >About Us</router-link
                 >
                 <router-link
                     :to="{ name: 'management' }"
-                    class="dropdown-item"
+                    class="dropdown-item mb-3"
                 >Management</router-link
                 >
                 <a href="#" class="dropdown-item">News</a>
@@ -203,43 +198,47 @@ const programHover = ref(false);
     <footer class="bg-success text-white">
       <div class="container-fluid py-5">
         <div class="row text-center">
-          <div class="col-6 col-lg-3 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4">
             <h4>Company</h4>
-            <a href="#" class="text-decoration-none text-white">About Us</a
-            ><br />
-            <a href="#" class="text-decoration-none text-white">Management</a
-            ><br />
-            <a href="#" class="text-decoration-none text-white">Impact</a><br />
-            <a href="#" class="text-decoration-none text-white">Careers</a
-            ><br />
+            <p>
+              <router-link :to="{name: 'home'}" class="text-decoration-none text-white">Home</router-link>
+            </p>
+            <p>
+              <router-link :to="{name: 'about'}" class="text-decoration-none text-white">About Us</router-link>
+            </p>
+            <p>
+              <router-link :to="{name: 'management'}" class="text-decoration-none text-white">Management</router-link>
+            </p>
+            <p>
+              <router-link :to="{name: 'gallery'}" class="text-decoration-none text-white">Gallery</router-link>
+            </p>
+            <p>
+              <router-link :to="{name: 'contact'}" class="text-decoration-none text-white">Contact Us</router-link>
+            </p>
           </div>
 
-          <div class="col-6 col-lg-3 mb-4">
-            <h4>Products</h4>
-            <a href="#" class="text-decoration-none text-white">Product One</a
-            ><br />
-            <a href="#" class="text-decoration-none text-white">Product Two</a
-            ><br />
-            <a href="#" class="text-decoration-none text-white">Product Three</a
-            ><br />
-          </div>
-
-          <div class="col-6 col-lg-3 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4">
             <h4>Contact</h4>
-            <a href="#" class="text-decoration-none text-white"
-              ><span class="fw-bold">Phone:</span> 0243631511 / 0265557165 /
-              0202144534</a
-            ><br />
-            <a href="#" class="text-decoration-none text-white"
-              ><span class="fw-bold">Email:</span> greenfieldagriculturalservices@gmail.com
-            </a
-            ><br />
-            <a href="#" class="text-decoration-none text-white"
-              ><span class="fw-bold">Location:</span> Plt 52 Blk C,Agric Nzema, Kumasi</a
-            ><br />
+            <p>
+              <b>Phone: </b>
+              <a href="tel:+233243631511" class="text-decoration-none text-white">0243631511</a> /
+              <a href="tel:+233265557165" class="text-decoration-none text-white">0265557165</a> /
+              <a href="tel:+233202144534" class="text-decoration-none text-white">0202144534</a>
+            </p>
+            <p>
+              <b>Email: </b>
+              <a href="mailto:greenfieldagriculturalservices@gmail.com" class="text-decoration-none text-white"
+              >greenfieldagriculturalservices@gmail.com</a>
+            </p>
+            <p>
+              <b>Location: </b>
+              <a class="text-decoration-none text-white"
+              >Plt 52 Blk C,Agric Nzema, Kumasi</a>
+            </p>
+
           </div>
 
-          <div class="col-6 col-lg-3 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4">
             <h4>Connect</h4>
             <div class="d-flex text-center">
               <div class="mx-auto">

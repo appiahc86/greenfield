@@ -31,66 +31,41 @@ onMounted(() => {
 });
 
 
-
 </script>
 
 <template>
+
   <div class="mt-5 mt-sm-5 mt-md-4 mt-lg-0">
     <div id="homeCarousel" class="carousel slide ">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#homeCarousel"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#homeCarousel"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#homeCarousel"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
             src="/img/carousel/c1.jpeg"
             class="d-block w-100 carousel-img"
-            alt="..."
+            alt="img"
           />
           <div class="carousel-caption d-block">
             <h3>sustainable cocoa farming</h3>
-            <!--            <p>Some representative placeholder content for the first slide.</p>-->
           </div>
         </div>
         <div class="carousel-item">
           <img
             src="/img/carousel/c2.jpg"
             class="d-block w-100 carousel-img"
-            alt="..."
+            alt="img"
           />
           <div class="carousel-caption d-block">
             <h3>Farmer Registration</h3>
-            <!--            <p>Some representative placeholder content for the second slide.</p>-->
           </div>
         </div>
         <div class="carousel-item">
           <img
             src="/img/carousel/c3.jpg"
             class="d-block w-100 carousel-img"
-            alt="..."
+            alt="img"
           />
           <div class="carousel-caption d-block">
             <h3>Greenfield Farmer Group</h3>
-            <!--            <p>Some representative placeholder content for the second slide.</p>-->
           </div>
         </div>
       </div>
@@ -100,7 +75,7 @@ onMounted(() => {
         data-bs-target="#homeCarousel"
         data-bs-slide="prev"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="pi pi-arrow-circle-left" style="font-size: 2em;" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button
@@ -109,16 +84,46 @@ onMounted(() => {
         data-bs-target="#homeCarousel"
         data-bs-slide="next"
       >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+<!--        <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+        <span class="pi pi-arrow-circle-right" style="font-size: 2em;" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <!--   ./carousel -->
   </div>
+  <!--   ./carousel -->
 
-  <div class="container mt-5 mb-5">
+
+<!--  Stock Feed -->
+  <div class="container">
+    <div class="row g-0">
+      <!--      <div class="visible-xs">-->
+      <!--        <span style="color:#212121;float:left;font-size: 15px;line-height: 24px;-->
+      <!--        font-weight: 400; padding-left:20px; padding-top:10px">-->
+      <!--          <strong>GSE STOCK FEED</strong></span>-->
+      <!--      </div>-->
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 hidden-xs">
+        <div class="">
+          <span style="float:left; font-size: 15px; line-height: 24px;
+          font-weight: 400; padding-top:10px"><strong>GSE STOCK FEED</strong></span>
+        </div>
+      </div><!--date-panel-->
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+        <div class="feed-board">
+          <iframe src="https://gsestockfeed.com" style="width: 100%; height: 40px; background: rgba(204,204,204,0.16);"
+                  scrolling="no" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0">
+          </iframe>
+
+        </div>
+      </div><!--feed board-->
+    </div>
+  </div>
+  <!--  ./Stock Feed -->
+
+
+
+  <div class="container mt-5 ">
     <div class="row">
-      <div class="col-lg-6 d-flex justify-content-center align-items-center">
+      <div class="col-lg-6 d-flex mb-2 justify-content-center align-items-center">
         <div class="home-about">
           <h2>About Us</h2>
           <h3
@@ -159,7 +164,8 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div class="col-lg-6 spacing-md">
+
+      <div class="col-lg-6 spacing-md mb-2">
         <figure class="home-about-img">
           <img src="/img/gfofficer.jpg" alt="officer" />
           <div class="image-badget">
@@ -241,6 +247,8 @@ onMounted(() => {
     <ContactCard />
     <!-- CONTACT END -->
   </section>
+
+
 
 </template>
 
