@@ -108,7 +108,11 @@ const programHover = ref(false);
 <!--                class="nav-link text-decoration-none"-->
 <!--                >gallery</router-link-->
 <!--              >-->
-              <a href="#"  class="nav-link text-decoration-none">gallery</a>
+              <router-link
+                  :to="{ name: 'gallery' }"
+                  class="nav-link text-decoration-none"
+              >gallery</router-link
+              >
             </li>
 
             <li class="nav-item dropdown"
