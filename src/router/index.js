@@ -6,6 +6,8 @@ import ContactView from '../views/ContactView.vue';
 import ManagementView from '../views/ManagementView.vue';
 import ProductsAndServices from '../views/ProductsAndServices.vue';
 import Careers from '../views/Careers.vue';
+import SocialImpact from '../views/SocialImpact.vue';
+import News from '../views/News.vue';
 
 const routes = [
   {
@@ -40,9 +42,19 @@ const routes = [
   },
 
   {
+    path: '/social-impact',
+    name: 'social-impact',
+    component: SocialImpact
+  },
+  {
     path: '/careers',
     name: 'careers',
     component: Careers
+  },
+  {
+    path: '/news',
+    name: 'news',
+    component: News
   },
   //    redirect to home page if route not found
   {

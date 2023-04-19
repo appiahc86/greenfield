@@ -97,17 +97,17 @@ const programHover = ref(false);
             </li>
 
             <li class="nav-item text-center">
-              <a href="#" class="nav-link text-decoration-none"
-                >Social impact</a
-              >
+              <router-link
+                  :to="{ name: 'social-impact' }"
+                  class="nav-link text-decoration-none"
+              >Social impact</router-link>
             </li>
 
             <li class="nav-item text-center">
               <router-link
                   :to="{ name: 'gallery' }"
                   class="nav-link text-decoration-none"
-              >gallery</router-link
-              >
+              >gallery</router-link>
             </li>
 
             <li class="nav-item dropdown"
@@ -173,15 +173,16 @@ const programHover = ref(false);
                 <router-link
                     :to="{ name: 'about' }"
                     class="dropdown-item mb-3"
-                >About Us</router-link
-                >
+                >About Us</router-link>
                 <router-link
                     :to="{ name: 'management' }"
                     class="dropdown-item mb-3"
                 >Management</router-link
                 >
-                <a href="#" class="dropdown-item">News</a>
-
+                <router-link
+                    :to="{ name: 'news' }"
+                    class="dropdown-item mb-3"
+                >News</router-link>
               </ul>
             </li>
 
