@@ -183,8 +183,10 @@ onMounted(() => {
 
 <style scoped>
 .top {
-  background: url("../../public/img/pbg.jpg");
+  background-image: url("../../public/img/pbg.jpg");
+  background-color: grey;
 }
+
 
 * {
   box-sizing: border-box;

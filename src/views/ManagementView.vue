@@ -14,7 +14,7 @@ import TeamCard from "@/component/TeamCard.vue";
   <div class="container mt-4">
     <div class="row">
       <div class="col-md-5 p-3 text-center">
-        <div class="card shadow">
+        <div class="card">
           <img src="/img/team/ceo.jpg" alt="ceo" class="img-fluid w-100">
         </div>
 

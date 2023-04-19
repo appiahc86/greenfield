@@ -5,6 +5,7 @@ import GalleryView from '../views/GalleryView.vue';
 import ContactView from '../views/ContactView.vue';
 import ManagementView from '../views/ManagementView.vue';
 import ProductsAndServices from '../views/ProductsAndServices.vue';
+import Careers from '../views/Careers.vue';
 
 const routes = [
   {
@@ -38,6 +39,11 @@ const routes = [
     component: ProductsAndServices
   },
 
+  {
+    path: '/careers',
+    name: 'careers',
+    component: Careers
+  },
   //    redirect to home page if route not found
   {
     path: '/:catchAll(.*)*',

@@ -148,7 +148,11 @@ const programHover = ref(false);
             </li>
 
             <li class="nav-item text-center">
-              <a href="#" class="nav-link text-decoration-none">careers</a>
+              <router-link
+                  :to="{ name: 'careers' }"
+                  class="nav-link text-decoration-none"
+              >careers</router-link
+              >
             </li>
 
             <li
@@ -217,7 +221,7 @@ const programHover = ref(false);
             </p>
           </div>
 
-          <div class="col-md-6 col-lg-4 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4 text-center">
             <h4>Contact</h4>
             <p>
               <b>Phone: </b>
@@ -225,10 +229,11 @@ const programHover = ref(false);
               <a href="tel:+233265557165" class="text-decoration-none text-white">0265557165</a> /
               <a href="tel:+233202144534" class="text-decoration-none text-white">0202144534</a>
             </p>
-            <p>
+            <p class="text-center">
               <b>Email: </b>
-              <a href="mailto:greenfieldagriculturalservices@gmail.com" class="text-decoration-none text-white"
-              >greenfieldagriculturalservices@gmail.com</a>
+              <a href="mailto:greenfieldagriculturalservices@gmail.com"
+                 class="text-decoration-none text-white"
+              >greenfieldagriculturalservices@gmail</a>
             </p>
             <p>
               <b>Location: </b>
