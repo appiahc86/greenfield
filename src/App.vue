@@ -110,7 +110,8 @@ const programHover = ref(false);
               >gallery</router-link>
             </li>
 
-            <li class="nav-item dropdown"
+<!--            Show only on large screens -->
+            <li class="nav-item dropdown d-none d-lg-block"
                 @mouseover="programHover = true"
                 @mouseleave="programHover = false"
             >
@@ -119,7 +120,8 @@ const programHover = ref(false);
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                :class="{ show: programHover }"
+
+
               >
                 <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>our programs
               </div>
@@ -147,6 +149,39 @@ const programHover = ref(false);
               </ul>
             </li>
 
+<!--            Show only on smaller screens -->
+            <li class="nav-item dropdown d-lg-none"
+            >
+              <div
+                  class="nav-link dropdown-toggle text-center"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+
+              >
+                <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>our programs
+              </div>
+              <ul
+                  class="dropdown-menu text-center"
+              >
+                <li>
+                  <a
+                      href="#"
+                      class="dropdown-item mb-3"
+                  >project one</a
+                  >
+                </li>
+                <li>
+                  <a
+                      href="#"
+                      class="dropdown-item"
+                  >project two</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+
             <li class="nav-item text-center">
               <router-link
                   :to="{ name: 'careers' }"
@@ -155,21 +190,47 @@ const programHover = ref(false);
               >
             </li>
 
-            <li
-              class="nav-item dropdown"
-              @mouseover="aboutHover = true"
-              @mouseleave="aboutHover = false"
+      <!--    Show only on large screens        -->
+            <li class="nav-item dropdown d-none d-lg-block"
+                @mouseover="aboutHover = true"
+                @mouseleave="aboutHover = false"
             >
               <div
-                class="nav-link dropdown-toggle text-center"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                :class="{ show: aboutHover }"
+                  class="nav-link dropdown-toggle text-center"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
               >
                 <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>About
               </div>
               <ul class="dropdown-menu text-center" :class="{ show: aboutHover }">
+                <router-link
+                    :to="{ name: 'about' }"
+                    class="dropdown-item mb-3"
+                >About Us</router-link>
+                <router-link
+                    :to="{ name: 'management' }"
+                    class="dropdown-item mb-3"
+                >Management</router-link
+                >
+                <router-link
+                    :to="{ name: 'news' }"
+                    class="dropdown-item mb-3"
+                >News</router-link>
+              </ul>
+            </li>
+
+<!--            Show only on smaller screens-->
+            <li class="nav-item dropdown d-lg-none">
+              <div
+                  class="nav-link dropdown-toggle text-center"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+              >
+                <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>About
+              </div>
+              <ul class="dropdown-menu text-center">
                 <router-link
                     :to="{ name: 'about' }"
                     class="dropdown-item mb-3"

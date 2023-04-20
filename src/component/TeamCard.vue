@@ -1,8 +1,9 @@
 <script setup>
 import {ref} from "vue";
-import {useRouter} from "vue-router";
+import {onBeforeRouteLeave, useRouter} from "vue-router";
 
 const openModalBtn = ref();
+const closeModalBtn = ref();
 const profileContainer = ref();
 const router = useRouter();
 
@@ -14,6 +15,11 @@ const openModal = (name) => {
   }
 
 }
+
+onBeforeRouteLeave((to, from, next) => {
+ closeModalBtn.value.click();
+  next();
+})
 
 </script>
 
@@ -131,7 +137,7 @@ const openModal = (name) => {
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" ref="closeModalBtn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="container-fluid" ref="profileContainer">
