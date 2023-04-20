@@ -29,7 +29,10 @@ onMounted(() => {
   <div class="my-5">
     <div class="section-title">
       <h2>CAREERS</h2>
-      <h3>Job Opportunities</h3>
+      <div class="anim">
+        <h3 class="typed">Job Opportunities</h3>
+      </div>
+
     </div>
 
     <div class="container">
@@ -237,5 +240,24 @@ onMounted(() => {
 }
 .card h4{
   font-weight: 400;
+}
+
+.anim{
+  display: inline-block;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 2s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 </style>

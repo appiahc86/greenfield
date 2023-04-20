@@ -8,6 +8,7 @@ import ProductsAndServices from '../views/ProductsAndServices.vue';
 import Careers from '../views/Careers.vue';
 import SocialImpact from '../views/SocialImpact.vue';
 import News from '../views/News.vue';
+import Programs from '../views/Programs.vue';
 
 const routes = [
   {
@@ -56,6 +57,11 @@ const routes = [
     name: 'news',
     component: News
   },
+  {
+  path: '/programs',
+    name: 'programs',
+    component: Programs
+},
   //    redirect to home page if route not found
   {
     path: '/:catchAll(.*)*',
@@ -75,7 +81,6 @@ const router = createRouter({
   }
 
 })
-
 
 
 export default router

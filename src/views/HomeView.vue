@@ -4,6 +4,7 @@ import sal from "sal.js";
 import Button from "primevue/button";
 import ServiceCard from "@/component/ServiceCard.vue";
 import TeamCard from "@/component/TeamCard.vue";
+import PartnersCard from "@/component/PartnersCard.vue"
 import ContactCard from "@/component/ContactCard.vue";
 
 const count = ref(0);
@@ -249,48 +250,8 @@ onMounted(() => {
   </section>
 
 
-
-<!--  Partners -->
-<div class="container mt-5">
-  <div class="text-center">
-    <h2 class="text-muted">OUR
-      <span
-          style="border-bottom: 2px solid green; padding-bottom: 10px; border-bottom-color: green;">
-        PAR</span>TNERS
-    </h2><br>
-  </div>
-  <div class="row justify-content-center text-center">
-    <div class="col-6 col-sm-4 col-md-3 mb-3">
-      <div class="card h-100 px-2">
-        <img src="/img/partners/ab.png" alt="ab" class="img-fluid my-auto">
-      </div>
-
-    </div>
-
-    <div class="col-6 col-sm-4 col-md-3 mb-3">
-      <div class="card h-100 px-2">
-        <img src="/img/partners/vf.png" alt="vf" class="img-fluid my-auto">
-      </div>
-    </div>
-
-    <div class="col-6 col-sm-4 col-md-3 mb-3">
-      <div class="card h-100 px-2">
-        <img src="/img/partners/agro.png" alt="agro" class="img-fluid my-auto">
-      </div>
-    </div>
-
-    <div class="col-6 col-sm-4 col-md-3 mb-3">
-      <div class="card h-100 px-2">
-        <img src="/img/partners/rmg.png" alt="rmg" class="img-fluid my-auto">
-      </div>
-    </div>
-
-
-
-
-  </div>
-</div>
-
+<!--  Partners Card-->
+  <PartnersCard />
 
 </template>
 

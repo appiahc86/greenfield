@@ -1,4 +1,5 @@
 <script setup>
+import {onMounted, ref} from "vue";
 
 </script>
 
@@ -7,8 +8,14 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 pt-5">
-        <h2 class="mt-4">Social Impact</h2>
-        <h5 class="my-4">Improving livelihood to help alleviate poverty.</h5>
+
+        <div class="anim">
+        <h2 class="mt-4 typed text-success fw-bold">Social Impact</h2>
+        </div>
+          <h5 class="">Improving livelihood to help alleviate poverty.</h5>
+
+<!--        <h5 class="my-4 line-1 anim-typewriter text-danger" ref="anim">-->
+<!--          Improving livelihood to help alleviate poverty.</h5>-->
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur
           corporis deserunt dolor dolores ducimus est id impedit inventore labore,
@@ -75,7 +82,25 @@
 </template>
 
 <style scoped>
-.top {
-  /*background: rgba(128, 128, 128, 0.56);*/
+
+.anim{
+  display: inline-block;
+  font-family: "arial",serif;
+  font-size: 1.6em;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 2s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 </style>

@@ -131,21 +131,13 @@ const programHover = ref(false);
                 @mouseleave="programHover = false"
               >
                 <li>
-                  <a
-                    href="#"
-                    class="dropdown-item mb-3"
-                    :class="{ show: programHover }"
-                    >project one</a
-                  >
+                  <router-link
+                      :to="{ name: 'programs' }"
+                      class="dropdown-item mb-3"
+                      @click="programHover = false"
+                  >programs</router-link>
                 </li>
-                <li>
-                  <a
-                    href="#"
-                    class="dropdown-item"
-                    :class="{ show: programHover }"
-                    >project two</a
-                  >
-                </li>
+
               </ul>
             </li>
 
@@ -157,27 +149,20 @@ const programHover = ref(false);
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-
               >
                 <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>our programs
               </div>
               <ul
                   class="dropdown-menu text-center"
               >
+
                 <li>
-                  <a
-                      href="#"
+                  <router-link
+                      :to="{ name: 'programs' }"
                       class="dropdown-item mb-3"
-                  >project one</a
-                  >
+                  >programs</router-link>
                 </li>
-                <li>
-                  <a
-                      href="#"
-                      class="dropdown-item"
-                  >project two</a
-                  >
-                </li>
+
               </ul>
             </li>
 
@@ -207,15 +192,18 @@ const programHover = ref(false);
                 <router-link
                     :to="{ name: 'about' }"
                     class="dropdown-item mb-3"
+                    @click="aboutHover = false"
                 >About Us</router-link>
                 <router-link
                     :to="{ name: 'management' }"
                     class="dropdown-item mb-3"
+                    @click="aboutHover = false"
                 >Management</router-link
                 >
                 <router-link
                     :to="{ name: 'news' }"
                     class="dropdown-item mb-3"
+                    @click="aboutHover = false"
                 >News</router-link>
               </ul>
             </li>
