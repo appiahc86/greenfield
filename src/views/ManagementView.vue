@@ -6,8 +6,8 @@ import TeamCard from "@/component/TeamCard.vue";
 <template>
 
   <div class="my-5 top">
-    <div class="py-5 text-center text-white">
-      <h4>MANAGEMENT TEAM</h4>
+    <div class="py-5 text-white">
+      <h4 style="font-size: 7vw; font-family: fantasy, SansSerif; opacity: 0.7">MANAGEMENT TEAM</h4>
     </div>
   </div>
 
@@ -85,7 +85,12 @@ import TeamCard from "@/component/TeamCard.vue";
 
 <style scoped>
 .top {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.55), black, #012801);
+  background-image: url("../../public/img/pbg.jpg");
+  background-color: grey;
+  height: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .user-profile {
   display: block !important;

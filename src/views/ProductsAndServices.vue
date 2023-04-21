@@ -13,7 +13,7 @@ onMounted(() => {
 <template>
   <div class="mt-5">
     <div class="py-5 top text-center text-white">
-      <br><h4 class="fw-bold">OUR PRODUCTS & SERVICES</h4><br>
+      <h4 class="fw-bold products-services ">OUR PRODUCTS & SERVICES</h4>
     </div>
   </div>
 
@@ -185,6 +185,10 @@ onMounted(() => {
 .top {
   background-image: url("../../public/img/pbg.jpg");
   background-color: grey;
+  height: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -245,4 +249,31 @@ li:nth-child(even) {
   margin-right: -2rem;
   margin-left: 2rem;
 }
+
+
+/* Header text anim*/
+.products-services {
+  position: relative;
+  font-family: sans-serif;
+  font-size: 6vw;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #ffffff, greenyellow, #ffffff);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
 </style>

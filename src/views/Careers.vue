@@ -2,10 +2,12 @@
 import {onMounted} from "vue";
 import sal from "sal.js";
 
+
 onMounted(() => {
   sal({
     once: false,
   });
+
 });
 </script>
 
@@ -20,7 +22,8 @@ onMounted(() => {
           <br>
         </div>
         <div class="col-md-6 text-center">
-          <img src="/img/cocoa.jpg" alt="cocoa" class="img-fluid rounded-circle">
+            <img src="/img/cocoa.jpg" alt="cocoa" class="img-fluid rounded-circle">
+
         </div>
       </div>
     </div>
@@ -260,4 +263,5 @@ onMounted(() => {
   from { width: 0 }
   to { width: 100% }
 }
+
 </style>

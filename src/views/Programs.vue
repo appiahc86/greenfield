@@ -5,7 +5,10 @@ import PartnersCard from "@/component/PartnersCard.vue"
 <template>
   <div class="wrapper">
   <div class="top mt5">
-  <h2 class="text-white text-uppercase">Our Programs</h2>
+  <h2 class="text-white text-uppercase"
+      style="font-size: 7vw; font-family: cursive; opacity: 0.7">
+    Our Programs
+  </h2>
   </div>
 
     <div class="di"><span class="dot"></span></div>
