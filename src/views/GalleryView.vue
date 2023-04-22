@@ -120,7 +120,7 @@ label.active {
   width: 100%;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
   display: flex;
   align-items: center;
   justify-content: center;

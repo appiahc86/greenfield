@@ -1,6 +1,15 @@
 <script setup>
 import PageBanner from "@/component/PageBanner.vue";
 import TeamCard from "@/component/TeamCard.vue";
+import { useMyStore } from "@/store/home";
+import {onBeforeRouteLeave} from "vue-router";
+
+const store = useMyStore();
+
+onBeforeRouteLeave((to, from, next) => {
+  store.aboutLazy = false;
+  next();
+});
 </script>
 
 <template>
@@ -84,17 +93,18 @@ import TeamCard from "@/component/TeamCard.vue";
       </div>
       <div class="col-lg-6 spacing-md">
         <figure class="home-about-img">
-          <img src="/img/farmertraining.jpeg" alt="" />
-<!--          <div class="image-badget">-->
-<!--            <figure class="ib-icon">-->
-<!--              <img src="/img/medal.png" alt="" width="100%" />-->
-<!--            </figure>-->
-<!--            <h4 class="mt-0">Our Values</h4>-->
-<!--            <p>-->
-<!--              Continuously realize profitability and growth objectives through-->
-<!--              the manufacture and distribution of fertilizer.-->
-<!--            </p>-->
-<!--          </div>-->
+          <img
+              v-if="store.aboutLazy"
+               v-lazy="{ src: '/img/farmertraining.jpeg', loading: '/img/dummy749x801.svg', error: '', delay: 500 }"
+               alt="training"
+               class="img-fluid"
+          />
+          <img
+              v-else
+              src="/img/farmertraining.jpeg"
+              alt="training"
+              class="img-fluid"
+          />
         </figure>
       </div>
     </div>
@@ -104,7 +114,18 @@ import TeamCard from "@/component/TeamCard.vue";
     <div class="row">
       <div class="col-lg-6 spacing-md">
         <figure class="home-about-img">
-          <img src="/img/ass.jpeg" alt="" />
+          <img
+              v-if="store.aboutLazy"
+               v-lazy="{ src: '/img/ass.jpeg', loading: '/img/dummy749x801.svg', error: '', delay: 500 }"
+               alt="training"
+               class="img-fluid"
+          />
+          <img
+              v-else
+              src="/img/ass.jpeg"
+              alt="training"
+              class="img-fluid"
+          />
 <!--          <div class="image-badget">-->
 <!--            <figure class="ib-icon">-->
 <!--              <img src="/img/medal.png" alt="" width="100%" />-->

@@ -8,11 +8,13 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "pinia": "^2.0.35",
     "primeicons": "^6.0.1",
     "primevue": "^3.26.1",
     "sal.js": "^0.8.5",
     "vue": "^3.2.13",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.0.3",
+    "vue3-lazyload": "^0.3.6"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

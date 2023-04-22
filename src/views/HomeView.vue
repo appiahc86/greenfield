@@ -6,9 +6,13 @@ import ServiceCard from "@/component/ServiceCard.vue";
 import TeamCard from "@/component/TeamCard.vue";
 import PartnersCard from "@/component/PartnersCard.vue"
 import ContactCard from "@/component/ContactCard.vue";
+import { useMyStore } from "@/store/home";
+import {onBeforeRouteLeave} from "vue-router";
 
 const count = ref(0);
+const store = useMyStore();
 
+console.log(store.homeLazy)
 onMounted(() => {
   const myCarouselElement = document.querySelector("#homeCarousel");
   const carousel = new bootstrap.Carousel(myCarouselElement, {
@@ -29,8 +33,13 @@ onMounted(() => {
       clearInterval(intervalId);
     }
   }, 0.1);
+
 });
 
+onBeforeRouteLeave((to, from, next) => {
+  store.homeLazy = false;
+  next();
+});
 
 </script>
 
@@ -45,15 +54,17 @@ onMounted(() => {
             class="d-block w-100 carousel-img"
             alt="img"
           />
+
+
           <div class="carousel-caption d-block">
             <h3>sustainable cocoa farming</h3>
           </div>
         </div>
         <div class="carousel-item">
           <img
-            src="/img/carousel/c2.jpg"
-            class="d-block w-100 carousel-img"
-            alt="img"
+              src="/img/carousel/c2.jpg"
+              class="d-block w-100 carousel-img"
+              alt="img"
           />
           <div class="carousel-caption d-block">
             <h3>Farmer Registration</h3>
@@ -61,7 +72,7 @@ onMounted(() => {
         </div>
         <div class="carousel-item">
           <img
-            src="/img/carousel/c3.jpg"
+              src="/img/carousel/c3.jpg"
             class="d-block w-100 carousel-img"
             alt="img"
           />
@@ -97,11 +108,6 @@ onMounted(() => {
 <!--  Stock Feed -->
   <div class="container">
     <div class="row g-0">
-      <!--      <div class="visible-xs">-->
-      <!--        <span style="color:#212121;float:left;font-size: 15px;line-height: 24px;-->
-      <!--        font-weight: 400; padding-left:20px; padding-top:10px">-->
-      <!--          <strong>GSE STOCK FEED</strong></span>-->
-      <!--      </div>-->
       <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 hidden-xs">
         <div class="">
           <span style="float:left; font-size: 15px; line-height: 24px;
@@ -150,7 +156,9 @@ onMounted(() => {
           <div class="hb-box d-flex flex-row">
             <div class="hb-inner">
               <figure class="hb-icon">
-                <img src="/img/shield-orange.png" alt="" />
+                <img
+                    src="/img/shield-orange.png" alt=""
+                />
               </figure>
               <h5>We are Passionate</h5>
               <p>Improving livelihood to help alleviate poverty.</p>
@@ -168,7 +176,18 @@ onMounted(() => {
 
       <div class="col-lg-6 spacing-md mb-2">
         <figure class="home-about-img">
-          <img src="/img/gfofficer.jpg" alt="officer"/>
+
+          <img v-if="store.homeLazy"
+               v-lazy="{ src: '/img/gfofficer.jpg',
+              loading: '/img/dummy768x1024.svg',
+               error: '', delay: 500 }"
+               class="img-fluid"
+               alt="officer"
+          >
+          <img src="/img/gfofficer.jpg"
+               alt="officer"
+               class="img-fluid"
+               v-else>
           <div class="image-badget">
             <figure class="ib-icon">
               <img src="/img/medal.png" alt="medal" />
@@ -192,7 +211,11 @@ onMounted(() => {
     <div class="why-us-layer mt-5 mb-5 container-fluid">
       <div class="row me-0">
         <div class="col-md-6">
-          <img src="/img/headoffice.jpeg" alt="headoffice" class="img-fluid">
+          <img
+              v-if="store.homeLazy"
+               v-lazy="{ src: '/img/headoffice.jpeg', loading: '/img/dummy1280x903.svg', error: '', delay: 500 }"
+               alt="headoffice" class="img-fluid">
+          <img v-else src="/img/headoffice.jpeg" alt="headoffice" class="img-fluid">
         </div>
         <div class="col-md-6 d-flex justify-content-center align-items-center">
           <div class="why-us-left">

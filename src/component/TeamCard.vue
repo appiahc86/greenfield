@@ -1,7 +1,10 @@
 <script setup>
 import {ref} from "vue";
 import {onBeforeRouteLeave, useRouter} from "vue-router";
+import { useMyStore } from "@/store/home";
 
+
+const store = useMyStore();
 const openModalBtn = ref();
 const closeModalBtn = ref();
 const profileContainer = ref();
@@ -30,10 +33,18 @@ onBeforeRouteLeave((to, from, next) => {
       <div class="col-xl-4 col-sm-6 mb-5">
         <div class="bg-white rounded shadow-sm py-3 px-3">
           <img
-            src="/img/team/samuel.jpg"
-            alt="samuel"
+            v-if="store.homeLazy"
+            v-lazy="{ src: '/img/team/samuel.jpg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
+            alt="CEO"
             width="150"
             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+          />
+          <img
+             v-else
+              src="/img/team/samuel.jpg"
+              alt="CEO"
+              width="150"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <h5 class="mb-0">Mr. Samuel Amissah</h5>
           <span class="small text-uppercase text-muted">Founder & CEO</span><br>
@@ -46,10 +57,18 @@ onBeforeRouteLeave((to, from, next) => {
       <div class="col-xl-4 col-sm-6 mb-5">
         <div class="bg-white rounded shadow-sm py-3 px-3">
           <img
-            src="/img/team/sebe.jpg"
+            v-if="store.homeLazy"
+            v-lazy="{ src: '/img/team/sebe.jpg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
             alt="Sebe"
             width="150"
             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+          />
+          <img
+              v-else
+              src="/img/team/sebe.jpg"
+              alt="Sebe"
+              width="150"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <h5 class="mb-0">Mr. Kofi Sebe</h5>
           <span class="small text-uppercase text-muted">General Manager</span><br>
@@ -62,10 +81,18 @@ onBeforeRouteLeave((to, from, next) => {
       <div class="col-xl-4 col-sm-6 mb-5">
         <div class="bg-white rounded shadow-sm py-3 px-3">
           <img
-            src="/img/team/ellen.jpg"
+            v-if="store.homeLazy"
+            v-lazy="{ src: '/img/team/ellen.jpg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
             alt="Ellen"
             width="150"
             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+          />
+          <img
+              v-else
+              src="/img/team/ellen.jpg"
+              alt="Ellen"
+              width="150"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <h5 class="mb-0">Ms Ellen Addai</h5>
           <span class="small text-uppercase text-muted">Project Administration Officer</span><br>
@@ -78,10 +105,18 @@ onBeforeRouteLeave((to, from, next) => {
       <div class="col-xl-4 col-sm-6 mb-5">
         <div class="bg-white rounded shadow-sm py-3 px-3">
           <img
-            src="/img/team/benjamin.jpg"
+            v-if="store.homeLazy"
+            v-lazy="{ src: '/img/team/benjamin.jpg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
             alt="Benjamin"
             width="150"
             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+          />
+          <img
+              v-else
+              src="/img/team/benjamin.jpg"
+              alt="Benjamin"
+              width="150"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <h5 class="mb-0">Mr. Benjamin Dadzie</h5>
           <span class="small text-uppercase text-muted">Operations Manager</span><br>
@@ -94,6 +129,14 @@ onBeforeRouteLeave((to, from, next) => {
       <div class="col-xl-4 col-sm-6 mb-5">
         <div class="bg-white rounded shadow-sm py-3 px-3">
           <img
+              v-if="store.homeLazy"
+              v-lazy="{ src: '/img/team/asante.jpg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
+              alt="Asante"
+              width="150"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+          />
+          <img
+              v-else
               src="/img/team/asante.jpg"
               alt="Asante"
               width="150"
@@ -110,8 +153,16 @@ onBeforeRouteLeave((to, from, next) => {
       <div class="col-xl-4 col-sm-6 mb-5">
         <div class="bg-white rounded shadow-sm py-3 px-3">
           <img
+              v-if="store.homeLazy"
+              v-lazy="{ src: '/img/team/constance.jpeg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
+              alt="constance"
+              width="150"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+          />
+          <img
+              v-else
               src="/img/team/constance.jpeg"
-              alt="Sebe"
+              alt="constance"
               width="150"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />

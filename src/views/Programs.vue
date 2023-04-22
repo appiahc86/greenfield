@@ -1,5 +1,14 @@
 <script setup>
-import PartnersCard from "@/component/PartnersCard.vue"
+import PartnersCard from "@/component/PartnersCard.vue";
+import { useMyStore } from "@/store/home";
+import {onBeforeRouteLeave} from "vue-router";
+
+const store = useMyStore();
+
+onBeforeRouteLeave((to, from, next) => {
+  store.programsLazy = false;
+  next();
+});
 </script>
 
 <template>
@@ -47,7 +56,14 @@ import PartnersCard from "@/component/PartnersCard.vue"
           loan project to provide small holder cocoa farmer groups sustainable access
           to training, approved quality agro inputs and micro loans.
         </p>
-        <img src="/img/frm.jpg" alt="farmer registration" class="img-fluid mb-2">
+        <img
+            v-if="store.programsLazy"
+             v-lazy="{ src: '/img/frm.jpg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"
+             alt="farmer registration" class="img-fluid mb-2">
+        <img
+            v-else
+            src="/img/frm.jpg"
+            alt="farmer registration" class="img-fluid mb-2">
         <p>
           Under the project Greenfield register and train small holder cocoa farmers, take their
           input request and supply them the inputs. Ahantamna Rural Bank PLC then open both
@@ -91,7 +107,14 @@ import PartnersCard from "@/component/PartnersCard.vue"
               with SUNBRIGHT to provide small holder farmers access to quality
               agro inputs in the Wassa East District in the Western Region of Ghana and its environs.
             </p>
-            <img src="/img/w.jpeg" alt="cocoa drying" class="img-fluid mb-2">
+            <img
+                 v-if="store.programsLazy"
+                 v-lazy="{ src: '/img/w.jpeg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"
+                 alt="cocoa drying" class="img-fluid mb-2">
+          <img
+              v-else
+              src="/img/w.jpeg"
+              alt="cocoa drying" class="img-fluid mb-2">
             <p>
               The project was expected to increase the yield of farmers in the district,
               increase their income and improve their livelihood. Through the project,

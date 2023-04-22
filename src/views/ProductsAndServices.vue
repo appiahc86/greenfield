@@ -2,12 +2,14 @@
 import {onMounted} from "vue";
 import sal from "sal.js";
 
+
 onMounted(() => {
   sal({
     once: false,
   });
 
 })
+
 </script>
 
 <template>
