@@ -7,6 +7,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "core-js": "^3.8.3",
     "pinia": "^2.0.35",
     "primeicons": "^6.0.1",

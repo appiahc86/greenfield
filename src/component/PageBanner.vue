@@ -32,7 +32,7 @@ defineProps({
 </script>
 <style scoped>
 .banner {
-  height: 25em;
+  height: 35em;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -43,6 +43,11 @@ defineProps({
   justify-content: center;
   flex-direction: column;
   color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .banner {
+    height: 28em;
+  }
 }
 .title {
   padding: 0.6rem 2rem;

@@ -13,7 +13,7 @@ onBeforeRouteLeave((to, from, next) => {
 </script>
 
 <template>
-  <PageBanner title="About Us" subTitle="about" img="/img/banner.jpg" />
+  <PageBanner title="About Us" subTitle="about" img="/img/banner.jpeg" />
   <!-- OUR MISSION -->
   <div class="container my">
     <div class="home-about my text-center">

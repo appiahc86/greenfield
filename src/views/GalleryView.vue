@@ -140,8 +140,6 @@ label.active {
   margin: 1rem 0;
 }
 .gallery-container .gallery img {
-  /*width: 100%;*/
-  /*min-height: 520px;*/
   cursor: pointer;
 }
 .my-s {
@@ -168,14 +166,14 @@ label.active {
   font-size: 1.1em;
 }
 
-.img-fluid:hover {opacity: 0.8;}
+.gallery img:hover {opacity: 0.8;}
 
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 60px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -192,7 +190,7 @@ label.active {
   width: 80%;
   max-width: 700px;
   padding: 5px;
-  max-height: 75vh;
+  /*max-height: 75vh;*/
   border-radius: 4%;
 }
 

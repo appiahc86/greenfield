@@ -16,10 +16,9 @@ import {onMounted, ref} from "vue";
 
 <!--        <h5 class="my-4 line-1 anim-typewriter text-danger" ref="anim">-->
 <!--          Improving livelihood to help alleviate poverty.</h5>-->
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consectetur
-          corporis deserunt dolor dolores ducimus est id impedit inventore labore,
-          libero magnam quidem quisquam quod ratione recusandae tempore vero voluptatem?
+        <p style="font-size: 1.1em;">
+          Our goal is to positively impact the society, create value in the lives of
+          small holder farmers and improve their well-being to help reduce poverty.
         </p>
       </div>
       <div class="col-md-6">

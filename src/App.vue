@@ -307,13 +307,20 @@ const programHover = ref(false);
                     style="font-size: 1.6em"
                   ></span
                 ></a>
-                <a
-                  ><span class="pi pi-twitter" style="font-size: 1.6em"></span
-                ></a>
+                  <a
+                  ><span class="pi pi-youtube" style="font-size: 1.6em"></span
+                  ></a>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col text-center">
+            <h6 style="font-size: 1em;">Copyright &copy; 2023 <b>Greenfield Agricultural Services</b></h6>
+          </div>
+        </div>
+
       </div>
     </footer>
   </div>

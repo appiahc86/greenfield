@@ -184,6 +184,11 @@ onMounted(() => {
 </template>
 
 <style scoped>
+
+.img-fluid{
+  /*height: 40vh !important;*/
+}
+
 .top {
   background-image: url("../../public/img/pbg.jpg");
   background-color: grey;

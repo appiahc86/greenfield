@@ -36,14 +36,14 @@ onBeforeRouteLeave((to, from, next) => {
             v-if="store.homeLazy"
             v-lazy="{ src: '/img/team/samuel.jpg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
             alt="CEO"
-            width="150"
+            width="180"
             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <img
              v-else
               src="/img/team/samuel.jpg"
               alt="CEO"
-              width="150"
+              width="180"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <h5 class="mb-0">Mr. Samuel Amissah</h5>
@@ -60,14 +60,14 @@ onBeforeRouteLeave((to, from, next) => {
             v-if="store.homeLazy"
             v-lazy="{ src: '/img/team/sebe.jpg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
             alt="Sebe"
-            width="150"
+            width="180"
             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <img
               v-else
               src="/img/team/sebe.jpg"
               alt="Sebe"
-              width="150"
+              width="180"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <h5 class="mb-0">Mr. Kofi Sebe</h5>
@@ -77,29 +77,6 @@ onBeforeRouteLeave((to, from, next) => {
       </div>
       <!-- End -->
 
-      <!-- Team item -->
-      <div class="col-xl-4 col-sm-6 mb-5">
-        <div class="bg-white rounded shadow-sm py-3 px-3">
-          <img
-            v-if="store.homeLazy"
-            v-lazy="{ src: '/img/team/ellen.jpg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
-            alt="Ellen"
-            width="150"
-            class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
-          />
-          <img
-              v-else
-              src="/img/team/ellen.jpg"
-              alt="Ellen"
-              width="150"
-              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
-          />
-          <h5 class="mb-0">Ms Ellen Addai</h5>
-          <span class="small text-uppercase text-muted">Project Administration Officer</span><br>
-          <a class="btn btn-sm btn-secondary mt-2" style="cursor: pointer;" @click="openModal('ellen')">View Profile</a>
-        </div>
-      </div>
-      <!-- End -->
 
       <!-- Team item -->
       <div class="col-xl-4 col-sm-6 mb-5">
@@ -108,14 +85,14 @@ onBeforeRouteLeave((to, from, next) => {
             v-if="store.homeLazy"
             v-lazy="{ src: '/img/team/benjamin.jpg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
             alt="Benjamin"
-            width="150"
+            width="180"
             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <img
               v-else
               src="/img/team/benjamin.jpg"
               alt="Benjamin"
-              width="150"
+              width="180"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <h5 class="mb-0">Mr. Benjamin Dadzie</h5>
@@ -132,14 +109,14 @@ onBeforeRouteLeave((to, from, next) => {
               v-if="store.homeLazy"
               v-lazy="{ src: '/img/team/asante.jpg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
               alt="Asante"
-              width="150"
+              width="180"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <img
               v-else
               src="/img/team/asante.jpg"
               alt="Asante"
-              width="150"
+              width="180"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <h5 class="mb-0">Mr. Collins Asante</h5>
@@ -149,6 +126,31 @@ onBeforeRouteLeave((to, from, next) => {
         </div>
       </div>
       <!-- End -->
+
+      <!-- Team item -->
+      <div class="col-xl-4 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-3 px-3">
+          <img
+              v-if="store.homeLazy"
+              v-lazy="{ src: '/img/team/ellen.jpg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
+              alt="Ellen"
+              width="180"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+          />
+          <img
+              v-else
+              src="/img/team/ellen.jpg"
+              alt="Ellen"
+              width="180"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+          />
+          <h5 class="mb-0">Ms Ellen Addai</h5>
+          <span class="small text-uppercase text-muted">Project Administration Officer</span><br>
+          <a class="btn btn-sm btn-secondary mt-2" style="cursor: pointer;" @click="openModal('ellen')">View Profile</a>
+        </div>
+      </div>
+      <!-- End -->
+
       <!-- Team item -->
       <div class="col-xl-4 col-sm-6 mb-5">
         <div class="bg-white rounded shadow-sm py-3 px-3">
@@ -156,14 +158,14 @@ onBeforeRouteLeave((to, from, next) => {
               v-if="store.homeLazy"
               v-lazy="{ src: '/img/team/constance.jpeg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
               alt="constance"
-              width="150"
+              width="180"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <img
               v-else
               src="/img/team/constance.jpeg"
               alt="constance"
-              width="150"
+              width="180"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <h5 class="mb-0">Ms Constance Opoku</h5>

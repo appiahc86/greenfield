@@ -2,7 +2,7 @@
 import { ref, onMounted } from "vue";
 import sal from "sal.js";
 import Button from "primevue/button";
-import ServiceCard from "@/component/ServiceCard.vue";
+// import ServiceCard from "@/component/ServiceCard.vue";
 import TeamCard from "@/component/TeamCard.vue";
 import PartnersCard from "@/component/PartnersCard.vue"
 import ContactCard from "@/component/ContactCard.vue";
@@ -12,7 +12,7 @@ import {onBeforeRouteLeave} from "vue-router";
 const count = ref(0);
 const store = useMyStore();
 
-console.log(store.homeLazy)
+
 onMounted(() => {
   const myCarouselElement = document.querySelector("#homeCarousel");
   const carousel = new bootstrap.Carousel(myCarouselElement, {
@@ -26,13 +26,25 @@ onMounted(() => {
     once: false,
   });
 
-  const intervalId = setInterval(() => {
-    if (count.value < 6254) {
-      count.value += 2;
-    } else {
-      clearInterval(intervalId);
+  const counter = document.querySelector('.counter');
+  window.addEventListener('scroll', () => {
+    const containerRect = counter.getBoundingClientRect();
+
+    if (containerRect.top < window.innerHeight) {
+
+      const intervalId = setInterval(() => {
+        if (count.value < 6254) {
+          count.value += 2;
+        } else {
+          clearInterval(intervalId);
+        }
+      }, 25);
+
     }
-  }, 0.1);
+  });
+
+
+
 
 });
 
@@ -54,10 +66,18 @@ onBeforeRouteLeave((to, from, next) => {
             class="d-block w-100 carousel-img"
             alt="img"
           />
-
-
           <div class="carousel-caption d-block">
             <h3>sustainable cocoa farming</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+              src="/img/carousel/c4.jpg"
+              class="d-block w-100 carousel-img"
+              alt="img"
+          />
+          <div class="carousel-caption d-block">
+            <h3>Food Security</h3>
           </div>
         </div>
         <div class="carousel-item">
@@ -78,6 +98,16 @@ onBeforeRouteLeave((to, from, next) => {
           />
           <div class="carousel-caption d-block">
             <h3>Greenfield Farmer Group</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+              src="/img/carousel/c5.jpg"
+              class="d-block w-100 carousel-img"
+              alt="img"
+          />
+          <div class="carousel-caption d-block">
+            <h3>Food Security</h3>
           </div>
         </div>
       </div>
@@ -182,12 +212,13 @@ onBeforeRouteLeave((to, from, next) => {
               loading: '/img/dummy768x1024.svg',
                error: '', delay: 500 }"
                class="img-fluid"
+               alt="officer">
+          <img
+              v-else
+              src="/img/gfofficer.jpg"
                alt="officer"
-          >
-          <img src="/img/gfofficer.jpg"
-               alt="officer"
-               class="img-fluid"
-               v-else>
+               class="img-fluid">
+
           <div class="image-badget">
             <figure class="ib-icon">
               <img src="/img/medal.png" alt="medal" />
@@ -248,13 +279,15 @@ onBeforeRouteLeave((to, from, next) => {
       </div>
     </div>
 
-    <div class="container">
+
       <div class="section-title">
         <h2>TOTAL FARMERS ONBOARD</h2>
         <h3>OUR FARMERS</h3>
-        <h1>{{ count }}</h1>
+        <h1 class="counter text-success fw-bold"
+            style="border-radius: 50%; background: rgba(204,204,204,0.24)">
+          {{ count }}</h1>
       </div>
-    </div>
+
     <!-- TEAM STAR -->
     <div class="container mt-5 mb-5">
       <div class="section-title">

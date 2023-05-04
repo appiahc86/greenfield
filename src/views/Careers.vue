@@ -38,43 +38,45 @@ onMounted(() => {
 
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <div class="card shadow p-4">
-            <h6 class="text-danger mb-2" style="opacity: 0.7">Fulltime, Onsite</h6>
-            <h4>Project Administrator</h4>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dignissimos
-              dolores eaque eius eum exercitationem id illum impedit itaque, maxime mollitia,
-              nisi placeat praesentium quisquam!
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card shadow p-4">
-            <h6 class="text-danger mb-2" style="opacity: 0.7">Part time, Remote</h6>
-            <h4>Marketing Strategies</h4>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dignissimos
-              dolores eaque eius eum exercitationem id illum impedit itaque, maxime mollitia,
-              nisi placeat praesentium quisquam!
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card shadow p-4">
-            <h6 class="text-danger mb-2" style="opacity: 0.7">Fulltime, Onsite</h6>
-            <h4>Customer Services</h4>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dignissimos
-              dolores eaque eius eum exercitationem id illum impedit itaque, maxime mollitia,
-              nisi placeat praesentium quisquam!
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h2 class="text-center text-danger">No vacancy at this time, please check again later</h2>
+
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <div class="col-md-4 mb-3">-->
+<!--          <div class="card shadow p-4">-->
+<!--            <h6 class="text-danger mb-2" style="opacity: 0.7">Fulltime, Onsite</h6>-->
+<!--            <h4>Project Administrator</h4>-->
+<!--            <p class="text-muted">-->
+<!--              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dignissimos-->
+<!--              dolores eaque eius eum exercitationem id illum impedit itaque, maxime mollitia,-->
+<!--              nisi placeat praesentium quisquam!-->
+<!--            </p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-4 mb-3">-->
+<!--          <div class="card shadow p-4">-->
+<!--            <h6 class="text-danger mb-2" style="opacity: 0.7">Part time, Remote</h6>-->
+<!--            <h4>Marketing Strategies</h4>-->
+<!--            <p class="text-muted">-->
+<!--              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dignissimos-->
+<!--              dolores eaque eius eum exercitationem id illum impedit itaque, maxime mollitia,-->
+<!--              nisi placeat praesentium quisquam!-->
+<!--            </p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-4 mb-3">-->
+<!--          <div class="card shadow p-4">-->
+<!--            <h6 class="text-danger mb-2" style="opacity: 0.7">Fulltime, Onsite</h6>-->
+<!--            <h4>Customer Services</h4>-->
+<!--            <p class="text-muted">-->
+<!--              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dignissimos-->
+<!--              dolores eaque eius eum exercitationem id illum impedit itaque, maxime mollitia,-->
+<!--              nisi placeat praesentium quisquam!-->
+<!--            </p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
 
   </div>
 
@@ -183,9 +185,8 @@ onMounted(() => {
 <!--            <div class="float-end text-muted small">8:30 AM</div>-->
             <h4 class="card-title">Social Impact</h4>
             <p>
-              <b>'We make a difference'</b> is one of our company values. Through the use of our skills
-              and expertise as well as fundraising activities, giving back to others
-              in society has always been a key part of our culture.
+              Our goal is to positively impact the society, create value in the lives of small holder farmers
+              and improve their livelihood to help reduce poverty.
             </p>
           </div>
         </div>

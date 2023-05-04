@@ -129,7 +129,12 @@ export const galleryData = [
     path:"/img/gallery/p26.jpeg",
     name:""
   },
-    //Landscape images
+  {
+    key: "people",
+    path:"/img/gallery/p27.jpeg",
+    name:""
+  },
+    //************** Landscape images ******************************
   {
     key: "others",
     path:"/img/gallery/l1.jpeg",
@@ -193,6 +198,16 @@ export const galleryData = [
   {
     key: "people",
     path:"/img/gallery/l13.jpeg",
+    name:""
+  },
+  {
+    key: "people",
+    path:"/img/gallery/l14.jpeg",
+    name:""
+  },
+  {
+    key: "others",
+    path:"/img/gallery/l15.jpeg",
     name:""
   },
 ]

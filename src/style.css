@@ -7,9 +7,19 @@
 
 .btn-default{
   background-color: #DE7900;
-  color: #fff;border-radius: 4px;
+  color: #fff;
+  border-radius: 4px;
   padding-right: 1.2rem;
   padding-left: 1.2rem;
+}
+.btn-default:hover{
+    background-color: rgba(222, 121, 0, 0.85);
+    color: #fff;
+}
+
+.btn-default:disabled{
+    background-color: rgba(222, 121, 0, 0.68);
+    color: #fff;
 }
 
 .my{
