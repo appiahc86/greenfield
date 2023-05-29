@@ -18,10 +18,6 @@ const togglerFunction = (e) => {
   }
 };
 
-const hideTimesIcon = () => {
-  togglerElement.value.children[0].style.display = "block";
-  togglerElement.value.children[1].style.display = "none";
-};
 
 const goHome = () => {
   router.push({ name: "home" });
@@ -283,7 +279,7 @@ const programHover = ref(false);
               <b>Email: </b>
               <a href="mailto:greenfieldagriculturalservices@gmail.com"
                  class="text-decoration-none text-white"
-              >greenfieldagriculturalservices@gmail</a>
+              >greenfieldagriculturalservices@gmail.com</a>
             </p>
             <p>
               <b>Location: </b>

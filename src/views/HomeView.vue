@@ -268,10 +268,7 @@ onBeforeRouteLeave((to, from, next) => {
               farmers in the comfort of their communities to increase their crop yield, increase
               their income and improve their livelihood to help alleviate poverty.
             </p>
-<!--            <p>-->
-<!--              Promoting the continuous improvement of human and technological-->
-<!--              resources, generating competitive profitability.-->
-<!--            </p>-->
+
 
             <router-link class="btn btn-sm btn-default" :to="{name: 'contact'}" role="button">GET IN TOUCH</router-link>
           </div>
@@ -285,7 +282,7 @@ onBeforeRouteLeave((to, from, next) => {
         <h3>OUR FARMERS</h3>
         <h1 class="counter text-success fw-bold"
             style="border-radius: 50%; background: rgba(204,204,204,0.24)">
-          {{ count }}</h1>
+          {{ count ? count.toLocaleString() : 0 }}</h1>
       </div>
 
     <!-- TEAM STAR -->
