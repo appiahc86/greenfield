@@ -28,12 +28,34 @@ import {onMounted, ref} from "vue";
   </div>
 </div>
 
+
+<!--  Videos -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <iframe width="100%" height="315"
+                src="https://www.youtube.com/embed/HM3jE0yUsnM"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+      </div>
+      <div class="col-sm-6">
+        <iframe width="100%" height="315"
+                src="https://www.youtube.com/embed/uw7ha08hGPY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
+
   <h1 class="text-center text-muted py-4">Soci<span style="border-bottom: 5px Solid gold; padding-bottom: 15px;">al I</span>mpact </h1>
   <div style="" class="py-5">
     <div class="container">
 
       <div class="row">
-        <div class="col-md-4 mb-3">
+        <div class="col-md-6 col-xl-3 mb-3">
           <div class="card shadow h-100">
             <div class="card-img-top">
                 <img src="/img/impact/1.jpeg" alt="" class="img-fluid">
@@ -47,7 +69,26 @@ import {onMounted, ref} from "vue";
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+
+
+        <div class="col-md-6 col-xl-3 mb-3">
+          <div class="card shadow h-100">
+            <div class="card-img-top">
+              <img src="/img/impact/4.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="card-body">
+              <p>
+                Greenfield donated 50 bags of cement to Adjetey Camp, a cocoa
+                community in the Twifo Atti Morkwa District in  Central Region
+                of Ghana for Rehabilitation of delapidated School Building.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-6 col-xl-3 mb-3">
           <div class="card shadow h-100">
             <div class="card-img-top">
               <img src="/img/impact/2.jpeg" alt="" class="img-fluid">
@@ -61,7 +102,9 @@ import {onMounted, ref} from "vue";
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+
+
+        <div class="col-md-6 col-xl-3 mb-3">
           <div class="card shadow h-100">
             <div class="card-img-top">
               <img src="/img/impact/3.jpeg" alt="" class="img-fluid">
@@ -75,6 +118,8 @@ import {onMounted, ref} from "vue";
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
   </div>
