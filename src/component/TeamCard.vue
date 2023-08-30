@@ -34,14 +34,14 @@ onBeforeRouteLeave((to, from, next) => {
         <div class="bg-white rounded shadow-sm py-3 px-3">
           <img
             v-if="store.homeLazy"
-            v-lazy="{ src: '/img/team/samuel.jpg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
+            v-lazy="{ src: '/img/team/samuel1.jpg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
             alt="CEO"
             width="180"
             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <img
              v-else
-              src="/img/team/samuel.jpg"
+              src="/img/team/samuel1.jpg"
               alt="CEO"
               width="180"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
