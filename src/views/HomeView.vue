@@ -9,7 +9,7 @@ import ContactCard from "@/component/ContactCard.vue";
 import { useMyStore } from "@/store/home";
 import {onBeforeRouteLeave} from "vue-router";
 
-const count = ref(0);
+const count = ref(20000);
 const store = useMyStore();
 
 
@@ -33,8 +33,8 @@ onMounted(() => {
     if (containerRect.top < window.innerHeight) {
 
       const intervalId = setInterval(() => {
-        if (count.value < 6254) {
-          count.value += 2;
+        if (count.value < 50000) {
+          count.value += 10;
         } else {
           clearInterval(intervalId);
         }
