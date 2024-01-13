@@ -39,14 +39,42 @@ const store = useMyStore();
         <div class="card h-100 px-2">
           <img
               v-if="store.homeLazy"
-               v-lazy="{ src: '/img/partners/vf.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
-               alt="vf" class="img-fluid my-auto"
+               v-lazy="{ src: '/img/partners/pbc.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
+               alt="pbc" class="img-fluid my-auto"
           >
           <img
               v-else
-              src="/img/partners/vf.png"
-              alt="vf" class="img-fluid my-auto"
+              src="/img/partners/pbc.png"
+              alt="pbc" class="img-fluid my-auto"
           >
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 mb-3">
+        <div class="card h-100 px-2">
+          <img
+              v-if="store.homeLazy"
+              v-lazy="{ src: '/img/partners/pan_african.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
+              alt="pan_african" class="img-fluid my-auto"
+          >
+          <img
+              v-else
+              src="/img/partners/pan_african.png"
+              alt="pan_african" class="img-fluid my-auto"
+          >
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 mb-3">
+        <div class="card h-100 px-2">
+          <img
+              v-if="store.homeLazy"
+              v-lazy="{ src: '/img/partners/rmg.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
+              alt="rmg" class="img-fluid my-auto">
+          <img
+              v-else
+              src="/img/partners/rmg.png"
+              alt="rmg" class="img-fluid my-auto">
         </div>
       </div>
 
@@ -62,21 +90,6 @@ const store = useMyStore();
               alt="agro" class="img-fluid my-auto">
         </div>
       </div>
-
-      <div class="col-6 col-sm-4 col-md-3 mb-3">
-        <div class="card h-100 px-2">
-          <img
-              v-if="store.homeLazy"
-               v-lazy="{ src: '/img/partners/rmg.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
-               alt="rmg" class="img-fluid my-auto">
-          <img
-             v-else
-              src="/img/partners/rmg.png"
-              alt="rmg" class="img-fluid my-auto">
-        </div>
-      </div>
-
-
 
 
     </div>

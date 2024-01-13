@@ -42,8 +42,110 @@ onBeforeRouteLeave((to, from, next) => {
 
   <div class="container mt-5">
     <div class="row justify-content-center text-center">
+
+      <!--      program start-->
       <div class="col-md-8">
-        <h4 class="text-success text-center text-uppercase">
+        <h4 class="text-center text-uppercase">
+          PBC-Pan African-Greenfield Cocoa Inputs Credit Project
+        </h4>
+        <div class="mx-auto" style="width: 20%;">
+          <hr style="border: 3px solid rgba(0,0,0,0.7);">
+        </div>
+
+        <br>
+        <p>
+          In November,2023, a 5-year tripartite MoU was signed among PBC Limited
+          (largest Licensed Cocoa Buying Company in Ghana) , Pan-African Savings and
+          Loans ( member of the ECOBANK Group) and Greenfield Agricultural Services
+          Limited to provide sustainable Inputs credit to <b>100,000</b> smallholder cocoa
+          farmers in Ghana to increase their crop yield, increase their income and improve
+          their livelihood. Beneficiary cocoa farmers will also be trained in areas
+          such Good Agricultural Practices (GAP), Environmental Protection,
+          Climate Change, Financial Literacy, Safe application of agrochemicals,
+          Post-harvest management etc.
+
+        </p>
+        <img
+            v-if="store.programsLazy"
+            v-lazy="{ src: '/img/programs/pbc_pan.jpg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"
+            alt="PBC-Pan African-Greenfield" class="img-fluid mb-2">
+        <img
+            v-else
+            src="/img/programs/pbc_pan.jpg"
+            alt="PBC-Pan African-Greenfield" class="img-fluid mb-2">
+      </div>
+      <hr class="border border-3 my-5">
+      <!--      program end-->
+
+
+      <!--      program start-->
+      <div class="col-md-8">
+        <h4 class="text-center text-uppercase">
+          GhREDD+ Project
+        </h4>
+        <div class="mx-auto" style="width: 20%;">
+          <hr style="border: 3px solid rgba(0,0,0,0.7);">
+        </div>
+
+        <br>
+        <p>
+          In July 2023, Greenfield Agricultural Services Limited was
+          selected as supplier by the Kakum HIA Implementation Committee
+          under the GhREDD+ program to supply various approved agro
+          inputs to cocoa farmers in selected communities with the
+          program implementation areas.
+        </p>
+        <img
+            v-if="store.programsLazy"
+            v-lazy="{ src: '/img/programs/GhREDD.jpg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"
+            alt="GhREDD" class="img-fluid mb-2">
+        <img
+            v-else
+            src="/img/programs/GhREDD.jpg"
+            alt="GhREDD" class="img-fluid mb-2">
+      </div>
+      <hr class="border border-3 my-5">
+      <!--      program end-->
+
+
+      <!--      program start-->
+      <div class="col-md-8">
+        <h4 class="text-center text-uppercase">
+          Livelihood Empowerment Agricultural Programme (LEAP)
+        </h4>
+        <div class="mx-auto" style="width: 20%;">
+          <hr style="border: 3px solid rgba(0,0,0,0.7);">
+        </div>
+
+        <br>
+        <p>
+          In May 2023, Greenfield Agricultural Services entered into
+          partnership with Jesus of the Latter Day Saints Church, Kumasi
+          University and Afrancho Stakes to implement the LEAP to provide
+          them with training and quality agro inputs towards sustainable
+          employment for the members to enable them take care of their families.
+          The selected members who benefited from the program were
+          into various farming activities such as Cocoa, Cereals, Vegetable,
+          Fish farming, and Rearing of Ruminants. The Phase 2 of the project
+          is expected to continue in 2024.
+        </p>
+        <img
+            v-if="store.programsLazy"
+            v-lazy="{ src: '/img/programs/LEAP.jpg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"
+            alt="LEAP" class="img-fluid mb-2">
+        <img
+            v-else
+            src="/img/programs/LEAP.jpg"
+            alt="LEAP" class="img-fluid mb-2">
+      </div>
+      <hr class="border border-3 my-5">
+      <!--      program end-->
+
+
+
+      <!--      program start-->
+      <div class="col-md-8">
+        <h4 class="text-center text-uppercase">
           Greenfield-Ahantaman Cocoa Inputs Loan Project
         </h4>
         <div class="mx-auto" style="width: 20%;">
@@ -58,11 +160,11 @@ onBeforeRouteLeave((to, from, next) => {
         </p>
         <img
             v-if="store.programsLazy"
-             v-lazy="{ src: '/img/frm.jpg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"
+             v-lazy="{ src: '/img/programs/frm.jpg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"
              alt="farmer registration" class="img-fluid mb-2">
         <img
             v-else
-            src="/img/frm.jpg"
+            src="/img/programs/frm.jpg"
             alt="farmer registration" class="img-fluid mb-2">
         <p>
           Under the project Greenfield register and train small holder cocoa farmers, take their
@@ -92,7 +194,10 @@ onBeforeRouteLeave((to, from, next) => {
         </p>
       </div>
       <hr class="border border-3 my-5">
-      <div class="row justify-content-center text-center">
+<!--      program end-->
+
+
+      <!--      program start-->
         <div class="col-md-8">
             <h4 class="text-center text-uppercase">
               Greenfield – SunBright Agribusiness Project
@@ -109,11 +214,11 @@ onBeforeRouteLeave((to, from, next) => {
             </p>
             <img
                  v-if="store.programsLazy"
-                 v-lazy="{ src: '/img/w.jpeg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"
+                 v-lazy="{ src: '/img/programs/w.jpeg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"
                  alt="cocoa drying" class="img-fluid mb-2">
           <img
               v-else
-              src="/img/w.jpeg"
+              src="/img/programs/w.jpeg"
               alt="cocoa drying" class="img-fluid mb-2">
             <p>
               The project was expected to increase the yield of farmers in the district,
@@ -122,7 +227,8 @@ onBeforeRouteLeave((to, from, next) => {
               introduced to modern system of farming including climate smart agriculture, agroforestry etc.
             </p>
           </div>
-      </div>
+
+      <!--      program end-->
 
     </div>
   </div>
