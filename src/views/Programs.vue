@@ -109,36 +109,36 @@ onBeforeRouteLeave((to, from, next) => {
 
 
       <!--      program start-->
-      <div class="col-md-8">
-        <h4 class="text-center text-uppercase">
-          Livelihood Empowerment Agricultural Programme (LEAP)
-        </h4>
-        <div class="mx-auto" style="width: 20%;">
-          <hr style="border: 3px solid rgba(0,0,0,0.7);">
-        </div>
+<!--      <div class="col-md-8">-->
+<!--        <h4 class="text-center text-uppercase">-->
+<!--          Livelihood Empowerment Agricultural Programme (LEAP)-->
+<!--        </h4>-->
+<!--        <div class="mx-auto" style="width: 20%;">-->
+<!--          <hr style="border: 3px solid rgba(0,0,0,0.7);">-->
+<!--        </div>-->
 
-        <br>
-        <p>
-          In May 2023, Greenfield Agricultural Services entered into
-          partnership with Jesus of the Latter Day Saints Church, Kumasi
-          University and Afrancho Stakes to implement the LEAP to provide
-          them with training and quality agro inputs towards sustainable
-          employment for the members to enable them take care of their families.
-          The selected members who benefited from the program were
-          into various farming activities such as Cocoa, Cereals, Vegetable,
-          Fish farming, and Rearing of Ruminants. The Phase 2 of the project
-          is expected to continue in 2024.
-        </p>
-        <img
-            v-if="store.programsLazy"
-            v-lazy="{ src: '/img/programs/LEAP.jpg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"
-            alt="LEAP" class="img-fluid mb-2">
-        <img
-            v-else
-            src="/img/programs/LEAP.jpg"
-            alt="LEAP" class="img-fluid mb-2">
-      </div>
-      <hr class="border border-3 my-5">
+<!--        <br>-->
+<!--        <p>-->
+<!--          In May 2023, Greenfield Agricultural Services entered into-->
+<!--          partnership with Jesus of the Latter Day Saints Church, Kumasi-->
+<!--          University and Afrancho Stakes to implement the LEAP to provide-->
+<!--          them with training and quality agro inputs towards sustainable-->
+<!--          employment for the members to enable them take care of their families.-->
+<!--          The selected members who benefited from the program were-->
+<!--          into various farming activities such as Cocoa, Cereals, Vegetable,-->
+<!--          Fish farming, and Rearing of Ruminants. The Phase 2 of the project-->
+<!--          is expected to continue in 2024.-->
+<!--        </p>-->
+<!--        <img-->
+<!--            v-if="store.programsLazy"-->
+<!--            v-lazy="{ src: '/img/programs/LEAP.jpg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"-->
+<!--            alt="LEAP" class="img-fluid mb-2">-->
+<!--        <img-->
+<!--            v-else-->
+<!--            src="/img/programs/LEAP.jpg"-->
+<!--            alt="LEAP" class="img-fluid mb-2">-->
+<!--      </div>-->
+<!--      <hr class="border border-3 my-5">-->
       <!--      program end-->
 
 
