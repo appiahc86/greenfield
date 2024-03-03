@@ -91,6 +91,18 @@ const store = useMyStore();
         </div>
       </div>
 
+      <div class="col-6 col-sm-4 col-md-3 mb-3">
+        <div class="card h-100 px-2">
+          <img
+              v-if="store.homeLazy"
+              v-lazy="{ src: '/img/partners/kampani.jpg', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
+              alt="kampani" class="img-fluid my-auto">
+          <img
+              v-else
+              src="/img/partners/kampani.jpg"
+              alt="kampani" class="img-fluid my-auto">
+        </div>
+      </div>
 
     </div>
   </div>

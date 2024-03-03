@@ -8,7 +8,7 @@ import ProductsAndServices from '../views/ProductsAndServices.vue';
 import Careers from '../views/Careers.vue';
 import SocialImpact from '../views/SocialImpact.vue';
 import News from '../views/News.vue';
-import Programs from '../views/Programs.vue';
+import Projects from "@/views/Projects.vue";
 
 const routes = [
   {
@@ -58,9 +58,9 @@ const routes = [
     component: News
   },
   {
-  path: '/programs',
-    name: 'programs',
-    component: Programs
+  path: '/projects',
+    name: 'projects',
+    component: Projects
 },
   //    redirect to home page if route not found
   {

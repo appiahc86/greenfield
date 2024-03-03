@@ -244,9 +244,9 @@ onBeforeRouteLeave((to, from, next) => {
         <div class="col-md-6">
           <img
               v-if="store.homeLazy"
-               v-lazy="{ src: '/img/headoffice.jpeg', loading: '/img/dummy1280x903.svg', error: '', delay: 500 }"
+               v-lazy="{ src: '/img/headoffice1.jpg', loading: '/img/dummy1280x903.svg', error: '', delay: 500 }"
                alt="headoffice" class="img-fluid">
-          <img v-else src="/img/headoffice.jpeg" alt="headoffice" class="img-fluid">
+          <img v-else src="/img/headoffice1.jpg" alt="headoffice" class="img-fluid">
         </div>
         <div class="col-md-6 d-flex justify-content-center align-items-center">
           <div class="why-us-left">
@@ -262,11 +262,13 @@ onBeforeRouteLeave((to, from, next) => {
                 style="--sal-duration: 2s; --sal-delay: 1s;"
                 data-sal-easing="ease-out-back"
             >
-              We provide small holder farmers with training and extension services, quality agro inputs,
-              and facilitate access to micro loans for farmers to purchace agro inputs acting as a bridge
-              between small holder farmers and Microfinance Institutions (MFIs). We support small holder
-              farmers in the comfort of their communities to increase their crop yield, increase
-              their income and improve their livelihood to help alleviate poverty.
+              We provide innovative, tailored-made, farmer-centred, and impact driven
+              solutions that meet the needs of our farmers and offer them sustainable
+              access to quality agro Inputs, training & extension services and micro
+              credit to purchase inputs. Our aim is to increase crop yield of smallholder
+              farmers, increase their income and improve their livelihood to help reduce
+              poverty. We also believe in gender equality and provision of jobs for the
+              youth especially women.
             </p>
 
 

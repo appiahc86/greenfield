@@ -119,7 +119,7 @@ const programHover = ref(false);
 
 
               >
-                <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>our programs
+                <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>our projects
               </div>
               <ul
                 class="dropdown-menu text-center"
@@ -128,10 +128,10 @@ const programHover = ref(false);
               >
                 <li>
                   <router-link
-                      :to="{ name: 'programs' }"
+                      :to="{ name: 'projects' }"
                       class="dropdown-item mb-3"
                       @click="programHover = false"
-                  >programs</router-link>
+                  >projects</router-link>
                 </li>
 
               </ul>
@@ -146,7 +146,7 @@ const programHover = ref(false);
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
               >
-                <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>our programs
+                <span class="d-lg-none">&nbsp; &nbsp; &nbsp;</span>our projects
               </div>
               <ul
                   class="dropdown-menu text-center"
@@ -154,9 +154,9 @@ const programHover = ref(false);
 
                 <li>
                   <router-link
-                      :to="{ name: 'programs' }"
+                      :to="{ name: 'projects' }"
                       class="dropdown-item mb-3"
-                  >programs</router-link>
+                  >projects</router-link>
                 </li>
 
               </ul>
@@ -271,9 +271,8 @@ const programHover = ref(false);
             <h4>Contact</h4>
             <p>
               <b>Phone: </b>
-              <a href="tel:+233243631511" class="text-decoration-none text-white">0243631511</a> /
-              <a href="tel:+233265557165" class="text-decoration-none text-white">0265557165</a> /
-              <a href="tel:+233202144534" class="text-decoration-none text-white">0202144534</a>
+              <a href="tel:+233248714806" class="text-decoration-none text-white">0248714806</a> /
+              <a href="tel:+233245276032" class="text-decoration-none text-white">0245276032</a>
             </p>
             <p class="text-center">
               <b>Email: </b>
@@ -313,7 +312,7 @@ const programHover = ref(false);
 
         <div class="row justify-content-center mt-4">
           <div class="col text-center">
-            <h6 style="font-size: 1em;">Copyright &copy; 2023 <b>Greenfield Agricultural Services</b></h6>
+            <h6 style="font-size: 1em;">Copyright &copy; 2024 <b>Greenfield Agricultural Services</b></h6>
           </div>
         </div>
 

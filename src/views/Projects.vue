@@ -16,7 +16,7 @@ onBeforeRouteLeave((to, from, next) => {
   <div class="top mt5">
   <h2 class="text-white text-uppercase"
       style="font-size: 7vw; font-family: cursive; opacity: 0.7">
-    Our Programs
+    Our Projects
   </h2>
   </div>
 
@@ -36,14 +36,13 @@ onBeforeRouteLeave((to, from, next) => {
     <div class="di"><span class="dot"></span></div>
     <div class="di"><span class="dot"></span></div>
 
-
   </div>
 
 
   <div class="container mt-5">
     <div class="row justify-content-center text-center">
 
-      <!--      program start-->
+      <!--      projects start-->
       <div class="col-md-8">
         <h4 class="text-center text-uppercase">
           PBC-Pan African-Greenfield Cocoa Inputs Credit Project
@@ -75,10 +74,10 @@ onBeforeRouteLeave((to, from, next) => {
             alt="PBC-Pan African-Greenfield" class="img-fluid mb-2">
       </div>
       <hr class="border border-3 my-5">
-      <!--      program end-->
+      <!--      projects end-->
 
 
-      <!--      program start-->
+      <!--      projects start-->
       <div class="col-md-8">
         <h4 class="text-center text-uppercase">
           GhREDD+ Project
@@ -105,10 +104,10 @@ onBeforeRouteLeave((to, from, next) => {
             alt="GhREDD" class="img-fluid mb-2">
       </div>
       <hr class="border border-3 my-5">
-      <!--      program end-->
+      <!--      projects end-->
 
 
-      <!--      program start-->
+      <!--      projects start-->
 <!--      <div class="col-md-8">-->
 <!--        <h4 class="text-center text-uppercase">-->
 <!--          Livelihood Empowerment Agricultural Programme (LEAP)-->
@@ -139,11 +138,11 @@ onBeforeRouteLeave((to, from, next) => {
 <!--            alt="LEAP" class="img-fluid mb-2">-->
 <!--      </div>-->
 <!--      <hr class="border border-3 my-5">-->
-      <!--      program end-->
+      <!--      projects end-->
 
 
 
-      <!--      program start-->
+      <!--      projects start-->
       <div class="col-md-8">
         <h4 class="text-center text-uppercase">
           Greenfield-Ahantaman Cocoa Inputs Loan Project
@@ -194,10 +193,10 @@ onBeforeRouteLeave((to, from, next) => {
         </p>
       </div>
       <hr class="border border-3 my-5">
-<!--      program end-->
+<!--      projects end-->
 
 
-      <!--      program start-->
+      <!--      projects start-->
         <div class="col-md-8">
             <h4 class="text-center text-uppercase">
               Greenfield – SunBright Agribusiness Project
@@ -228,7 +227,7 @@ onBeforeRouteLeave((to, from, next) => {
             </p>
           </div>
 
-      <!--      program end-->
+      <!--      projects end-->
 
     </div>
   </div>

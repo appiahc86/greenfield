@@ -8,7 +8,7 @@
     <div class="row py-5">
       <div class="col-md-8">
         <h5 class="text-warning text-center">News</h5>
-        <h1 class="text-center">Greenfield Receives $500K long term Capex loan from Kapmani</h1>
+        <h1 class="text-center">Greenfield Receives $500K long term Capex loan from Kampani</h1>
         <small><span class="pi pi-clock"></span>
           November, 2022
         </small><br><br>
@@ -38,7 +38,7 @@
         <hr>
         <br>
         <div class="card p-3 shadow">
-          <h6 class="news-headings">Greenfield Receives $500K long term Capex loan from Kapmani</h6>
+          <h6 class="news-headings">Greenfield Receives $500K long term Capex loan from Kampani</h6>
           <small><span class="pi pi-clock"></span>
             November, 2022
           </small><br><br>
