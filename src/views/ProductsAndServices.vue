@@ -64,7 +64,7 @@ onMounted(() => {
             data-sal-delay="300"
             style="--sal-duration: 2s; --sal-delay: 1s;"
             data-sal-easing="ease-out-back"
-        >Development and Management of VSLAs</li>
+        >Development and Management of VSLAs.</li>
         <li
             data-sal="slide-up"
             data-sal-delay="300"

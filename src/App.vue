@@ -322,13 +322,13 @@ const programHover = ref(false);
 </template>
 
 <style scoped>
-.router-link-exact-active {
-  color: gold;
-}
-.navbar-expand-lg {
-  background: linear-gradient(45deg, white, white, #eafcea);
-}
-.dropdown-item {
-  font-size: 0.8rem;
-}
+    .router-link-exact-active {
+      color: gold;
+    }
+    .navbar-expand-lg {
+      background: linear-gradient(45deg, white, white, #eafcea);
+    }
+    .dropdown-item {
+      font-size: 0.8rem;
+    }
 </style>
