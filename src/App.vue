@@ -194,8 +194,12 @@ const programHover = ref(false);
                     :to="{ name: 'management' }"
                     class="dropdown-item mb-3"
                     @click="aboutHover = false"
-                >Management</router-link
-                >
+                >Management</router-link>
+                <router-link
+                    :to="{ name: 'partners' }"
+                    class="dropdown-item mb-3"
+                    @click="aboutHover = false"
+                >Partners</router-link>
                 <router-link
                     :to="{ name: 'news' }"
                     class="dropdown-item mb-3"
@@ -223,6 +227,11 @@ const programHover = ref(false);
                     :to="{ name: 'management' }"
                     class="dropdown-item mb-3"
                 >Management</router-link
+                >
+                <router-link
+                    :to="{ name: 'partners' }"
+                    class="dropdown-item mb-3"
+                >Partners</router-link
                 >
                 <router-link
                     :to="{ name: 'news' }"
@@ -323,7 +332,7 @@ const programHover = ref(false);
 
 <style scoped>
     .router-link-exact-active {
-      color: gold;
+      color: red;
     }
     .navbar-expand-lg {
       background: linear-gradient(45deg, white, white, #eafcea);

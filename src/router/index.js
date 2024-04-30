@@ -9,6 +9,7 @@ import Careers from '../views/Careers.vue';
 import SocialImpact from '../views/SocialImpact.vue';
 import News from '../views/News.vue';
 import Projects from "@/views/Projects.vue";
+import PartnersView from "@/views/PartnersView.vue";
 
 const routes = [
   {
@@ -51,6 +52,11 @@ const routes = [
     path: '/careers',
     name: 'careers',
     component: Careers
+  },
+  {
+    path: '/partners',
+    name: 'partners',
+    component: PartnersView
   },
   {
     path: '/news',

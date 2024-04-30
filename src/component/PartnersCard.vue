@@ -2,6 +2,7 @@
 import { useMyStore } from "@/store/home";
 
 const store = useMyStore();
+
 </script>
 
 <template>

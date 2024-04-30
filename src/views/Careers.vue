@@ -7,7 +7,6 @@ onMounted(() => {
   sal({
     once: false,
   });
-
 });
 </script>
 

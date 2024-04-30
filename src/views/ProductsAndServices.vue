@@ -15,7 +15,7 @@ onMounted(() => {
 <template>
   <div class="mt-5">
     <div class="py-5 top text-center text-white">
-      <h4 class="fw-bold products-services ">OUR PRODUCTS & SERVICES</h4>
+      <h4 class="fw-bold products-services">OUR PRODUCTS & SERVICES</h4>
     </div>
   </div>
 
@@ -92,10 +92,10 @@ onMounted(() => {
 
     <div class="row mt-4 g-0">
       <div class="col-6">
-        <img src="/img/shop1.jpg" alt="shop" class="img-fluid h-100">
+        <img src="/img/shop1.jpg" alt="shop" class="img-fluid h-auto">
       </div>
       <div class="col-6">
-        <img src="/img/shop2.jpg" alt="shop" class="img-fluid h-100">
+        <img src="/img/shop2.jpg" alt="shop" class="img-fluid h-auto">
       </div>
     </div>
 
@@ -262,25 +262,15 @@ li:nth-child(even) {
 .products-services {
   position: relative;
   font-family: sans-serif;
-  font-size: 6vw;
+  font-size: 4vw;
   text-transform: uppercase;
   letter-spacing: 4px;
-  overflow: hidden;
+  //overflow: hidden;
   background: linear-gradient(90deg, #ffffff, greenyellow, #ffffff);
   background-repeat: no-repeat;
-  background-size: 80%;
-  animation: animate 5s linear infinite;
+  background-size: 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-}
-
-@keyframes animate {
-  0% {
-    background-position: -500%;
-  }
-  100% {
-    background-position: 500%;
-  }
 }
 
 </style>
