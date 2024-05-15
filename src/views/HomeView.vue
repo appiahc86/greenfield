@@ -58,7 +58,7 @@ onBeforeRouteLeave((to, from, next) => {
 <template>
 
   <div class="mt-5 mt-sm-5 mt-md-4 mt-lg-0">
-    <div id="homeCarousel" class="carousel slide ">
+    <div id="homeCarousel" class="carousel slide">
       <div class="carousel-inner">
 
         <div class="carousel-item active">
