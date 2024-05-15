@@ -125,6 +125,22 @@ export const galleryData = [
     name:""
   },
   {
+    key: "products",
+    path:"/img/gallery/p30.jpg",
+    name:""
+  },
+  {
+    key: "products",
+    path:"/img/gallery/p28.jpg",
+    name:""
+  },
+  {
+    key: "products",
+    path:"/img/gallery/p29.jpg",
+    name:""
+  },
+
+  {
     key: "others",
     path:"/img/gallery/p26.jpeg",
     name:""

@@ -33,8 +33,8 @@ onMounted(() => {
     if (containerRect.top < window.innerHeight) {
 
       const intervalId = setInterval(() => {
-        if (count.value < 50000) {
-          count.value += 10;
+        if (count.value < 60000) {
+          count.value += 20;
         } else {
           clearInterval(intervalId);
         }
@@ -60,16 +60,29 @@ onBeforeRouteLeave((to, from, next) => {
   <div class="mt-5 mt-sm-5 mt-md-4 mt-lg-0">
     <div id="homeCarousel" class="carousel slide ">
       <div class="carousel-inner">
+
         <div class="carousel-item active">
           <img
-            src="/img/carousel/c1.jpeg"
+              src="/img/carousel/c1.jpeg"
+              class="d-block w-100 carousel-img"
+              alt="img"
+          />
+          <div class="carousel-caption d-block">
+            <h3>Sustainable Cocoa Farming</h3>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="/img/carousel/cv1.jpg"
             class="d-block w-100 carousel-img"
             alt="img"
           />
           <div class="carousel-caption d-block">
-            <h3>sustainable cocoa farming</h3>
+            <h3>Vegetable Farming</h3>
           </div>
         </div>
+
         <div class="carousel-item">
           <img
               src="/img/carousel/c4.jpg"
@@ -90,16 +103,16 @@ onBeforeRouteLeave((to, from, next) => {
             <h3>Farmer Registration</h3>
           </div>
         </div>
-        <div class="carousel-item">
-          <img
-              src="/img/carousel/c3.jpg"
-            class="d-block w-100 carousel-img"
-            alt="img"
-          />
-          <div class="carousel-caption d-block">
-            <h3>Greenfield Farmer Group</h3>
-          </div>
-        </div>
+<!--        <div class="carousel-item">-->
+<!--          <img-->
+<!--              src="/img/carousel/c3.jpg"-->
+<!--            class="d-block w-100 carousel-img"-->
+<!--            alt="img"-->
+<!--          />-->
+<!--          <div class="carousel-caption d-block">-->
+<!--            <h3>Greenfield Farmer Group</h3>-->
+<!--          </div>-->
+<!--        </div>-->
         <div class="carousel-item">
           <img
               src="/img/carousel/c5.jpg"
@@ -366,7 +379,8 @@ onBeforeRouteLeave((to, from, next) => {
   font-style: italic;
 }
 .home-about-img .image-badget {
-  background-color: #de7900;
+  background-color: #19908b;
+  /*ackground-color: #de7900; */
   padding: 30px;
   max-width: 300px;
   position: absolute;

@@ -254,7 +254,7 @@ const programHover = ref(false);
 
     <router-view />
 
-    <footer class="bg-success text-white">
+    <footer class="footer text-white">
       <div class="container-fluid py-5">
         <div class="row text-center">
           <div class="col-md-6 col-lg-4 mb-4">
@@ -332,12 +332,17 @@ const programHover = ref(false);
 
 <style scoped>
     .router-link-exact-active {
-      color: red;
+      color: #19908b;
     }
     .navbar-expand-lg {
-      background: linear-gradient(45deg, white, white, #eafcea);
+     /* background: linear-gradient(45deg, white, white, #eafcea); */
+      background: #fff;
+
     }
     .dropdown-item {
       font-size: 0.8rem;
+    }
+    .footer {
+      background: #19908b;
     }
 </style>

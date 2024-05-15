@@ -16,8 +16,9 @@ const store = useMyStore();
         PAR</span>TNERS
       </h2><br>
     </div>
+
     <div class="row justify-content-center text-center">
-      <div class="col-6 col-sm-4 col-md-3 mb-3">
+      <div class="col-3 col-lg-2 mb-3">
         <div class="card h-100 px-2">
           <img
               v-if="store.homeLazy"
@@ -36,7 +37,7 @@ const store = useMyStore();
 
       </div>
 
-      <div class="col-6 col-sm-4 col-md-3 mb-3">
+      <div class="col-3 col-lg-2 mb-3">
         <div class="card h-100 px-2">
           <img
               v-if="store.homeLazy"
@@ -51,7 +52,7 @@ const store = useMyStore();
         </div>
       </div>
 
-      <div class="col-6 col-sm-4 col-md-3 mb-3">
+      <div class="col-3 col-lg-2 mb-3">
         <div class="card h-100 px-2">
           <img
               v-if="store.homeLazy"
@@ -66,7 +67,7 @@ const store = useMyStore();
         </div>
       </div>
 
-      <div class="col-6 col-sm-4 col-md-3 mb-3">
+      <div class="col-3 col-lg-2 mb-3">
         <div class="card h-100 px-2">
           <img
               v-if="store.homeLazy"
@@ -79,7 +80,7 @@ const store = useMyStore();
         </div>
       </div>
 
-      <div class="col-6 col-sm-4 col-md-3 mb-3">
+      <div class="col-3 col-lg-2 mb-3">
         <div class="card h-100 px-2">
           <img
               v-if="store.homeLazy"
@@ -92,7 +93,7 @@ const store = useMyStore();
         </div>
       </div>
 
-      <div class="col-6 col-sm-4 col-md-3 mb-3">
+      <div class="col-3 col-lg-2 mb-3">
         <div class="card h-100 px-2">
           <img
               v-if="store.homeLazy"
@@ -102,6 +103,110 @@ const store = useMyStore();
               v-else
               src="/img/partners/kampani.jpg"
               alt="kampani" class="img-fluid my-auto">
+        </div>
+      </div>
+
+      <div class="col-3 col-lg-2 mb-3">
+        <div class="card h-100 px-2">
+          <img
+              v-if="store.homeLazy"
+              v-lazy="{ src: '/img/partners/fidelity.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
+              alt="Fidelity" class="img-fluid my-auto">
+          <img
+              v-else
+              src="/img/partners/fidelity.png"
+              alt="Fidelity" class="img-fluid my-auto">
+        </div>
+      </div>
+
+      <div class="col-3 col-lg-2 mb-3">
+        <div class="card h-100 px-2">
+          <img
+              v-if="store.homeLazy"
+              v-lazy="{ src: '/img/partners/glover.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
+              alt="Glover" class="img-fluid my-auto">
+          <img
+              v-else
+              src="/img/partners/glover.png"
+              alt="Glover" class="img-fluid my-auto">
+        </div>
+      </div>
+
+      <div class="col-3 col-lg-2 mb-3">
+        <div class="card h-100 px-2">
+          <img
+              v-if="store.homeLazy"
+              v-lazy="{ src: '/img/partners/adama.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
+              alt="Adama" class="img-fluid my-auto">
+          <img
+              v-else
+              src="/img/partners/adama.png"
+              alt="Adama" class="img-fluid my-auto">
+        </div>
+      </div>
+
+      <div class="col-3 col-lg-2 mb-3">
+        <div class="card h-100 px-2">
+          <img
+              v-if="store.homeLazy"
+              v-lazy="{ src: '/img/partners/sinapi.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
+              alt="Sinapi" class="img-fluid my-auto">
+          <img
+              v-else
+              src="/img/partners/sinapi.png"
+              alt="Sinapi" class="img-fluid my-auto">
+        </div>
+      </div>.
+
+      <div class="col-3 col-lg-2 mb-3">
+        <div class="card h-100 px-2">
+          <img
+              v-if="store.homeLazy"
+              v-lazy="{ src: '/img/partners/advans.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
+              alt="Advans" class="img-fluid my-auto">
+          <img
+              v-else
+              src="/img/partners/advans.png"
+              alt="Advans" class="img-fluid my-auto">
+        </div>
+      </div>
+
+      <div class="col-3 col-lg-2 mb-3">
+        <div class="card h-100 px-2">
+          <img
+              v-if="store.homeLazy"
+              v-lazy="{ src: '/img/partners/gtco.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
+              alt="Gtco" class="img-fluid my-auto">
+          <img
+              v-else
+              src="/img/partners/gtco.png"
+              alt="Gtco" class="img-fluid my-auto">
+        </div>
+      </div>
+
+      <div class="col-3 col-lg-2 mb-3">
+        <div class="card h-100 px-2">
+          <img
+              v-if="store.homeLazy"
+              v-lazy="{ src: '/img/partners/amenfiman.jpg', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
+              alt="Amenfiman" class="img-fluid my-auto">
+          <img
+              v-else
+              src="/img/partners/amenfiman.jpg"
+              alt="Amenfiman" class="img-fluid my-auto">
+        </div>
+      </div>
+
+      <div class="col-3 col-lg-2 mb-3">
+        <div class="card h-100 px-2">
+          <img
+              v-if="store.homeLazy"
+              v-lazy="{ src: '/img/partners/absa.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
+              alt="Absa" class="img-fluid my-auto">
+          <img
+              v-else
+              src="/img/partners/absa.png"
+              alt="Absa" class="img-fluid my-auto">
         </div>
       </div>
 

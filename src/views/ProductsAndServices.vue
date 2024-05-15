@@ -22,55 +22,91 @@ onMounted(() => {
 
   <section class="mt-5">
     <div class="wrapper">
-      <ol role="list">
-        <li
-            data-sal="slide-right"
-            data-sal-delay="300"
-            style="--sal-duration: 2s; --sal-delay: 1s;"
-            data-sal-easing="ease-out-back"
-        >Agro Inputs Credit Scheme for Small Holder Farmers(Cocoa, cereals, vegetables etc).</li>
-        <li
-            data-sal="slide-left"
-            data-sal-delay="300"
-            style="--sal-duration: 2s; --sal-delay: 1s;"
-            data-sal-easing="ease-out-back"
-        >Sale and distribution of Agrochemicals and Agro-equipment.</li>
-        <li
-            data-sal="slide-right"
-            data-sal-delay="300"
-            style="--sal-duration: 2s; --sal-delay: 1s;"
-            data-sal-easing="ease-out-back"
-        >Farm Management and Mechanization Services.</li>
-        <li
-            data-sal="slide-left"
-            data-sal-delay="300"
-            style="--sal-duration: 2s; --sal-delay: 1s;"
-            data-sal-easing="ease-out-back"
-        >Farmer Training and Extension Services. </li>
-        <li
-            data-sal="slide-right"
-            data-sal-delay="300"
-            style="--sal-duration: 2s; --sal-delay: 1s;"
-            data-sal-easing="ease-out-back"
-        >Value Chain Linkage and Financial Inclusion.</li>
-        <li
-            data-sal="slide-left"
-            data-sal-delay="300"
-            style="--sal-duration: 2s; --sal-delay: 1s;"
-            data-sal-easing="ease-out-back"
-        >Business Plan Development for Small Holder Farmer Groups, Cooperatives and FBOs.</li>
-        <li
-            data-sal="slide-right"
-            data-sal-delay="300"
-            style="--sal-duration: 2s; --sal-delay: 1s;"
-            data-sal-easing="ease-out-back"
-        >Development and Management of VSLAs.</li>
-        <li
-            data-sal="slide-up"
-            data-sal-delay="300"
-            style="--sal-duration: 2s; --sal-delay: 1s;"
-            data-sal-easing="ease-out-back"
-        >Agribusiness Management and Consultancy Services.</li>
+      <h2 class="header1">CROPS</h2>
+      <h4 class="list-header ps-3">COCOA</h4>
+      <ol>
+        <li>Cocoa Inputs Credit Scheme</li>
+        <li>Access to Credit (financial inclusion)</li>
+        <li>Sale and Distribution of agrochemicals and equipment</li>
+        <li>Training of farmers, Advisory and Extension Services</li>
+        <li>Certification Services</li>
+        <li>Seedling Production and Nursery Management</li>
+        <li>Business Plan Development for Cocoa farmer Groups and Cooperatives</li>
+        <li>Development and Management of VSLAs</li>
+        <li>Farm Management Services and Consultancy</li>
+      </ol>
+
+      <h2 class="header1 mt-3">HORTICULTURAL CROPS</h2>
+      <h4 class="list-header ps-3">Vegetables (Chili Pepper, Tomato, Cabbage Lettuce etc)</h4>
+      <ol>
+        <li>Seedling Production and Nursery Management</li>
+        <li>Supply of quality seeds</li>
+        <li>Access to Credit and Market Linkage</li>
+        <li>Farm Management and Mechanization Services </li>
+        <li>Sale and Distribution of agrochemicals and equipment</li>
+        <li>Training of farmers, Advisory and Extension Services</li>
+        <li>Certification Services</li>
+        <li>Business Plan Development for Farmer Groups, FBOs and Cooperatives</li>
+        <li>Formation and Management of VSLAs</li>
+      </ol>
+
+      <h4 class="list-header ps-3">Fruits ( Mango, Pineapple, Papaya, Passion Fruits)</h4>
+      <ol>
+        <li>Agro Inputs Credit Scheme</li>
+        <li>Access to Credit (financial inclusion)</li>
+        <li>Sale and Distribution of agrochemicals and equipment</li>
+        <li>Training of farmers, Advisory and Extension Services</li>
+        <li>Farm Management and Mechanization Services</li>
+        <li>Certification Services</li>
+        <li>Business Plan Development for Farmer Groups, FBOs and Cooperatives</li>
+        <li>Formation and Management of VSLAs</li>
+      </ol>
+
+      <h2 class="header1 mt-3">FOOD CROPS (Maize, Rice, Plantain,Cassava,Yam etc)</h2>
+      <ol>
+        <li>Agro Inputs Credit Scheme</li>
+        <li>Access to Credit ( financial inclusion)</li>
+        <li>Market Linkage</li>
+        <li>Sale and Distribution of agrochemicals and equipment</li>
+        <li>Training of farmers, Advisory and Extension Services</li>
+        <li>Certification Services</li>
+        <li>Farm Management and Mechanization Services</li>
+        <li>Business Plan Development for Farmer Groups, FBOs and Cooperatives</li>
+        <li>Formation and Management of VSLAs</li>
+      </ol>
+
+      <h2 class="header1 mt-3">ANIMALS</h2>
+      <h4 class="list-header ps-3">Livestock & Poultry</h4>
+      <ol>
+        <li>Pen construction</li>
+        <li>Access to Credit ( financial inclusion)</li>
+        <li>Market Linkage</li>
+        <li>Farmer training, Advisory and Extension Services</li>
+        <li>Business Plan  Development and Project Proposal</li>
+        <li>Supply of Day Old Chicks</li>
+        <li>Supply of Feed for both poultry birds and pigs</li>
+      </ol>
+      <h4 class="list-header ps-3">Fish Farming</h4>
+      <ol>
+        <li>Construction Ponds ( concrete, tarpaulin, plastic etc)</li>
+        <li>Access to Credit ( financial inclusion)</li>
+        <li>Supply of fingerlings</li>
+        <li>Supply of Feed (starter and mature)</li>
+        <li>Farmer training, Advisory and Extension Services</li>
+        <li>Development of Business Plan / Project Proposals</li>
+      </ol>
+      <h4 class="list-header ps-3">Snail and Grasscutter Farming</h4>
+      <ol>
+        <li>Construction of Pen</li>
+        <li>Access to Credit ( financial inclusion)</li>
+        <li>Farmer training, Advisory and Extension Services</li>
+        <li>Business Plan Development / Project Proposals</li>
+        <li>Market linkage</li>
+      </ol>
+
+      <h2 class="header1 mt-3">SUPPORT SERVICES</h2>
+      <ol>
+        <li>Construction of boreholes and other amenities to improve living conditions of smallholder farmers.</li>
       </ol>
     </div>
   </section>
@@ -185,10 +221,6 @@ onMounted(() => {
 
 <style scoped>
 
-.img-fluid{
-  /*height: 40vh !important;*/
-}
-
 .top {
   background-image: url("../../public/img/pbg.jpg");
   background-color: grey;
@@ -207,65 +239,33 @@ onMounted(() => {
 
 section {
   background: url("../../public/img/section-bg.jpg");
-  background-position: center;
+
+  padding: 40px 0;
 }
 .wrapper {
   max-width: 800px;
   margin: 0 auto;
 }
 
-ol {
-  list-style: none;
-  padding: 0;
+.header1 {
+  text-align: center;
+  background: linear-gradient(90deg, #ffffff, #ddedc4, #ffffff);
+}
+.header1, .list-header {
+  font-weight: bold;
 }
 
-li + li {
-  margin-top: 1rem;
+ol li {
+  list-style: square;
+  font-size: 1.2em;
 }
 
-li {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  background: aliceblue;
-  padding: 0.6rem;
-  border-radius: 1rem;
-  width: calc(100% - 2rem);
-  box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
-}
-
-li::before {
-  counter-increment: list-item;
-  content: counter(list-item);
-  font-size: 2rem;
-  font-weight: 700;
-  width: 2em;
-  height: 2em;
-  background: black;
-  flex: 0 0 auto;
-  border-radius: 50%;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-li:nth-child(even) {
-  flex-direction: row-reverse;
-  background: lavender;
-  margin-right: -2rem;
-  margin-left: 2rem;
-}
-
-
-/* Header text anim*/
 .products-services {
   position: relative;
   font-family: sans-serif;
   font-size: 4vw;
   text-transform: uppercase;
   letter-spacing: 4px;
-  //overflow: hidden;
   background: linear-gradient(90deg, #ffffff, greenyellow, #ffffff);
   background-repeat: no-repeat;
   background-size: 100%;

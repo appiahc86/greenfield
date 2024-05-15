@@ -48,7 +48,7 @@ onBeforeRouteLeave((to, from, next) => {
           />
           <h5 class="mb-0">Mr. Samuel Amissah</h5>
           <span class="small text-uppercase text-muted">Founder & CEO</span><br>
-          <a class="btn btn-sm btn-secondary mt-2" style="cursor: pointer;" @click="router.push({name: 'management'})">View Profile</a>
+          <a class="btn btn-sm btn-default mt-2" style="cursor: pointer;" @click="router.push({name: 'management'})">View Profile</a>
         </div>
       </div>
       <!-- End -->
@@ -72,7 +72,7 @@ onBeforeRouteLeave((to, from, next) => {
           />
           <h5 class="mb-0">Mr. Kofi Sebe</h5>
           <span class="small text-uppercase text-muted">General Manager</span><br>
-          <a class="btn btn-sm btn-secondary mt-2" style="cursor: pointer;" @click="openModal('sebe')">View Profile</a>
+          <a class="btn btn-sm btn-default mt-2" style="cursor: pointer;" @click="openModal('sebe')">View Profile</a>
         </div>
       </div>
       <!-- End -->
@@ -97,7 +97,7 @@ onBeforeRouteLeave((to, from, next) => {
           />
           <h5 class="mb-0">Mr. Benjamin Dadzie</h5>
           <span class="small text-uppercase text-muted">Operations Manager</span><br>
-          <a class="btn btn-sm btn-secondary mt-2" style="cursor: pointer;" @click="openModal('benjamin')">View Profile</a>
+          <a class="btn btn-sm btn-default mt-2" style="cursor: pointer;" @click="openModal('benjamin')">View Profile</a>
 
         </div>
       </div>
@@ -121,7 +121,7 @@ onBeforeRouteLeave((to, from, next) => {
           />
           <h5 class="mb-0">Mr. Collins Asante</h5>
           <span class="small text-uppercase text-muted">Project Coordinator</span><br>
-          <a class="btn btn-sm btn-secondary mt-2" style="cursor: pointer;" @click="openModal('asante')">View Profile</a>
+          <a class="btn btn-sm btn-default mt-2" style="cursor: pointer;" @click="openModal('asante')">View Profile</a>
 
         </div>
       </div>
@@ -146,7 +146,7 @@ onBeforeRouteLeave((to, from, next) => {
           />
           <h5 class="mb-0">Ms Ellen Addai</h5>
           <span class="small text-uppercase text-muted">Project Administration Officer</span><br>
-          <a class="btn btn-sm btn-secondary mt-2" style="cursor: pointer;" @click="openModal('ellen')">View Profile</a>
+          <a class="btn btn-sm btn-default mt-2" style="cursor: pointer;" @click="openModal('ellen')">View Profile</a>
         </div>
       </div>
       <!-- End -->
@@ -170,7 +170,7 @@ onBeforeRouteLeave((to, from, next) => {
           />
           <h5 class="mb-0">Ms Constance Opoku</h5>
           <span class="small text-uppercase text-muted">Project Officer – Sales & Marketing</span><br>
-          <a class="btn btn-sm btn-secondary mt-2" style="cursor: pointer;" @click="openModal('constance')">View Profile</a>
+          <a class="btn btn-sm btn-default mt-2" style="cursor: pointer;" @click="openModal('constance')">View Profile</a>
 
         </div>
       </div>

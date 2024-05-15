@@ -102,7 +102,7 @@ const closeModal = () => {
 
 <style scoped>
 label.active {
-  background: #07264d !important;
+  background: #19908b !important;
   color: #fff;
 }
 .gallery-type__buttons-container {
