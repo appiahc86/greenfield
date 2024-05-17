@@ -33,7 +33,7 @@ onMounted(() => {
     if (containerRect.top < window.innerHeight) {
 
       const intervalId = setInterval(() => {
-        if (count.value < 60000) {
+        if (count.value < store.registeredFarmers) {
           count.value += 20;
         } else {
           clearInterval(intervalId);
@@ -300,7 +300,11 @@ onBeforeRouteLeave((to, from, next) => {
           {{ count ? count.toLocaleString() : 0 }}</h1>
       </div>
 
-    <!-- TEAM STAR -->
+
+    <div class="container-fluid mt-5 mb-5 vegetable-farm"></div>
+
+
+    <!-- TEAM START -->
     <div class="container mt-5 mb-5">
       <div class="section-title">
         <h2>MEET</h2>
@@ -313,6 +317,7 @@ onBeforeRouteLeave((to, from, next) => {
       <TeamCard />
     </div>
     <!-- TEAM END -->
+
     <ContactCard />
     <!-- CONTACT END -->
   </section>
@@ -473,11 +478,23 @@ section {
   margin-bottom: 6px;
 }
 
-.why-us-img-bg {
-  /*height: 600px;*/
-  /*background-position: center;*/
-  /*background-repeat: no-repeat;*/
-  /*background-size: cover;*/
-  /*position: relative;*/
+.vegetable-farm {
+  background: url("../../public/img/home/3.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-color: #ccc;
+  height: 600px;
+}
+
+@media screen and (max-width: 800px){
+  .vegetable-farm {
+    height: 300px !important;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .vegetable-farm {
+    height: 450px !important;
+  }
 }
 </style>

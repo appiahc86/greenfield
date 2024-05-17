@@ -281,7 +281,8 @@ const programHover = ref(false);
             <p>
               <b>Phone: </b>
               <a href="tel:+233248714806" class="text-decoration-none text-white">0248714806</a> /
-              <a href="tel:+233245276032" class="text-decoration-none text-white">0245276032</a>
+              <a href="tel:+233245276032" class="text-decoration-none text-white">0245276032</a> /
+              <a href="tel:+233243631511" class="text-decoration-none text-white">0243631511</a>
             </p>
             <p class="text-center">
               <b>Email: </b>

@@ -1,5 +1,6 @@
 <script setup>
-import {onMounted, ref} from "vue";
+import { useMyStore } from "@/store/home";
+const store = useMyStore();
 
 </script>
 
@@ -111,8 +112,9 @@ import {onMounted, ref} from "vue";
             </div>
             <div class="card-body">
               <p>
-                Currently the company has registered over 5,000 small
-                holder cocoa farmers to provide them with sustainable
+                Currently the company has registered over
+                <span class="fw-bold">{{ store.registeredFarmers.toLocaleString() }}</span>
+                small holder cocoa farmers to provide them with sustainable
                 able access to training and quality agro inputs
               </p>
             </div>

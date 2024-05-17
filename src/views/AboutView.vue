@@ -51,7 +51,8 @@ onBeforeRouteLeave((to, from, next) => {
         implements cocoa inputs credit scheme for small holder cocoa farmers and
         has supported about 2,000 small holder cocoa farmers in the cocoa
         growing areas with the cocoa inputs credit scheme. Currently the company
-        has registered over 5,000 small holder cocoa farmers to provide them
+        has registered over <span class="fw-bold">{{ store.registeredFarmers.toLocaleString() }}</span>
+        small holder cocoa farmers to provide them
         with sustainable able access to training and quality agro inputs. In
         partnership with MFIs, Greenfield has so far supported about 693 cocoa
         farmers.

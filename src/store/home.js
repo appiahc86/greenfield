@@ -12,6 +12,7 @@ export const useMyStore = defineStore('myStore', {
             homeLazy: true,
             programsLazy: true,
             aboutLazy: true,
+            registeredFarmers: 60000
         }
     },
 

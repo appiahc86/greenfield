@@ -232,7 +232,7 @@ onBeforeRouteLeave((to, from, next) => {
     </div>
   </div>
 
-  <PartnersCard />
+<!--  <PartnersCard />-->
 
 </template>
 

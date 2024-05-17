@@ -23,7 +23,7 @@ onMounted(() => {
   <section class="mt-5">
     <div class="wrapper">
       <h2 class="header1">CROPS</h2>
-      <h4 class="list-header ps-3">COCOA</h4>
+      <h4 class="list-header ps-3"><span>&#x2735;</span> COCOA</h4>
       <ol>
         <li>Cocoa Inputs Credit Scheme</li>
         <li>Access to Credit (financial inclusion)</li>
@@ -36,8 +36,11 @@ onMounted(() => {
         <li>Farm Management Services and Consultancy</li>
       </ol>
 
-      <h2 class="header1 mt-3">HORTICULTURAL CROPS</h2>
-      <h4 class="list-header ps-3">Vegetables (Chili Pepper, Tomato, Cabbage Lettuce etc)</h4>
+      <h4 class="list-header ps-3 mt-2"><span class="">&#x2735;</span> HORTICULTURAL CROPS</h4>
+      <h6 class="list-header ps-3 mt-2">
+        <span class="">&#x2713;</span>
+         Vegetables (Chili Pepper, Tomato, Cabbage Lettuce etc)
+      </h6>
       <ol>
         <li>Seedling Production and Nursery Management</li>
         <li>Supply of quality seeds</li>
@@ -50,7 +53,10 @@ onMounted(() => {
         <li>Formation and Management of VSLAs</li>
       </ol>
 
-      <h4 class="list-header ps-3">Fruits ( Mango, Pineapple, Papaya, Passion Fruits)</h4>
+      <h6 class="list-header ps-3 mt-2">
+        <span>&#x2713;</span>
+         Fruits ( Mango, Pineapple, Papaya, Passion Fruits)
+      </h6>
       <ol>
         <li>Agro Inputs Credit Scheme</li>
         <li>Access to Credit (financial inclusion)</li>
@@ -62,7 +68,10 @@ onMounted(() => {
         <li>Formation and Management of VSLAs</li>
       </ol>
 
-      <h2 class="header1 mt-3">FOOD CROPS (Maize, Rice, Plantain,Cassava,Yam etc)</h2>
+      <h4 class="list-header ps-3 mt-2">
+        <span>&#x2735;</span>
+        FOOD CROPS (Maize, Rice, Plantain,Cassava,Yam etc)
+      </h4>
       <ol>
         <li>Agro Inputs Credit Scheme</li>
         <li>Access to Credit ( financial inclusion)</li>
@@ -76,7 +85,7 @@ onMounted(() => {
       </ol>
 
       <h2 class="header1 mt-3">ANIMALS</h2>
-      <h4 class="list-header ps-3">Livestock & Poultry</h4>
+      <h4 class="list-header ps-3"><span>&#x2735;</span> Livestock & Poultry</h4>
       <ol>
         <li>Pen construction</li>
         <li>Access to Credit ( financial inclusion)</li>
@@ -86,7 +95,7 @@ onMounted(() => {
         <li>Supply of Day Old Chicks</li>
         <li>Supply of Feed for both poultry birds and pigs</li>
       </ol>
-      <h4 class="list-header ps-3">Fish Farming</h4>
+      <h4 class="list-header ps-3"><span>&#x2735;</span> Fish Farming</h4>
       <ol>
         <li>Construction Ponds ( concrete, tarpaulin, plastic etc)</li>
         <li>Access to Credit ( financial inclusion)</li>
@@ -95,7 +104,7 @@ onMounted(() => {
         <li>Farmer training, Advisory and Extension Services</li>
         <li>Development of Business Plan / Project Proposals</li>
       </ol>
-      <h4 class="list-header ps-3">Snail and Grasscutter Farming</h4>
+      <h4 class="list-header ps-3"><span>&#x2735;</span> Snail and Grasscutter Farming</h4>
       <ol>
         <li>Construction of Pen</li>
         <li>Access to Credit ( financial inclusion)</li>
