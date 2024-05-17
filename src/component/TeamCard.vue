@@ -261,7 +261,7 @@ onBeforeRouteLeave((to, from, next) => {
           She holds BSc Natural Resource Management (Social Forestry option) and a Diploma in Natural Resource
           Management from University of Energy and Natural Resources, Ghana. She has about 4
           years working experience. She worked with the Forest Division
-          and Amandi Investment Construction Company Limited a Secretary.
+          and Amandi Investment Construction Company Limited as a Secretary.
         </p>
       </div>
     </div>
@@ -314,7 +314,7 @@ onBeforeRouteLeave((to, from, next) => {
         <p>
           He holds Diploma Business Studies (Accounting) from Kumasi Technical University with
           9 years experience in training of cocoa farmers and farm mapping. He worked for ECOM Ghana
-          and Nyonkopa Cocoa as Field Officer and Mapper
+          and Nyonkopa Cocoa as Field Officer and Mapper.
         </p>
       </div>
     </div>
@@ -326,14 +326,14 @@ onBeforeRouteLeave((to, from, next) => {
       <div class="col-md-4">
         <img src="/img/team/constance.jpeg" alt="Constance" class="img-fluid">
         <p class="text-center mt-2">
-          <b>Ms Constance Opoku</b><br>
+          <b>Mrs Constance Opoku</b><br>
           <small class="text-muted">PROJECT OFFICER – SALES & MARKETING</small>
         </p>
 
       </div>
       <div class="col-md-8">
         <p>
-          Ms Constance Opoku is Project Officer in charge of Sales and Marketing for
+          Mrs Constance Opoku is Project Officer in charge of Sales and Marketing for
           Greenfield Agricultural Services Limited. She has
           worked for Nokia Company Ltd as Sales Consultant and Truamen
           Travel & Tour as Sales and Ticketing Officer.

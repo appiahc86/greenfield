@@ -301,7 +301,7 @@ onBeforeRouteLeave((to, from, next) => {
       </div>
 
 
-    <div class="container-fluid mt-5 mb-5 vegetable-farm"></div>
+<!--    <div class="container-fluid mt-5 mb-5 vegetable-farm"></div>-->
 
 
     <!-- TEAM START -->
@@ -385,16 +385,16 @@ onBeforeRouteLeave((to, from, next) => {
 }
 .home-about-img .image-badget {
   background-color: #19908b;
-  /*ackground-color: #de7900; */
   padding: 30px;
   max-width: 300px;
   position: absolute;
   bottom: 15px;
-  left: 15px;
+  right: 15px;
   outline: 1px dashed #fff;
   outline-offset: -12px;
   color: #fff;
 }
+
 .image-badget {
   padding: 20px !important;
 }
@@ -402,6 +402,24 @@ onBeforeRouteLeave((to, from, next) => {
   font-size: 20px;
   line-height: 20px;
 }
+
+@media screen and (max-width: 760px) {
+  .image-badget {
+    right: 2px !important;
+    left: auto !important;
+    max-width: 200px !important;
+    height: 200px;
+    outline-offset: -6px !important;
+    padding: 15px !important;
+  }
+  .image-badget img, .ib-icon {
+    display: none;
+  }
+  .image-badget p {
+    font-size: 11px;
+  }
+}
+
 
 .image-badget p {
   font-style: italic;
