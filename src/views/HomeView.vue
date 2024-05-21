@@ -301,7 +301,7 @@ onBeforeRouteLeave((to, from, next) => {
       </div>
 
 
-<!--    <div class="container-fluid mt-5 mb-5 vegetable-farm"></div>-->
+    <div class="container-fluid mt-5 mb-5 vegetable-farm"></div>
 
 
     <!-- TEAM START -->
