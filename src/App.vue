@@ -274,6 +274,9 @@ const programHover = ref(false);
             <p>
               <router-link :to="{name: 'contact'}" class="text-decoration-none text-white">Contact Us</router-link>
             </p>
+            <p>
+              <a href="https://greenfieldagricgh.com:2096" target="_blank" class="text-decoration-none text-white">Email Login</a>
+            </p>
           </div>
 
           <div class="col-md-6 col-lg-4 mb-4 text-center">

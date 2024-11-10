@@ -23,11 +23,11 @@ const sendMail = async () => {
     sendingMail.value = true;
 
     const result = await emailjs.sendForm(
-        'service_20sbslu',
+        'service_ot52z8f',
 
-        'template_7cpvba9',
+        'greenfield_contact_form',
                    myForm.value,
-        'DFqWf3TGLO7r_bqsj');
+        'QuYtDzfIbQkBjBtnD');
 
     myForm.value.reset();
     email.value = "";

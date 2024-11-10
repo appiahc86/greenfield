@@ -168,7 +168,7 @@ onBeforeRouteLeave((to, from, next) => {
               width="180"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
-          <h5 class="mb-0">Ms Constance Opoku</h5>
+          <h5 class="mb-0">Mrs Constance Opoku</h5>
           <span class="small text-uppercase text-muted">Project Officer – Sales & Marketing</span><br>
           <a class="btn btn-sm btn-default mt-2" style="cursor: pointer;" @click="openModal('constance')">View Profile</a>
 
