@@ -257,9 +257,9 @@ onBeforeRouteLeave((to, from, next) => {
         <div class="col-md-6">
           <img
               v-if="store.homeLazy"
-               v-lazy="{ src: '/img/headoffice1.jpg', loading: '/img/dummy1280x903.svg', error: '', delay: 500 }"
+               v-lazy="{ src: '/img/headoffice3.jpeg', loading: '/img/dummy1280x903.svg', error: '', delay: 500 }"
                alt="headoffice" class="img-fluid">
-          <img v-else src="/img/headoffice1.jpg" alt="headoffice" class="img-fluid">
+          <img v-else src="/img/headoffice3.jpeg" alt="headoffice" class="img-fluid">
         </div>
         <div class="col-md-6 d-flex justify-content-center align-items-center">
           <div class="why-us-left">
