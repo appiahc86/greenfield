@@ -102,6 +102,33 @@ onBeforeRouteLeave((to, from, next) => {
         </div>
       </div>
       <!-- End -->
+
+
+      <!-- Team item -->
+      <div class="col-xl-4 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-3 px-3">
+          <img
+              v-if="store.homeLazy"
+              v-lazy="{ src: '/img/team/william.jpeg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
+              alt="William"
+              width="180"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+          />
+          <img
+              v-else
+              src="/img/team/william.jpeg"
+              alt="William"
+              width="180"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+          />
+          <h5 class="mb-0">Dr. William Tawiah Baidoo</h5>
+          <span class="small text-uppercase text-muted">Director of Finance</span><br>
+          <a class="btn btn-sm btn-default mt-2" style="cursor: pointer;" @click="openModal('william')">View Profile</a>
+        </div>
+      </div>
+      <!-- End -->
+
+
       <!-- Team item -->
       <div class="col-xl-4 col-sm-6 mb-5">
         <div class="bg-white rounded shadow-sm py-3 px-3">
@@ -151,8 +178,12 @@ onBeforeRouteLeave((to, from, next) => {
       </div>
       <!-- End -->
 
+    </div>
+
+<!--  Second Row  -->
+    <div class="row text-center justify-content-center">
       <!-- Team item -->
-      <div class="col-xl-4 col-sm-6 mb-5">
+      <div class="col-xl-4 mb-5">
         <div class="bg-white rounded shadow-sm py-3 px-3">
           <img
               v-if="store.homeLazy"
@@ -176,6 +207,7 @@ onBeforeRouteLeave((to, from, next) => {
       </div>
       <!-- End -->
     </div>
+
   </div>
 
 
@@ -213,13 +245,13 @@ onBeforeRouteLeave((to, from, next) => {
         <img src="/img/team/sebe.jpg" alt="Sebe" class="img-fluid">
         <p class="text-center mt-2">
           <b>Mr. Kofi Sebe</b><br>
-          <small class="text-muted">General Manager</small>
+          <small class="text-muted text-uppercase">General Manager</small>
         </p>
 
       </div>
       <div class="col-md-8">
         <p>
-          Mr. Kofi Sebe is the General Manager of Greenfield Agricultural Services Limited.
+          <b>Mr. Kofi Sebe</b> is the General Manager of Greenfield Agricultural Services Limited.
           He is in charge of the entire business activities of the company and acts in the
           absence of the CEO. He supervises all field activities including farmer training on GAP,
           farmer group formation and registration, distribution of Inputs to farmer groups,
@@ -248,13 +280,13 @@ onBeforeRouteLeave((to, from, next) => {
         <img src="/img/team/ellen.jpg" alt="Ellen" class="img-fluid">
         <p class="text-center mt-2">
           <b>Ms Ellen Addai</b><br>
-          <small class="text-muted">Project Administration Officer</small>
+          <small class="text-muted text-uppercase">Project Administration Officer</small>
         </p>
 
       </div>
       <div class="col-md-8">
         <p>
-          Ms Ellen Addai is the Project Administration Officer of Greenfield Agricultural
+          <b>Ms Ellen Addai</b> is the Project Administration Officer of Greenfield Agricultural
           Services Limited. She handles all project admin issues and as well office management.
         </p>
         <p>
@@ -276,13 +308,13 @@ onBeforeRouteLeave((to, from, next) => {
         <img src="/img/team/benjamin.jpg" alt="Benjamin" class="img-fluid">
         <p class="text-center mt-2">
           <b>Mr. Benjamin Dadzie</b><br>
-          <small class="text-muted">OPERATIONS MANAGER</small>
+          <small class="text-muted text-uppercase">OPERATIONS MANAGER</small>
         </p>
 
       </div>
       <div class="col-md-8">
         <p>
-          Mr. Ben Dadzie is the Operations Manager for the Greenfield Agricultural Services Limited.
+          <b>Mr. Ben Dadzie</b> is the Operations Manager for the Greenfield Agricultural Services Limited.
           Mr Dadzie worked for Cocoa Abrabopa for about 4 years where he supervised cocoa farms
           and provided farm management services.
         </p>
@@ -295,6 +327,90 @@ onBeforeRouteLeave((to, from, next) => {
     </div>
   </template>
 
+
+  <!--  William -->
+  <template id="william">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="/img/team/william.jpeg" alt="William" class="img-fluid">
+        <p class="text-center mt-2">
+          <b>Dr. William Tawiah Baidoo</b><br>
+          <small class="text-muted text-uppercase">Director of Finance</small>
+        </p>
+
+      </div>
+      <div class="col-md-8">
+        <div class="" style="max-height: 400px; overflow: auto;">
+        <p>
+          <b>Dr. William Tawiah Baidoo</b> is a dynamic and self-motivated professional based
+          in Kumasi, Ashanti. With a robust background in teaching, research,
+          and administration, he possesses excellent communication skills
+          that foster a constructive and effective administrative environment.
+        </p>
+        <p>
+          Since January 2020, Dr. Baidoo has served as the Director of Finance
+          at Greenfield Agricultural Services Limited, where he provides consultancy
+          in management and finance, focusing on business development, management
+          restructuring, and financial engineering. He also holds a consultancy
+          position at Emperor Limited, contributing his expertise in similar areas.
+          Additionally, as a consultant and director at WT Management & Financial
+          Consult since 2017, he has further solidified his reputation as a
+          knowledgeable advisor in the financial sector.
+        </p>
+        <p>
+          Before his current roles, Dr. Baidoo was a freelance consultant with RN
+          Advisory, where he conducted financial audits and provided management
+          financial reports and tax consultancy services. His career began in
+          the education sector, where he served as a Finance Officer at Christ
+          the Teacher College of Education from July 2014 to January 2017.
+          In this role, he was instrumental in overseeing the college's financial
+          affairs, advising the principal, and managing the acquisition of capital assets.
+        </p>
+        <p>
+          Dr. Baidoo's journey in education also includes teaching positions at
+          Armed Forces Senior High Technical School and Abesim R/C Junior High School,
+          where he inspired students in business management and information technology.
+          His dedication to public service is evidenced by his national service at
+          the Denyase Traditional Council, where he gained valuable administrative
+          experience.
+        </p>
+        <p>
+          Academically, Dr. Baidoo is a PhD candidate in Business Administration
+          at AIT (OUM) and holds a Doctorate in Management Studies
+          (Financial Management) from ISBM. His educational credentials include
+          a Master of Financial Management and an MBA in Accounting and Finance
+          from Amity University, India, alongside a Bachelor of Education in
+          Accounting from the University of Education, Winneba.
+        </p>
+        <p>
+          In addition to his formal education, Dr. Baidoo has pursued professional
+          development through certifications in Advanced Excel and life skills
+          from Amity University. He is also a member of the Chartered Institute
+          of Financial and Investment Analysts in Ghana.
+        </p>
+        <p>
+          Dr. Baidoo has contributed to academic discourse through various
+          publications presented at international conferences, exploring
+          topics such as the influence of earnings per share on investment
+          decisions and the performance of banks in Ghana.
+        </p>
+        <p>
+          He is well-respected in his field, with references available
+          from notable professionals, including Richard Nixon Oppong Pepprah,
+          Director at RN Advisory, and Mr. Samuel Amissah, Director at Greenfield
+          Agricultural Services Limited.
+        </p>
+        <p>
+          Dr. William Tawiah Baidoo continues to impact the fields of finance
+          and education, driven by a commitment to excellence and a passion
+          for helping others succeed.
+        </p>
+        </div>
+      </div>
+    </div>
+  </template>
+
+
   <!--  Asante -->
   <template id="asante">
     <div  class="row">
@@ -302,13 +418,13 @@ onBeforeRouteLeave((to, from, next) => {
         <img src="/img/team/asante.jpg" alt="Asante" class="img-fluid">
         <p class="text-center mt-2">
           <b>Mr. Collins Asante</b><br>
-          <small class="text-muted">PROJECT COORDINATOR</small>
+          <small class="text-muted text-uppercase">PROJECT COORDINATOR</small>
         </p>
 
       </div>
       <div class="col-md-8">
         <p>
-          Mr. Collins Asante is Project Coordinator for Greenfield Agricultural
+          <b>Mr. Collins Asante</b> is Project Coordinator for Greenfield Agricultural
           Services Limited in charge of Farmer Training and Registration.
         </p>
         <p>
@@ -327,13 +443,13 @@ onBeforeRouteLeave((to, from, next) => {
         <img src="/img/team/constance.jpeg" alt="Constance" class="img-fluid">
         <p class="text-center mt-2">
           <b>Mrs Constance Opoku</b><br>
-          <small class="text-muted">PROJECT OFFICER – SALES & MARKETING</small>
+          <small class="text-muted text-uppercase">PROJECT OFFICER – SALES & MARKETING</small>
         </p>
 
       </div>
       <div class="col-md-8">
         <p>
-          Mrs Constance Opoku is Project Officer in charge of Sales and Marketing for
+          <b>Mrs Constance Opoku</b> is Project Officer in charge of Sales and Marketing for
           Greenfield Agricultural Services Limited. She has
           worked for Nokia Company Ltd as Sales Consultant and Truamen
           Travel & Tour as Sales and Ticketing Officer.
@@ -349,6 +465,3 @@ onBeforeRouteLeave((to, from, next) => {
 
 
 </template>
-<style scoped>
-
-</style>

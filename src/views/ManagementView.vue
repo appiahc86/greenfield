@@ -21,7 +21,7 @@ import TeamCard from "@/component/TeamCard.vue";
       </div>
       <div class="col-md-7 p-3">
         <h4>Mr. Samuel Amissah</h4>
-        <h5 class="text-success">Founder & CEO</h5>
+        <h5 class="text-success text-uppercase">Founder & CEO</h5>
         <p class="mt-2">
           <b>Mr. Samuel Amissah</b> is the Founder & CEO of Greenfield Agricultural Services Limited.
           He is a qualified Agriculturist, Agribusiness Expert and Consultant with about 17
