@@ -46,7 +46,7 @@ onBeforeRouteLeave((to, from, next) => {
               width="180"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
-          <h5 class="mb-0">Mr. Samuel Amissah</h5>
+          <h5 class="mb-0">Dr. Samuel Amissah</h5>
           <span class="small text-uppercase text-muted">Founder & CEO</span><br>
           <a class="btn btn-sm btn-default mt-2" style="cursor: pointer;" @click="router.push({name: 'management'})">View Profile</a>
         </div>

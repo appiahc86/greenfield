@@ -74,13 +74,13 @@ onBeforeRouteLeave((to, from, next) => {
 
         <div class="carousel-item">
           <img
-            src="/img/carousel/cv1.jpg"
+            src="/img/carousel/ca.jpeg"
             class="d-block w-100 carousel-img"
             alt="img"
           />
-          <div class="carousel-caption d-block">
-            <h3>Vegetable Farming</h3>
-          </div>
+<!--          <div class="carousel-caption d-block">-->
+<!--            <h3>Vegetable Farming</h3>-->
+<!--          </div>-->
         </div>
 
         <div class="carousel-item">
@@ -497,7 +497,7 @@ section {
 }
 
 .vegetable-farm {
-  background: url("../../public/img/home/3.jpg");
+  background: url('../../public/img/home/5.jpg');
   background-size: cover;
   background-position: center center;
   background-color: #ccc;
