@@ -33,7 +33,7 @@ const handleOptionChanged = (key, value) => {
     images.value = galleryData.filter((image) => image.key === key);
   }
 };
-
+ 
 
 onMounted(() => {
   images.value = galleryData.filter((image) => image.key === "people");

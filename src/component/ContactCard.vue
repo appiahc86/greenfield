@@ -4,37 +4,49 @@ import emailjs from '@emailjs/browser';
 import { useToast } from "primevue/usetoast";
 import Toast from "primevue/toast";
 import Button from "primevue/button";
-const sendingMail = ref(false);
 const toast = useToast();
+
+
 const myForm = ref();
 const email = ref('');
 const name = ref('');
+const message = ref('');
+const subject = ref('');
+const sendingMail = ref(false);
 
 const sendMail = async () => {
   try {
+
     if (!email.value.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)){
-      return toast.add({severity:'warn',  detail:'Please Enter a valid email address', life: 4000});
+      return toast.error("Please Enter a valid email address", {
+        autoClose: 5000,
+      });
     }
 
     if (name.value.trim().length < 2) {
-      return toast.add({severity: 'warn', detail: 'Please Enter you name', life: 4000});
+      return toast.error("Please Enter your name", {
+        autoClose: 5000,
+      });
     }
 
     sendingMail.value = true;
 
     const result = await emailjs.sendForm(
-        'service_ot52z8f',
+        'service_yhrhr9l',
 
         'greenfield_contact_form',
                    myForm.value,
-        'QuYtDzfIbQkBjBtnD');
+        'j7XaF6VZxxczCfcX6');
 
     myForm.value.reset();
     email.value = "";
     name.value = "";
-    toast.add({severity:'success', detail:'Your Message has been sent', life: 4000});
+    subject.value = "";
+    message.value = "";
+
+    toast.add({severity:'success', detail:'Your Message has been sent', life: 6000});
   }catch (e){
-    toast.add({severity:'error', detail:'Sorry, error occurred. Please try again later', life: 4000});
+    toast.add({severity:'error', detail:'Sorry, error occurred. Please try again later', life: 6000});
   }finally { sendingMail.value = false; }
 
 }
@@ -83,9 +95,10 @@ const sendMail = async () => {
                             id="form_name"
                             type="text"
                             name="name"
-                            v-model="name"
+                            v-model.trim="name"
                             class="form-control custom-form"
                             placeholder="*Name"
+                            minlength="3"
                             required="required"
                             data-error="Firstname is required."
                         />
@@ -98,9 +111,9 @@ const sendMail = async () => {
                             id="form_email"
                             type="email"
                             name="email"
-                            v-model="email"
+                            v-model.trim="email"
                             class="form-control custom-form"
-                            placeholder="*Email address"
+                            placeholder="*Email Address"
                             required="required"
                             data-error="Valid email is required."
                         />
@@ -112,8 +125,10 @@ const sendMail = async () => {
                         <input
                             type="text"
                             name="subject"
+                            v-model.trim="subject"
                             class="form-control custom-form"
-                            placeholder="*Please enter subject"
+                            placeholder="*Please Enter Subject"
+                            required="required"
                         />
                         <div class="help-block with-errors"></div>
                       </div>
@@ -124,7 +139,9 @@ const sendMail = async () => {
                       id="form_message"
                       name="message"
                       class="form-control message-form custom-form"
-                      placeholder="*Your message"
+                      placeholder="*Your Message"
+                      v-model.trim="message"
+                      minlength="10"
                       rows="6"
                       required="required"
                       data-error="Please,leave us a message."

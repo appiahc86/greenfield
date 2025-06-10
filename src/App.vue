@@ -289,6 +289,9 @@ const programHover = ref(false);
             </p>
             <p class="text-center">
               <b>Email: </b>
+              <a href="mailto:info@greenfieldagricgh.com"
+                 class="text-decoration-none text-white"
+              >info@greenfieldagricgh.com</a> <br>
               <a href="mailto:greenfieldagriculturalservices@gmail.com"
                  class="text-decoration-none text-white"
               >greenfieldagriculturalservices@gmail.com</a>
@@ -325,7 +328,7 @@ const programHover = ref(false);
 
         <div class="row justify-content-center mt-4">
           <div class="col text-center">
-            <h6 style="font-size: 1em;">Copyright &copy; 2024 <b>Greenfield Agricultural Services</b></h6>
+            <h6 style="font-size: 1em;">Copyright &copy; 2025 <b>Greenfield Agricultural Services</b></h6>
           </div>
         </div>
 
