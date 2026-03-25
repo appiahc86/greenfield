@@ -181,32 +181,32 @@ onBeforeRouteLeave((to, from, next) => {
     </div>
 
 <!--  Second Row  -->
-    <div class="row text-center justify-content-center">
-      <!-- Team item -->
-      <div class="col-xl-4 mb-5">
-        <div class="bg-white rounded shadow-sm py-3 px-3">
-          <img
-              v-if="store.homeLazy"
-              v-lazy="{ src: '/img/team/constance.jpeg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
-              alt="constance"
-              width="180"
-              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
-          />
-          <img
-              v-else
-              src="/img/team/constance.jpeg"
-              alt="constance"
-              width="180"
-              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
-          />
-          <h5 class="mb-0">Mrs Constance Opoku</h5>
-          <span class="small text-uppercase text-muted">Project Officer – Sales & Marketing</span><br>
-          <a class="btn btn-sm btn-default mt-2" style="cursor: pointer;" @click="openModal('constance')">View Profile</a>
+<!--    <div class="row text-center justify-content-center">-->
+<!--      &lt;!&ndash; Team item &ndash;&gt;-->
+<!--      <div class="col-xl-4 mb-5">-->
+<!--        <div class="bg-white rounded shadow-sm py-3 px-3">-->
+<!--          <img-->
+<!--              v-if="store.homeLazy"-->
+<!--              v-lazy="{ src: '/img/team/constance.jpeg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"-->
+<!--              alt="constance"-->
+<!--              width="180"-->
+<!--              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"-->
+<!--          />-->
+<!--          <img-->
+<!--              v-else-->
+<!--              src="/img/team/constance.jpeg"-->
+<!--              alt="constance"-->
+<!--              width="180"-->
+<!--              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"-->
+<!--          />-->
+<!--          <h5 class="mb-0">Mrs Constance Opoku</h5>-->
+<!--          <span class="small text-uppercase text-muted">Project Officer – Sales & Marketing</span><br>-->
+<!--          <a class="btn btn-sm btn-default mt-2" style="cursor: pointer;" @click="openModal('constance')">View Profile</a>-->
 
-        </div>
-      </div>
-      <!-- End -->
-    </div>
+<!--        </div>-->
+<!--      </div>-->
+<!--      &lt;!&ndash; End &ndash;&gt;-->
+<!--    </div>-->
 
   </div>
 
@@ -437,31 +437,31 @@ onBeforeRouteLeave((to, from, next) => {
   </template>
 
   <!--  Constance -->
-  <template id="constance">
-    <div  class="row">
-      <div class="col-md-4">
-        <img src="/img/team/constance.jpeg" alt="Constance" class="img-fluid">
-        <p class="text-center mt-2">
-          <b>Mrs Constance Opoku</b><br>
-          <small class="text-muted text-uppercase">PROJECT OFFICER – SALES & MARKETING</small>
-        </p>
+<!--  <template id="constance">-->
+<!--    <div  class="row">-->
+<!--      <div class="col-md-4">-->
+<!--        <img src="/img/team/constance.jpeg" alt="Constance" class="img-fluid">-->
+<!--        <p class="text-center mt-2">-->
+<!--          <b>Mrs Constance Opoku</b><br>-->
+<!--          <small class="text-muted text-uppercase">PROJECT OFFICER – SALES & MARKETING</small>-->
+<!--        </p>-->
 
-      </div>
-      <div class="col-md-8">
-        <p>
-          <b>Mrs Constance Opoku</b> is Project Officer in charge of Sales and Marketing for
-          Greenfield Agricultural Services Limited. She has
-          worked for Nokia Company Ltd as Sales Consultant and Truamen
-          Travel & Tour as Sales and Ticketing Officer.
-        </p>
-        <p>
-          She has also worked for UT Life Insurance as Sales Personnel.
-          She holds a Diploma in Travel & Tourism from Global Institute of Aviation with
-          6 working experience in Sales and Marketing.
-        </p>
-      </div>
-    </div>
-  </template>
+<!--      </div>-->
+<!--      <div class="col-md-8">-->
+<!--        <p>-->
+<!--          <b>Mrs Constance Opoku</b> is Project Officer in charge of Sales and Marketing for-->
+<!--          Greenfield Agricultural Services Limited. She has-->
+<!--          worked for Nokia Company Ltd as Sales Consultant and Truamen-->
+<!--          Travel & Tour as Sales and Ticketing Officer.-->
+<!--        </p>-->
+<!--        <p>-->
+<!--          She has also worked for UT Life Insurance as Sales Personnel.-->
+<!--          She holds a Diploma in Travel & Tourism from Global Institute of Aviation with-->
+<!--          6 working experience in Sales and Marketing.-->
+<!--        </p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </template>-->
 
 
 </template>
