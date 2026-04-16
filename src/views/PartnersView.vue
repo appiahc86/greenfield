@@ -32,6 +32,7 @@ onMounted(() => {
                     <div class="h6 mb-0 fw-bold">
                       <ul class="custom-list">
                         <li>Kampani (Belgium)</li>
+                        <li>Global Social Impact Investments </li>
                       </ul>
                     </div>
                   </div>
