@@ -84,19 +84,6 @@ const store = useMyStore();
         <div class="card h-100 px-2">
           <img
               v-if="store.homeLazy"
-               v-lazy="{ src: '/img/partners/agro.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
-               alt="agro" class="img-fluid my-auto">
-          <img
-              v-else
-              src="/img/partners/agro.png"
-              alt="agro" class="img-fluid my-auto">
-        </div>
-      </div>
-
-      <div class="col-3 col-lg-2 mb-3">
-        <div class="card h-100 px-2">
-          <img
-              v-if="store.homeLazy"
               v-lazy="{ src: '/img/partners/kampani.jpg', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
               alt="kampani" class="img-fluid my-auto">
           <img
@@ -156,32 +143,6 @@ const store = useMyStore();
               src="/img/partners/sinapi.png"
               alt="Sinapi" class="img-fluid my-auto">
         </div>
-      </div>.
-
-      <div class="col-3 col-lg-2 mb-3">
-        <div class="card h-100 px-2">
-          <img
-              v-if="store.homeLazy"
-              v-lazy="{ src: '/img/partners/advans.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
-              alt="Advans" class="img-fluid my-auto">
-          <img
-              v-else
-              src="/img/partners/advans.png"
-              alt="Advans" class="img-fluid my-auto">
-        </div>
-      </div>
-
-      <div class="col-3 col-lg-2 mb-3">
-        <div class="card h-100 px-2">
-          <img
-              v-if="store.homeLazy"
-              v-lazy="{ src: '/img/partners/gtco.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
-              alt="Gtco" class="img-fluid my-auto">
-          <img
-              v-else
-              src="/img/partners/gtco.png"
-              alt="Gtco" class="img-fluid my-auto">
-        </div>
       </div>
 
       <div class="col-3 col-lg-2 mb-3">
@@ -194,19 +155,6 @@ const store = useMyStore();
               v-else
               src="/img/partners/amenfiman.jpg"
               alt="Amenfiman" class="img-fluid my-auto">
-        </div>
-      </div>
-
-      <div class="col-3 col-lg-2 mb-3">
-        <div class="card h-100 px-2">
-          <img
-              v-if="store.homeLazy"
-              v-lazy="{ src: '/img/partners/absa.png', loading: '/img/dummy493x168.svg', error: '', delay: 500 }"
-              alt="Absa" class="img-fluid my-auto">
-          <img
-              v-else
-              src="/img/partners/absa.png"
-              alt="Absa" class="img-fluid my-auto">
         </div>
       </div>
 

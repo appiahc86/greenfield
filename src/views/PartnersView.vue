@@ -72,11 +72,8 @@ onMounted(() => {
                     </div>
                     <div class="h6 mb-0 fw-bold">
                       <ul class="custom-list">
-                        <li>Absa Bank Ltd</li>
                         <li>Fidelity Bank Ltd</li>
-                        <li>GT Bank</li>
                         <li>Sinapi Aba Savings and Loans</li>
-                        <li>Advans Ghana Savings & Loans</li>
                         <li>Pan-African Savings & Loans</li>
                         <li>Ahantaman Rural Bank PLC</li>
                         <li>Amenfiman Rural Bank PLC</li>
