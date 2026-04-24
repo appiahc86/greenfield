@@ -58,6 +58,7 @@ onBeforeRouteLeave((to, from, next) => {
 
 <template>
 
+
   <div class="mt-5 mt-sm-5 mt-md-4 mt-lg-0 hero-section">
     <div id="homeCarousel" class="carousel slide modern-carousel">
       <div class="carousel-indicators">
@@ -72,7 +73,7 @@ onBeforeRouteLeave((to, from, next) => {
         <div class="carousel-item active">
           <div class="carousel-overlay"></div>
           <img
-              src="/img/carousel/c1.jpeg"
+              src="/img/carousel/n1.jpeg"
               class="d-block w-100 carousel-img"
               alt="img"
           />
@@ -85,7 +86,7 @@ onBeforeRouteLeave((to, from, next) => {
         <div class="carousel-item">
           <div class="carousel-overlay"></div>
           <img
-            src="/img/carousel/ca.jpeg"
+            src="/img/carousel/n3.jpeg"
             class="d-block w-100 carousel-img"
             alt="img"
           />
@@ -122,7 +123,7 @@ onBeforeRouteLeave((to, from, next) => {
         <div class="carousel-item">
           <div class="carousel-overlay"></div>
           <img
-              src="/img/carousel/c5.jpg"
+              src="/img/carousel/n2.jpeg"
               class="d-block w-100 carousel-img"
               alt="img"
           />
@@ -280,9 +281,9 @@ onBeforeRouteLeave((to, from, next) => {
         <div class="col-md-6">
           <img
               v-if="store.homeLazy"
-               v-lazy="{ src: '/img/headoffice3.jpeg', loading: '/img/dummy1280x903.svg', error: '', delay: 500 }"
+               v-lazy="{ src: '/img/headoffice4.jpeg', loading: '/img/dummy1280x903.svg', error: '', delay: 500 }"
                alt="headoffice" class="img-fluid">
-          <img v-else src="/img/headoffice3.jpeg" alt="headoffice" class="img-fluid">
+          <img v-else src="/img/headoffice4.jpeg" alt="headoffice" class="img-fluid">
         </div>
         <div class="col-md-6 d-flex justify-content-center align-items-center">
           <div class="why-us-left">
@@ -387,9 +388,12 @@ onBeforeRouteLeave((to, from, next) => {
 }
 
 .carousel-img {
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(70%);
+
+  filter: brightness(80%);
+  width: 100%;
+  height: 100vh;        /* Full viewport height */
+  object-fit: cover;    /* Fills the area, crops if needed */
+  object-position: center;
   transition: transform 0.5s ease, filter 0.5s ease;
 }
 

@@ -191,6 +191,16 @@ export const galleryData = [
     path:"/img/gallery/l8.webp",
     name:""
   },
+    {
+        key: "people",
+        path:"/img/gallery/l16.jpeg",
+        name:""
+    },
+    {
+        key: "people",
+        path:"/img/gallery/l17.jpeg",
+        name:""
+    },
   {
     key: "people",
     path:"/img/gallery/l9.jpeg",
