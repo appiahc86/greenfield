@@ -12,7 +12,7 @@ import {onBeforeRouteLeave} from "vue-router";
 const count = ref(0);
 const store = useMyStore();
 const hasAnimated = ref(false);
-
+const imageLoaded = ref(false);
 
 onMounted(() => {
   const myCarouselElement = document.querySelector("#homeCarousel");
@@ -246,14 +246,16 @@ onBeforeRouteLeave((to, from, next) => {
               loading: '/img/dummy768x1024.svg',
                error: '', delay: 500 }"
                class="img-fluid about-image"
-               alt="officer">
+               alt="officer"
+               @load="imageLoaded = true">
           <img
               v-else
               src="/img/gfofficer.jpg"
                alt="officer"
-               class="img-fluid about-image">
+               class="img-fluid about-image"
+              @load="imageLoaded = true">
 
-          <div class="image-badget">
+          <div class="image-badget" :class="{ 'badge-visible': imageLoaded }">
             <figure class="ib-icon">
               <img src="/img/medal.png" alt="medal" />
             </figure>
@@ -944,6 +946,15 @@ section {
 .image-badget:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.image-badget {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.image-badget.badge-visible {
+  opacity: 1;
 }
 
 /* Smooth Scroll Behavior */
