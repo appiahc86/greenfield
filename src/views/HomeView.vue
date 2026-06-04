@@ -238,10 +238,7 @@ onBeforeRouteLeave((to, from, next) => {
         </div>
       </div>
 
-      <div class="col-lg-6 spacing-md mb-2"
-           data-sal="fade"
-           data-sal-delay="200"
-           data-sal-duration="1000">
+      <div class="col-lg-6 spacing-md mb-2">
         <figure class="home-about-img">
 
           <img v-if="store.homeLazy"
