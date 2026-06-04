@@ -316,6 +316,59 @@ onBeforeRouteLeave((to, from, next) => {
     </div>
 
 
+
+    <!-- EUDR Certification Section -->
+    <div class="container mt-5 mb-5 eudr-section px-2 px-lg-1"
+        >
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="eudr-text">
+            <span class="eudr-badge">NEW ACHIEVEMENT</span>
+            <h2>EUDR Certified</h2>
+            <h3>EU Deforestation Regulation Compliance</h3>
+            <p>
+              <b>Greenfield Agricultural Services Limited</b> is proud to be officially certified
+              in <strong>EUDR Compliance</strong> by the EUDR Institute — a CPD-accredited
+              body. This certification affirms our commitment to deforestation-free supply
+              chains and responsible sourcing, ensuring our farmers meet the highest
+              European market standards.
+            </p>
+            <div class="eudr-highlights">
+              <div class="eudr-highlight-item">
+                <i class="pi pi-verified"></i>
+                <span>CPD Certified</span>
+              </div>
+              <div class="eudr-highlight-item">
+                <i class="pi pi-globe"></i>
+                <span>EU Market Ready</span>
+              </div>
+              <div class="eudr-highlight-item">
+                <i class="pi pi-shield"></i>
+                <span>Deforestation-Free</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="cert-wrapper">
+            <div class="cert-glow"></div>
+            <img
+                src="/img/eudr-certificate.jpeg"
+                alt="EUDR Compliance Certificate - Greenfield Agricultural Services Limited"
+                class="eudr-cert-img img-fluid"
+            />
+            <div class="cert-stamp">
+              <i class="pi pi-check-circle"></i>
+              <span>Verified 4 Jun 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./EUDR Certification Section -->
+
+
+
       <div class="section-title farmers-counter"
            data-sal="zoom-in"
            data-sal-delay="100"
@@ -331,9 +384,7 @@ onBeforeRouteLeave((to, from, next) => {
       </div>
 
 
-          <div class="container-fluid mt-5 mb-5 vegetable-farm"
-               data-sal="fade"
-               data-sal-duration="1500"></div>
+          <div class="container-fluid mt-5 mb-5 vegetable-farm"></div>
 
 
 
@@ -971,6 +1022,163 @@ html {
   line-height: 1.8;
   color: #555;
 }
+
+/* EUDR Certification Section */
+.eudr-section {
+  padding: 20px 0;
+}
+
+.eudr-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #f5a623 0%, #e8941a 100%);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  box-shadow: 0 3px 12px rgba(245, 166, 35, 0.35);
+}
+
+.eudr-text h2 {
+  color: #dae1e6;
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 55px;
+  line-height: 60px;
+  margin-bottom: 0;
+}
+
+.eudr-text h3 {
+  font-size: 26px;
+  line-height: 34px;
+  margin-top: -28px;
+  position: relative;
+  z-index: 1;
+  color: #19908b;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.eudr-text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.eudr-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.eudr-highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, rgba(25, 144, 139, 0.08) 0%, rgba(25, 144, 139, 0.03) 100%);
+  border: 1px solid rgba(25, 144, 139, 0.2);
+  border-radius: 25px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #19908b;
+  transition: all 0.3s ease;
+}
+
+.eudr-highlight-item:hover {
+  background: linear-gradient(135deg, rgba(25, 144, 139, 0.15) 0%, rgba(25, 144, 139, 0.08) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(25, 144, 139, 0.2);
+}
+
+.eudr-highlight-item i {
+  font-size: 16px;
+}
+
+.cert-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.cert-glow {
+  position: absolute;
+  inset: -15px;
+  background: radial-gradient(ellipse at center, rgba(25, 144, 139, 0.15) 0%, transparent 70%);
+  border-radius: 25px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.eudr-cert-img {
+  position: relative;
+  z-index: 1;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(25, 144, 139, 0.15);
+  transition: all 0.4s ease;
+}
+
+.eudr-cert-img:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2), 0 0 0 2px rgba(25, 144, 139, 0.3);
+}
+
+.cert-stamp {
+  position: absolute;
+  bottom: -12px;
+  right: 20px;
+  z-index: 2;
+  background: linear-gradient(135deg, #19908b 0%, #0d6b67 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(25, 144, 139, 0.4);
+  letter-spacing: 0.3px;
+}
+
+.cert-stamp i {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .eudr-text h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .eudr-text h3 {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+
+  .eudr-highlights {
+    gap: 8px;
+  }
+
+  .eudr-highlight-item {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+
+  .cert-stamp {
+    font-size: 11px;
+    padding: 7px 14px;
+    right: 10px;
+  }
+}
+/* End of EUDR Certification Section */
+
 
 /* Responsive Improvements */
 @media screen and (max-width: 768px) {
