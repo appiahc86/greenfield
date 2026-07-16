@@ -16,47 +16,49 @@ onBeforeRouteLeave((to, from, next) => {
   <PageBanner title="About Us" subTitle="about" img="/img/banner.jpeg" />
   <!-- OUR MISSION -->
   <div class="container my">
-    <div class="home-about my text-center">
-      <h2>About Us</h2>
-      <p>
-        GreenField Agricultural Services is a social impact and value addition
-        Agribusiness Company that supports small holder farmers by implementing
-        sustainable agricultural value chain programs aimed at increasing crop
-        yield, increasing farmers' income, improving their livelihood and
-        reducing poverty. The Head Office is located in Kumasi, the capital city
-        of the Ashanti Region.
-      </p>
-      <p>
-        Greenfield was first registered as Greenfield Agrochemicals in 2014 as a
-        sole proprietorship to undertake sale of agro inputs, provide training
-        and extension services to small holder farmers. It was founded by Mr.
-        Samuel Amissah, an Agribusiness Expert with about 16 years field
-        experience in Agricultural Financing, Microfinance, Agro Inputs Credit
-        Management, Project Development and Management, VSLAs Development, Cocoa
-        Sustainability, Farm Management, Farmer Training, Agribusiness
-        Management and Consulting. Mr. Amissah is the Chief Executive Officer
-        (CEO) and owner of the business. In order to expand its activities and
-        restructure, the company was registered again as Greenfield Agricultural
-        Services Limited in 2020. Greenfield currently has 6 outlets in the
-        cocoa growing areas providing small holder cocoa farmers with
-        sustainable access to quality agro inputs and training to improve their
-        livelihood. Greenfield started with only 1 outlet at Sofoline in Kumasi
-        and has expanded to 6 outlets currently. These are Sofoline and Kunsu
-        Wiawso in the Ashanti Region, Goaso in the Ahafo Region, Twifo Praso,
-        Agona Abrem in the Central Region and Daboase Junction in the Western
-        Region.
-      </p>
-      <p>
-        Apart from farmer coming to the outlets to buy agro inputs, Greenfield
-        implements cocoa inputs credit scheme for small holder cocoa farmers and
-        has supported about 2,000 small holder cocoa farmers in the cocoa
-        growing areas with the cocoa inputs credit scheme. Currently the company
-        has registered over <span class="fw-bold">{{ store.registeredFarmers.toLocaleString() }}</span>
-        small holder cocoa farmers to provide them
-        with sustainable able access to training and quality agro inputs. In
-        partnership with MFIs, Greenfield has so far supported about 693 cocoa
-        farmers.
-      </p>
+    <div class="row justify-content-center home-about my text-center">
+      <div class="col-lg-9">
+        <h2 class="fw-bold">About Us</h2>
+        <p>
+          <b>Greenfield Agricultural Services Ltd</b> is a social impact and value
+          addition Agribusiness Company that supports small holder farmers by
+          implementing sustainable agricultural value chain programs aimed at
+          increasing crop yield, increasing farmers' income, improving their
+          livelihood and reducing poverty. The Head Office is located in Kumasi, the
+          capital city of the Ashanti Region.
+        </p>
+        <p>
+          Greenfield was first registered as Greenfield Agrochemicals in 2014
+          as a sole proprietorship to undertake sale of Agro Inputs, provide training
+          and extension services to small holder farmers. It was founded by Dr. Samuel
+          Amissah, an Agribusiness Expert with over 19 years working experience in
+          Agricultural Financing, Microfinance, Agro Inputs Credit Management, Project
+          Development and Management, VSLAs Development, Cocoa Sustainability, Farm
+          Management, Farmer Training, Agribusiness Management and Consulting.
+          Dr. Amissah is the Chief Executive Officer (CEO) and owner of the business.
+          In order to expand its activities and restructure, the company was
+          registered again as Greenfield Agricultural Services Limited in 2020.
+          bGreenfield currently has 6 outlets in the cocoa growing areas providing
+          small holder cocoa farmers with sustainable access to quality Agro inputs
+          and training to improve their livelihood. Greenfield started with only 1
+          outlet at Sofoline in Kumasi and has expanded to 6 outlets currently.
+          These are Sofoline and Kunsu Wiawso in the Ashanti Region, Goaso in the
+          Ahafo Region, Twifo Praso, Agona Abrem in the Central Region and
+          Daboase Junction in the Western Region.
+        </p>
+        <p>
+          Greenfield implements Agro inputs credit scheme for smallholder cocoa
+          farmers and has supported over 25,000 smallholder cocoa farmers so far
+          in the cocoa growing areas with quality agro inputs, training & extension
+          and microcredit. The company has registered over
+          <span class="fw-bold">{{ store.registeredFarmers.toLocaleString() }}</span>
+          small holder cocoa farmers to provide them with sustainable access
+          to training and
+          quality agro inputs.
+        </p>
+      </div>
+
+
     </div>
     <div class="row">
       <div class="col-lg-6 d-flex justify-content-center align-items-center">
@@ -74,22 +76,35 @@ onBeforeRouteLeave((to, from, next) => {
             lives of small holder farmers and improve their well-being to help
             reduce poverty.
           </p>
+
           <div class="hb-box d-flex flex-row">
-            <div class="hb-inner">
-              <figure class="hb-icon">
-                <img src="/img/shield-orange.png" alt="" />
-              </figure>
-              <h5>We are Passionate</h5>
-              <p>Improving livelihood to help alleviate poverty.</p>
-            </div>
-            <div class="hb-inner spacing-sm">
-              <figure class="hb-icon">
-                <img src="/img/wheat.png" alt="" />
-              </figure>
-              <h5>Industry Oriented</h5>
-              <p>Enabling Ecosystem for Food and Agriculture.</p>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="hb-inner">
+                  <figure class="hb-icon">
+                    <img src="/img/shield-orange.png" alt="" />
+                  </figure>
+                  <h5>We are Passionate</h5>
+                  <p>Improving livelihood to help alleviate poverty.</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="hb-inner spacing-sm">
+                  <figure class="hb-icon">
+                    <img src="/img/wheat.png" alt="" />
+                  </figure>
+                  <h5>Industry Oriented</h5>
+                  <p>Enabling Ecosystem for Food and Agriculture.</p>
+                </div>
+              </div>
             </div>
           </div>
+
+          </div>
+
+
         </div>
       </div>
       <div class="col-lg-6 spacing-md">

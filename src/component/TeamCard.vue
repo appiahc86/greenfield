@@ -34,14 +34,14 @@ onBeforeRouteLeave((to, from, next) => {
         <div class="bg-white rounded shadow-sm py-3 px-3">
           <img
             v-if="store.homeLazy"
-            v-lazy="{ src: '/img/team/samuel.jpeg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
+            v-lazy="{ src: '/img/team/samuel1.jpeg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
             alt="CEO"
             width="180"
             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <img
              v-else
-              src="/img/team/samuel.jpeg"
+              src="/img/team/samuel1.jpeg"
               alt="CEO"
               width="180"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
@@ -83,14 +83,14 @@ onBeforeRouteLeave((to, from, next) => {
         <div class="bg-white rounded shadow-sm py-3 px-3">
           <img
             v-if="store.homeLazy"
-            v-lazy="{ src: '/img/team/benjamin.jpg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
+            v-lazy="{ src: '/img/team/ben.jpeg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
             alt="Benjamin"
             width="180"
             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <img
               v-else
-              src="/img/team/benjamin.jpg"
+              src="/img/team/ben.jpeg"
               alt="Benjamin"
               width="180"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
@@ -172,7 +172,7 @@ onBeforeRouteLeave((to, from, next) => {
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <h5 class="mb-0">Ms Ellen Addai</h5>
-          <span class="small text-uppercase text-muted">Project Administration Officer</span><br>
+          <span class="small text-uppercase text-muted">Administrative Officer</span><br>
           <a class="btn btn-sm btn-default mt-2" style="cursor: pointer;" @click="openModal('ellen')">View Profile</a>
         </div>
       </div>
@@ -280,20 +280,24 @@ onBeforeRouteLeave((to, from, next) => {
         <img src="/img/team/ellen.jpg" alt="Ellen" class="img-fluid">
         <p class="text-center mt-2">
           <b>Ms Ellen Addai</b><br>
-          <small class="text-muted text-uppercase">Project Administration Officer</small>
+          <small class="text-muted text-uppercase">Administrative Officer</small>
         </p>
 
       </div>
       <div class="col-md-8">
         <p>
-          <b>Ms Ellen Addai</b> is the Project Administration Officer of Greenfield Agricultural
-          Services Limited. She handles all project admin issues and as well office management.
+          <b>Ms Ellen Addai</b>
+          is the Administrative Officer for Greenfield Agricultural Services Limited.
+          She handles all admin issues and office management. She holds
+          BSc Natural Resource Management (Social Forestry option) and a
+          Diploma in Natural Resource Management from University of Energy
+          and Natural Resources, Ghana.
         </p>
         <p>
-          She holds BSc Natural Resource Management (Social Forestry option) and a Diploma in Natural Resource
-          Management from University of Energy and Natural Resources, Ghana. She has about 4
-          years working experience. She worked with the Forest Division
-          and Amandi Investment Construction Company Limited as a Secretary.
+          She is also pursuing Master’s degree
+          program in Organizational Development at KNUST.
+          Prior to joining Greenfield, Ellen worked for the Forest
+          Division and Amandi Investment Construction Company Limited as a Secretary.
         </p>
       </div>
     </div>
@@ -305,7 +309,7 @@ onBeforeRouteLeave((to, from, next) => {
   <template id="benjamin">
     <div  class="row">
       <div class="col-md-4">
-        <img src="/img/team/benjamin.jpg" alt="Benjamin" class="img-fluid">
+        <img src="/img/team/ben.jpeg" alt="Benjamin" class="img-fluid">
         <p class="text-center mt-2">
           <b>Mr. Benjamin Dadzie</b><br>
           <small class="text-muted text-uppercase">OPERATIONS MANAGER</small>
@@ -314,14 +318,17 @@ onBeforeRouteLeave((to, from, next) => {
       </div>
       <div class="col-md-8">
         <p>
-          <b>Mr. Ben Dadzie</b> is the Operations Manager for the Greenfield Agricultural Services Limited.
-          Mr Dadzie worked for Cocoa Abrabopa for about 4 years where he supervised cocoa farms
-          and provided farm management services.
+          <b>Mr. Ben Dadzie</b>
+          is the Operations Manager for Greenfield Agricultural Services Limited.
+          He holds MSc Project Management from KNUST and BSc Development Studies
+          from UDS. He has great experience in Cocoa Inputs Credit Scheme, Cocoa
+          Operations and Farmer Training.
         </p>
         <p>
-          He also worked for BestLink Cocoa Company
-          for 1 year as cocoa operations officer. He also worked for Sunshine Commodities
-          as Operations and Port Officer for 1 year. He holds a BSc Degree in Development Studies from UDS.
+          He is also an expert in repair and
+          maintenance of spraying machines, and training of farmers. Before Joining
+          Greenfield, he Worked for Wienco Ghana Cocoa Abrabopa, BestLink Ghana
+          Ltd and Sunshine Commodities (cocoa buying companies).
         </p>
       </div>
     </div>
@@ -435,33 +442,6 @@ onBeforeRouteLeave((to, from, next) => {
       </div>
     </div>
   </template>
-
-  <!--  Constance -->
-<!--  <template id="constance">-->
-<!--    <div  class="row">-->
-<!--      <div class="col-md-4">-->
-<!--        <img src="/img/team/constance.jpeg" alt="Constance" class="img-fluid">-->
-<!--        <p class="text-center mt-2">-->
-<!--          <b>Mrs Constance Opoku</b><br>-->
-<!--          <small class="text-muted text-uppercase">PROJECT OFFICER – SALES & MARKETING</small>-->
-<!--        </p>-->
-
-<!--      </div>-->
-<!--      <div class="col-md-8">-->
-<!--        <p>-->
-<!--          <b>Mrs Constance Opoku</b> is Project Officer in charge of Sales and Marketing for-->
-<!--          Greenfield Agricultural Services Limited. She has-->
-<!--          worked for Nokia Company Ltd as Sales Consultant and Truamen-->
-<!--          Travel & Tour as Sales and Ticketing Officer.-->
-<!--        </p>-->
-<!--        <p>-->
-<!--          She has also worked for UT Life Insurance as Sales Personnel.-->
-<!--          She holds a Diploma in Travel & Tourism from Global Institute of Aviation with-->
-<!--          6 working experience in Sales and Marketing.-->
-<!--        </p>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </template>-->
 
 
 </template>
