@@ -231,8 +231,7 @@ onMounted(() => {
 <style scoped>
 
 .top {
-  background-image: url("../../public/img/pbg.jpg");
-  background-color: grey;
+  background-color: rgba(21, 23, 4, 0.86);
   height: 20em;
   display: flex;
   align-items: center;

@@ -7,7 +7,9 @@ import TeamCard from "@/component/TeamCard.vue";
 
   <div class="my-5 top">
     <div class="py-5 text-white">
-      <h4 style="font-size: 7vw; font-family: fantasy, SansSerif; opacity: 0.7">MANAGEMENT TEAM</h4>
+      <h4 style="font-size: 7vw;
+      font-family: fantasy, SansSerif; opacity: 0.7"
+      class="upper-text">MANAGEMENT TEAM</h4>
     </div>
   </div>
 
@@ -96,8 +98,7 @@ import TeamCard from "@/component/TeamCard.vue";
 
 <style scoped>
 .top {
-  background-image: url("../../public/img/pbg.jpg");
-  background-color: grey;
+  background-color: rgba(21, 23, 4, 0.86);
   height: 20em;
   display: flex;
   align-items: center;
@@ -106,4 +107,5 @@ import TeamCard from "@/component/TeamCard.vue";
 .user-profile {
   display: block !important;
 }
+
 </style>

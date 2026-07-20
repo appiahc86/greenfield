@@ -13,28 +13,28 @@ onBeforeRouteLeave((to, from, next) => {
 
 <template>
   <div class="wrapper">
-  <div class="top mt5">
-  <h2 class="text-white text-uppercase"
-      style="font-size: 7vw; font-family: cursive; opacity: 0.7">
-    Our Projects
-  </h2>
-  </div>
+    <div class="top mt5">
+      <h2 class="text-white text-uppercase"
+          style="font-size: 7vw; font-family: cursive; opacity: 0.7">
+        Our Projects
+      </h2>
+    </div>
 
-    <div class="di"><span class="dot"></span></div>
-    <div class="di"><span class="dot"></span></div>
-    <div class="di"><span class="dot"></span></div>
-    <div class="di"><span class="dot"></span></div>
-    <div class="di"><span class="dot"></span></div>
-    <div class="di"><span class="dot"></span></div>
-    <div class="di"><span class="dot"></span></div>
-    <div class="di"><span class="dot"></span></div>
-    <div class="di"><span class="dot"></span></div>
-    <div class="di"><span class="dot"></span></div>
-    <div class="di"><span class="dot"></span></div>
-    <div class="di"><span class="dot"></span></div>
-    <div class="di"><span class="dot"></span></div>
-    <div class="di"><span class="dot"></span></div>
-    <div class="di"><span class="dot"></span></div>
+    <!--    <div class="di"><span class="dot"></span></div>-->
+    <!--    <div class="di"><span class="dot"></span></div>-->
+    <!--    <div class="di"><span class="dot"></span></div>-->
+    <!--    <div class="di"><span class="dot"></span></div>-->
+    <!--    <div class="di"><span class="dot"></span></div>-->
+    <!--    <div class="di"><span class="dot"></span></div>-->
+    <!--    <div class="di"><span class="dot"></span></div>-->
+    <!--    <div class="di"><span class="dot"></span></div>-->
+    <!--    <div class="di"><span class="dot"></span></div>-->
+    <!--    <div class="di"><span class="dot"></span></div>-->
+    <!--    <div class="di"><span class="dot"></span></div>-->
+    <!--    <div class="di"><span class="dot"></span></div>-->
+    <!--    <div class="di"><span class="dot"></span></div>-->
+    <!--    <div class="di"><span class="dot"></span></div>-->
+    <!--    <div class="di"><span class="dot"></span></div>-->
 
   </div>
 
@@ -108,36 +108,36 @@ onBeforeRouteLeave((to, from, next) => {
 
 
       <!--      projects start-->
-<!--      <div class="col-md-8">-->
-<!--        <h4 class="text-center text-uppercase">-->
-<!--          Livelihood Empowerment Agricultural Programme (LEAP)-->
-<!--        </h4>-->
-<!--        <div class="mx-auto" style="width: 20%;">-->
-<!--          <hr style="border: 3px solid rgba(0,0,0,0.7);">-->
-<!--        </div>-->
+      <!--      <div class="col-md-8">-->
+      <!--        <h4 class="text-center text-uppercase">-->
+      <!--          Livelihood Empowerment Agricultural Programme (LEAP)-->
+      <!--        </h4>-->
+      <!--        <div class="mx-auto" style="width: 20%;">-->
+      <!--          <hr style="border: 3px solid rgba(0,0,0,0.7);">-->
+      <!--        </div>-->
 
-<!--        <br>-->
-<!--        <p>-->
-<!--          In May 2023, Greenfield Agricultural Services entered into-->
-<!--          partnership with Jesus of the Latter Day Saints Church, Kumasi-->
-<!--          University and Afrancho Stakes to implement the LEAP to provide-->
-<!--          them with training and quality agro inputs towards sustainable-->
-<!--          employment for the members to enable them take care of their families.-->
-<!--          The selected members who benefited from the program were-->
-<!--          into various farming activities such as Cocoa, Cereals, Vegetable,-->
-<!--          Fish farming, and Rearing of Ruminants. The Phase 2 of the project-->
-<!--          is expected to continue in 2024.-->
-<!--        </p>-->
-<!--        <img-->
-<!--            v-if="store.programsLazy"-->
-<!--            v-lazy="{ src: '/img/programs/LEAP.jpg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"-->
-<!--            alt="LEAP" class="img-fluid mb-2">-->
-<!--        <img-->
-<!--            v-else-->
-<!--            src="/img/programs/LEAP.jpg"-->
-<!--            alt="LEAP" class="img-fluid mb-2">-->
-<!--      </div>-->
-<!--      <hr class="border border-3 my-5">-->
+      <!--        <br>-->
+      <!--        <p>-->
+      <!--          In May 2023, Greenfield Agricultural Services entered into-->
+      <!--          partnership with Jesus of the Latter Day Saints Church, Kumasi-->
+      <!--          University and Afrancho Stakes to implement the LEAP to provide-->
+      <!--          them with training and quality agro inputs towards sustainable-->
+      <!--          employment for the members to enable them take care of their families.-->
+      <!--          The selected members who benefited from the program were-->
+      <!--          into various farming activities such as Cocoa, Cereals, Vegetable,-->
+      <!--          Fish farming, and Rearing of Ruminants. The Phase 2 of the project-->
+      <!--          is expected to continue in 2024.-->
+      <!--        </p>-->
+      <!--        <img-->
+      <!--            v-if="store.programsLazy"-->
+      <!--            v-lazy="{ src: '/img/programs/LEAP.jpg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"-->
+      <!--            alt="LEAP" class="img-fluid mb-2">-->
+      <!--        <img-->
+      <!--            v-else-->
+      <!--            src="/img/programs/LEAP.jpg"-->
+      <!--            alt="LEAP" class="img-fluid mb-2">-->
+      <!--      </div>-->
+      <!--      <hr class="border border-3 my-5">-->
       <!--      projects end-->
 
 
@@ -159,8 +159,8 @@ onBeforeRouteLeave((to, from, next) => {
         </p>
         <img
             v-if="store.programsLazy"
-             v-lazy="{ src: '/img/programs/frm.jpg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"
-             alt="farmer registration" class="img-fluid mb-2">
+            v-lazy="{ src: '/img/programs/frm.jpg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"
+            alt="farmer registration" class="img-fluid mb-2">
         <img
             v-else
             src="/img/programs/frm.jpg"
@@ -193,46 +193,46 @@ onBeforeRouteLeave((to, from, next) => {
         </p>
       </div>
       <hr class="border border-3 my-5">
-<!--      projects end-->
+      <!--      projects end-->
 
 
       <!--      projects start-->
-        <div class="col-md-8">
-            <h4 class="text-center text-uppercase">
-              Greenfield – SunBright Agribusiness Project
-            </h4>
-            <div class="mx-auto" style="width: 20%;">
-              <hr style="border: 3px solid rgba(0,0,0,0.7);">
-            </div>
+      <div class="col-md-8">
+        <h4 class="text-center text-uppercase">
+          Greenfield – SunBright Agribusiness Project
+        </h4>
+        <div class="mx-auto" style="width: 20%;">
+          <hr style="border: 3px solid rgba(0,0,0,0.7);">
+        </div>
 
-          <br>
-            <p>
-              On 26th August,2021, GREENFIELD signed partnership agreement
-              with SUNBRIGHT to provide small holder farmers access to quality
-              agro inputs in the Wassa East District in the Western Region of Ghana and its environs.
-            </p>
-            <img
-                 v-if="store.programsLazy"
-                 v-lazy="{ src: '/img/programs/w.jpeg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"
-                 alt="cocoa drying" class="img-fluid mb-2">
-          <img
-              v-else
-              src="/img/programs/w.jpeg"
-              alt="cocoa drying" class="img-fluid mb-2">
-            <p>
-              The project was expected to increase the yield of farmers in the district,
-              increase their income and improve their livelihood. Through the project,
-              farmers in the district and beyond will also be given training and
-              introduced to modern system of farming including climate smart agriculture, agroforestry etc.
-            </p>
-          </div>
+        <br>
+        <p>
+          On 26th August,2021, GREENFIELD signed partnership agreement
+          with SUNBRIGHT to provide small holder farmers access to quality
+          agro inputs in the Wassa East District in the Western Region of Ghana and its environs.
+        </p>
+        <img
+            v-if="store.programsLazy"
+            v-lazy="{ src: '/img/programs/w.jpeg', loading: '/img/dummy800x498.svg', error: '', delay: 500 }"
+            alt="cocoa drying" class="img-fluid mb-2">
+        <img
+            v-else
+            src="/img/programs/w.jpeg"
+            alt="cocoa drying" class="img-fluid mb-2">
+        <p>
+          The project was expected to increase the yield of farmers in the district,
+          increase their income and improve their livelihood. Through the project,
+          farmers in the district and beyond will also be given training and
+          introduced to modern system of farming including climate smart agriculture, agroforestry etc.
+        </p>
+      </div>
 
       <!--      projects end-->
 
     </div>
   </div>
 
-<!--  <PartnersCard />-->
+  <!--  <PartnersCard />-->
 
 </template>
 
@@ -240,11 +240,10 @@ onBeforeRouteLeave((to, from, next) => {
 <style scoped>
 .top {
   height: 22em;
-  background-image: url("../../public/img/pbg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: grey;
+  background-color: rgba(21, 23, 4, 0.86);
   background-blend-mode: multiply;
   display: flex;
   align-items: center;
