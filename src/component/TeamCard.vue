@@ -83,14 +83,14 @@ onBeforeRouteLeave((to, from, next) => {
         <div class="bg-white rounded shadow-sm py-3 px-3">
           <img
             v-if="store.homeLazy"
-            v-lazy="{ src: '/img/team/ben.jpeg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
+            v-lazy="{ src: '/img/team/ben1.jpeg', loading: '/img/dummy266x266.svg', error: '', delay: 500 }"
             alt="Benjamin"
             width="180"
             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
           />
           <img
               v-else
-              src="/img/team/ben.jpeg"
+              src="/img/team/ben1.jpeg"
               alt="Benjamin"
               width="180"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
@@ -309,7 +309,7 @@ onBeforeRouteLeave((to, from, next) => {
   <template id="benjamin">
     <div  class="row">
       <div class="col-md-4">
-        <img src="/img/team/ben.jpeg" alt="Benjamin" class="img-fluid">
+        <img src="/img/team/ben1.jpeg" alt="Benjamin" class="img-fluid">
         <p class="text-center mt-2">
           <b>Mr. Benjamin Dadzie</b><br>
           <small class="text-muted text-uppercase">OPERATIONS MANAGER</small>
